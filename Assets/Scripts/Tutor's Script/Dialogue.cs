@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+[CreateAssetMenu(menuName = "Dialog/Dialogue Blueprint")]
+public class Dialogue : ScriptableObject
 {
-    [SerializeField] private DialogueProperties[] dialogue;
+    [SerializeField] private DialogueProperties[] _dialogue;
+
+    public DialogueProperties[] dialogue => _dialogue;
 }

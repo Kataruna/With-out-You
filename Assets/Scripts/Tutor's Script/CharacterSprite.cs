@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CharacterSprite : MonoBehaviour
 {
-    [SerializeField] private CharacterFace _emily;
-    [SerializeField] private CharacterFace _anna;
+    [SerializeField] private CharacterFace _silvia;
+    [SerializeField] private CharacterFace _january;
 
-    public CharacterFace Emily => _emily;
-    public CharacterFace Anna => _anna;
+    public CharacterFace Silvia => _silvia;
+    public CharacterFace January => _january;
 }

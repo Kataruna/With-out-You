@@ -10,15 +10,15 @@ public class DialogueProperties
     
     public enum Character
     {
-        a,
-        b,
+        Silvia,
+        January,
     }
 
     public enum Mood
     {
-        neutral,
-        angry,
-        sad,
-        curious,
+        Neutral,
+        Angry,
+        Sad,
+        Curious,
     }
 }
