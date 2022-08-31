@@ -56,7 +56,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         EditorGUIUtility.labelWidth = 60;
 
         float xPos = position.min.x;
-        float yPos = position.min.y + lineHeight;
+        float yPos = position.min.y + (lineHeight * 1.25f);
         float width = position.size.x * .4f;
         float height = lineHeight;
 
@@ -67,7 +67,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     private void DrawMoodProperty(Rect position)
     {
         float xPos = position.min.x + (position.width * .5f);;
-        float yPos = position.min.y + lineHeight;
+        float yPos = position.min.y + (lineHeight * 1.25f);
         float width = position.size.x * .5f;
         float height = lineHeight;
 
@@ -78,8 +78,8 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     private void DrawMessageProperty(Rect position)
     {
         EditorStyles.textField.wordWrap = true;
-        float xPos = position.min.x;;
-        float yPos = position.min.y + (lineHeight*2);
+        float xPos = position.min.x;
+        float yPos = position.min.y + (lineHeight*2.5f);
         float width = position.size.x;
         float height = lineHeight*5;
 
