@@ -74,6 +74,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                     DrawMessageProperty(position, 3);
                     break;
                 case DialogueProperties.Mode.Choice:
+                    DrawChoiceProperty(position,2);
                     break;
             }
         }
@@ -88,7 +89,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
 
         if (property.isExpanded)
         {
-            totalLines += 8;
+            totalLines += 11;
         }
         
         return (lineHeight * totalLines);
@@ -154,6 +155,18 @@ public class DialogueBlueprintDrawer : PropertyDrawer
 
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 5);
         EditorGUI.PropertyField(drawArea, _sentence, new GUIContent("Message"));
+    }
+    
+    private void DrawChoiceProperty(Rect position, int line)
+    {
+        EditorStyles.textField.wordWrap = true;
+        // float xPos = position.min.x;
+        // float yPos = position.min.y + (lineHeight*3.5f);
+        // float width = position.size.x;
+        // float height = lineHeight*5;
+
+        Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
+        EditorGUI.PropertyField(drawArea, _choices, new GUIContent("Message"));
     }
 
     private Rect DrawProperty(Rect position, PositionInLine pos, HorizontalSize size, int line, float heightScale)

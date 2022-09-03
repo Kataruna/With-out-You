@@ -9,7 +9,7 @@ public class DialogueProperties
     public string name;
     public Mood mood;
     public string message;
-    public string[] choices;
+    public Choices[] choices;
     
     public enum Character
     {
@@ -31,4 +31,11 @@ public class DialogueProperties
         SideCharacter,
         Choice
     }
+}
+
+[Serializable]
+public class Choices
+{
+    [Tooltip("ข้อความที่จะขึ้นบนตัวเลือก")]public string choice;
+    [Tooltip("ใส่แปลนบทสนทนาลงไป")]public Dialogue blueprint;
 }

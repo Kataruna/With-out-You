@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 475232493}
   - component: {fileID: 475232491}
   m_Layer: 5
-  m_Name: Dialog Holder
+  m_Name: Dialog Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
