@@ -4,9 +4,12 @@ using UnityEngine;
 [Serializable]
 public class DialogueProperties
 {
+    public Mode mode;
     public Character character;
+    public string name;
     public Mood mood;
     public string message;
+    public string[] choices;
     
     public enum Character
     {
@@ -20,5 +23,12 @@ public class DialogueProperties
         Angry,
         Sad,
         Curious,
+    }
+
+    public enum Mode
+    {
+        MainCharacter,
+        SideCharacter,
+        Choice
     }
 }

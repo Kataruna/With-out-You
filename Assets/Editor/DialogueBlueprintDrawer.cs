@@ -7,9 +7,12 @@ using UnityEditor;
 [CustomPropertyDrawer(typeof(DialogueProperties))]
 public class DialogueBlueprintDrawer : PropertyDrawer
 {
+    private SerializedProperty _mode;
+    private SerializedProperty _character;
     private SerializedProperty _name;
     private SerializedProperty _mood;
     private SerializedProperty _sentence;
+    private SerializedProperty _choices;
 
     private float lineHeight = EditorGUIUtility.singleLineHeight;
 
@@ -18,21 +21,48 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     {
         EditorGUI.BeginProperty(position, label, property);
 
+        DialogueProperties properties;
+
         //Fill our properties
-        _name = property.FindPropertyRelative("character");
+        _mode = property.FindPropertyRelative("mode");
+        _character = property.FindPropertyRelative("character");
+        _name = property.FindPropertyRelative("name");
         _mood = property.FindPropertyRelative("mood");
         _sentence = property.FindPropertyRelative("message");
-        
+        _choices = property.FindPropertyRelative("choices");
+
         //Draw foldOutBox
         Rect foldOutBox = new Rect(position.xMin, position.yMin , position.size.x, lineHeight);
         property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
             $"Sentence {Convert.ToInt32(label.ToString().Substring(label.ToString().Length-1,1))+1}");
+        
+        //Sentence {Convert.ToInt32(label.ToString().Substring(label.ToString().Length-1,1))+1}
 
         if (property.isExpanded)
         {
-            DrawNameProperty(position);
-            DrawMoodProperty(position);
-            DrawMessageProperty(position);
+            /*
+            _mode.intValue =
+                EditorGUI.Popup(
+                    new Rect(position.min.x, position.min.y + (lineHeight * 1.25f), position.size.x, lineHeight),
+                    "Mode", _mode.intValue, _mode.enumNames);
+                    */
+
+            DrawModeProperty(position, 1);
+            
+            switch ((DialogueProperties.Mode)_mode.intValue)
+            {
+                case DialogueProperties.Mode.MainCharacter:
+                    DrawCharacterProperty(position, 2);
+                    DrawMoodProperty(position, 2);
+                    DrawMessageProperty(position, 3);
+                    break;
+                case DialogueProperties.Mode.SideCharacter:
+                    DrawNameProperty(position, 2);
+                    DrawMessageProperty(position, 3);
+                    break;
+                case DialogueProperties.Mode.Choice:
+                    break;
+            }
         }
         
         EditorGUI.EndProperty();
@@ -45,45 +75,116 @@ public class DialogueBlueprintDrawer : PropertyDrawer
 
         if (property.isExpanded)
         {
-            totalLines += 7;
+            totalLines += 8;
         }
         
         return (lineHeight * totalLines);
     }
     
-    private void DrawNameProperty(Rect position)
+    private void DrawModeProperty(Rect position, int line)
     {
         EditorGUIUtility.labelWidth = 60;
 
-        float xPos = position.min.x;
-        float yPos = position.min.y + (lineHeight * 1.25f);
-        float width = position.size.x * .4f;
-        float height = lineHeight;
+        // float xPos = position.min.x;
+        // float yPos = position.min.y + (lineHeight * 1.25f);
+        // float width = position.size.x;
+        // float height = lineHeight;
 
-        Rect drawArea = new Rect(xPos, yPos, width, height);
+        Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
+        EditorGUI.PropertyField(drawArea, _mode, new GUIContent("Mode"));
+    }
+    
+    private void DrawCharacterProperty(Rect position, int line)
+    {
+        EditorGUIUtility.labelWidth = 60;
+
+        // float xPos = position.min.x;
+        // float yPos = position.min.y + (lineHeight * 2.25f);
+        // float width = position.size.x * .4f;
+        // float height = lineHeight;
+
+        Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.half, line, 1);
+        EditorGUI.PropertyField(drawArea, _character, new GUIContent("Name"));
+    }
+    
+    private void DrawNameProperty(Rect position, int line)
+    {
+        EditorGUIUtility.labelWidth = 60;
+
+        // float xPos = position.min.x;
+        // float yPos = position.min.y + (lineHeight * 2.25f);
+        // float width = position.size.x * .4f;
+        // float height = lineHeight;
+
+        Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
         EditorGUI.PropertyField(drawArea, _name, new GUIContent("Name"));
     }
     
-    private void DrawMoodProperty(Rect position)
+    private void DrawMoodProperty(Rect position, int line)
     {
-        float xPos = position.min.x + (position.width * .5f);;
-        float yPos = position.min.y + (lineHeight * 1.25f);
-        float width = position.size.x * .5f;
-        float height = lineHeight;
+        // float xPos = position.min.x + (position.width * .5f);
+        // float yPos = position.min.y + (lineHeight * 2.25f);
+        // float width = position.size.x * .5f;
+        // float height = lineHeight;
 
-        Rect drawArea = new Rect(xPos, yPos, width, height);
+        Rect drawArea = DrawProperty(position, PositionInLine.back, HorizontalSize.half, line, 1);
         EditorGUI.PropertyField(drawArea, _mood, new GUIContent("Mood"));
     }
 
-    private void DrawMessageProperty(Rect position)
+    private void DrawMessageProperty(Rect position, int line)
     {
         EditorStyles.textField.wordWrap = true;
-        float xPos = position.min.x;
-        float yPos = position.min.y + (lineHeight*2.5f);
-        float width = position.size.x;
-        float height = lineHeight*5;
+        // float xPos = position.min.x;
+        // float yPos = position.min.y + (lineHeight*3.5f);
+        // float width = position.size.x;
+        // float height = lineHeight*5;
 
-        Rect drawArea = new Rect(xPos, yPos, width, height);
+        Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 5);
         EditorGUI.PropertyField(drawArea, _sentence, new GUIContent("Message"));
+    }
+
+    private Rect DrawProperty(Rect position, PositionInLine pos, HorizontalSize size, int line, float heightScale)
+    {
+        float xPos = position.min.x;
+        
+        switch (pos)
+        {
+            case PositionInLine.front:
+                xPos = position.min.x;
+                break;
+            case PositionInLine.back:
+                xPos = position.min.x + (position.width * .51f);
+                break;
+        }
+        
+        float yPos = position.min.y + (lineHeight*line);
+        if (line > 1) yPos += 5 * (line-1);
+
+        float width = position.size.x;
+        switch (size)
+        {
+            case HorizontalSize.full:
+                width = position.size.x;
+                break;
+            case HorizontalSize.half:
+                width = position.size.x * 0.5f;
+                break;
+        }
+        
+        float height = lineHeight * heightScale;
+        
+        return new Rect(xPos, yPos,width,height);
+    }
+    
+    private enum HorizontalSize
+    {
+        half,
+        full
+    }
+    
+    private enum PositionInLine
+    {
+        front,
+        back
     }
 }
