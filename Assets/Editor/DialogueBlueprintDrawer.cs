@@ -21,8 +21,6 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     {
         EditorGUI.BeginProperty(position, label, property);
 
-        DialogueProperties properties;
-
         //Fill our properties
         _mode = property.FindPropertyRelative("mode");
         _character = property.FindPropertyRelative("character");
@@ -33,8 +31,23 @@ public class DialogueBlueprintDrawer : PropertyDrawer
 
         //Draw foldOutBox
         Rect foldOutBox = new Rect(position.xMin, position.yMin , position.size.x, lineHeight);
-        property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
-            $"Sentence {Convert.ToInt32(label.ToString().Substring(label.ToString().Length-1,1))+1}");
+        
+        switch ((DialogueProperties.Mode)_mode.intValue)
+        {
+            case DialogueProperties.Mode.MainCharacter:
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
+                    $"{(DialogueProperties.Character)_character.intValue} - {_sentence.stringValue.Substring(0,40)}...");
+                break;
+            case DialogueProperties.Mode.SideCharacter:
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
+                    $"{_name.stringValue} - {_sentence.stringValue.Substring(0,40)}...");
+                break;
+            case DialogueProperties.Mode.Choice:
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
+                    $"Choice");
+                break;
+        }
+        
         
         //Sentence {Convert.ToInt32(label.ToString().Substring(label.ToString().Length-1,1))+1}
 
