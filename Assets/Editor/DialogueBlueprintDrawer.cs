@@ -19,6 +19,10 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     //How to draw to the Inspector Window
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
+        //EditorGUI.PropertyField(position, property, label, true);
+
+        #region CustomInspector
+
         EditorGUI.BeginProperty(position, label, property);
 
         //Fill our properties
@@ -58,7 +62,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                     property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
                         $"{_name.stringValue}");
                 }
-                else if(_sentence.stringValue.Length < 40)
+                else if (_sentence.stringValue.Length < 40)
                 {
                     property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
                         $"{_name.stringValue} - {_sentence.stringValue}...");
@@ -108,6 +112,8 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         }
 
         EditorGUI.EndProperty();
+
+        #endregion
     }
 
     //Request more vertical Spacing, return it

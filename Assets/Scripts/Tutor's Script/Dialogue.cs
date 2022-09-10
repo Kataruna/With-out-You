@@ -5,7 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Dialog/Dialogue Blueprint")]
 public class Dialogue : ScriptableObject
 {
-    [SerializeField] private DialogueProperties[] _dialogue;
-
-    public DialogueProperties[] dialogue => _dialogue;
+    public DialogueProperties[] dialogue;
 }
