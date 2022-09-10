@@ -31,6 +31,15 @@ public class DialogueProperties
         SideCharacter,
         Choice
     }
+
+    public DialogueProperties(Mode mode, Character character, string name, Mood mood, string message)
+    {
+        this.mode = mode;
+        this.character = character;
+        this.name = name;
+        this.mood = mood;
+        this.message = message;
+    }
 }
 
 [Serializable]

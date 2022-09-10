@@ -19,6 +19,8 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     //How to draw to the Inspector Window
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
+        //EditorGUI.PropertyField(position, property, label, true);
+        
         EditorGUI.BeginProperty(position, label, property);
 
         //Fill our properties
@@ -31,20 +33,25 @@ public class DialogueBlueprintDrawer : PropertyDrawer
 
         //Draw foldOutBox
         Rect foldOutBox = new Rect(position.xMin, position.yMin , position.size.x, lineHeight);
+
+        _character.intValue = 0;
         
         switch ((DialogueProperties.Mode)_mode.intValue)
         {
             case DialogueProperties.Mode.MainCharacter:
-                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
-                    $"{(DialogueProperties.Character)_character.intValue} - {_sentence.stringValue.Substring(0,40)}...");
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                    "");
+                    //$"{(DialogueProperties.Character)_character.intValue} - {_sentence.stringValue.Substring(0,40)}...");
                 break;
             case DialogueProperties.Mode.SideCharacter:
                 property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
-                    $"{_name.stringValue} - {_sentence.stringValue.Substring(0,40)}...");
+                    "");
+                    //$"{_name.stringValue} - {_sentence.stringValue.Substring(0,40)}...");
                 break;
             case DialogueProperties.Mode.Choice:
                 property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
-                    $"Choice");
+                    "");
+                    //$"Choice");
                 break;
         }
         
