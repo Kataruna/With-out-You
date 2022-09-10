@@ -11,10 +11,13 @@ using UnityEngine.UI;
 
 public class DialogueDisplay : MonoBehaviour
 {
-    [Header("Active Dialogue")] [SerializeField]
-    private Dialogue activeDialogue;
+    #region - Variable Decleration -
 
-    [Header("Setting")] [SerializeField] private float textSpeed;
+    [Header("Active Dialogue")]
+    [SerializeField] private Dialogue activeDialogue;
+
+    [Header("Setting")]
+    [SerializeField] private float textSpeed;
 
     [Header("Dialogue UI")]
     [SerializeField] private TMP_Text speaker;
@@ -24,34 +27,43 @@ public class DialogueDisplay : MonoBehaviour
     [Header("Animator Controller")]
     [SerializeField] private Animator dialogAnimator;
     [SerializeField] private Animator choicesAnimator;
-    
+
     [Header("Object Assign")]
     [SerializeField] private Transform choiceHolder;
     [SerializeField] private GameObject choicePrefab;
 
     private int line;
     private List<GameObject> choices = new List<GameObject>();
+    private Controller controller;
+
+    #endregion
+
+    #region - Unity's Method -
+
+    private void Awake()
+    {
+        controller = new Controller();
+    }
+
+    private void OnEnable()
+    {
+        controller.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controller.Disable();
+    }
 
     private void Start()
     {
         StartLine();
+        controller.UI.Interact.performed += _ => DialogueInteraction();
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
-        {
-            if (line == activeDialogue.dialogue.Length)
-                ConversationEnd();
-            else if (message.text == activeDialogue.dialogue[line].message)
-                NextLine();
-            else
-            {
-                StopAllCoroutines();
-                message.text = activeDialogue.dialogue[line].message;
-            }
-        }
-    }
+    #endregion
+
+    #region - Custom Method -
 
     void StartLine()
     {
@@ -88,9 +100,9 @@ public class DialogueDisplay : MonoBehaviour
         {
             Debug.Log($"Line: {line}");
             Debug.Log($"Dialogue Size: {activeDialogue.dialogue.Length}");
-            
+
             line++;
-            if(line == activeDialogue.dialogue.Length) return;
+            if (line == activeDialogue.dialogue.Length) return;
 
             switch (activeDialogue.dialogue[line].mode)
             {
@@ -102,26 +114,40 @@ public class DialogueDisplay : MonoBehaviour
                 case DialogueProperties.Mode.Choice:
                     dialogAnimator.SetBool("ChoicePhrase", true);
                     choicesAnimator.SetBool("ChoicePhrase", true);
-                    
+
                     foreach (Choices path in activeDialogue.dialogue[line].choices)
                     {
                         GameObject go = Instantiate(choicePrefab, choiceHolder);
 
                         go.name = path.choice;
-                        
-                        go.transform.SetSiblingIndex(go.transform.parent.childCount-2);
-                        
-                        go.GetComponent<Button>().onClick.AddListener(()=>ChangeDialog(path.blueprint));
+
+                        go.transform.SetSiblingIndex(go.transform.parent.childCount - 2);
+
+                        go.GetComponent<Button>().onClick.AddListener(() => ChangeDialog(path.blueprint));
                         go.transform.GetChild(0).GetComponent<TMP_Text>().text = path.choice;
-                        
+
                         choices.Add(go);
                     }
+
                     break;
             }
         }
         else
         {
             Debug.Log("End of all Line");
+        }
+    }
+
+    void DialogueInteraction()
+    {
+        if (line == activeDialogue.dialogue.Length)
+            ConversationEnd();
+        else if (message.text == activeDialogue.dialogue[line].message)
+            NextLine();
+        else
+        {
+            StopAllCoroutines();
+            message.text = activeDialogue.dialogue[line].message;
         }
     }
 
@@ -134,7 +160,7 @@ public class DialogueDisplay : MonoBehaviour
     {
         dialogAnimator.SetBool("ChoicePhrase", false);
         choicesAnimator.SetBool("ChoicePhrase", false);
-        
+
         activeDialogue = dialogue;
         StartLine();
     }
@@ -146,4 +172,6 @@ public class DialogueDisplay : MonoBehaviour
             Destroy(go);
         }
     }
+
+    #endregion
 }
