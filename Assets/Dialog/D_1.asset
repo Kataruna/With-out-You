@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogue:
   - mode: 0
-    character: 0
+    character: 1
     name: 
     mood: 0
-    message: 
+    message: "\u0E2A\u0E27\u0E30\u0E14\u0E35\u0E2D\u0E35\u0E42\u0E07\u0E48"
     choices: []
