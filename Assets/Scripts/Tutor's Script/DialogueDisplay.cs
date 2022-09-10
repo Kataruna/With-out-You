@@ -77,22 +77,9 @@ public class DialogueDisplay : MonoBehaviour
         {
             line++;
 
-            switch (activeDialogue.dialogue[line].mode)
-            {
-                case DialogueProperties.Mode.MainCharacter:
-                case DialogueProperties.Mode.SideCharacter:
-                    if (speaker.text != activeDialogue.dialogue[line].character.ToString()) StartCoroutine(TypeName());
-                    StartCoroutine(TypeLine());
-                    break;
+            if (speaker.text != activeDialogue.dialogue[line].character.ToString()) StartCoroutine(TypeName());
                 
-                case DialogueProperties.Mode.Choice:
-                    foreach (Choices choice in activeDialogue.dialogue[line].choices)
-                    {
-                        Debug.Log(choice.choice);
-                    }
-                    break;
-            }
-            
+            StartCoroutine(TypeLine());
         }
         else
         {

@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using Cinemachine;
+using Cinemachine.Editor;
 using UnityEngine;
 
 public class CharacterCameraController : MonoBehaviour

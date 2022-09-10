@@ -19,8 +19,6 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     //How to draw to the Inspector Window
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
-        //EditorGUI.PropertyField(position, property, label, true);
-        
         EditorGUI.BeginProperty(position, label, property);
 
         //Fill our properties
@@ -32,30 +30,53 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         _choices = property.FindPropertyRelative("choices");
 
         //Draw foldOutBox
-        Rect foldOutBox = new Rect(position.xMin, position.yMin , position.size.x, lineHeight);
+        Rect foldOutBox = new Rect(position.xMin, position.yMin, position.size.x, lineHeight);
 
-        _character.intValue = 0;
-        
-        switch ((DialogueProperties.Mode)_mode.intValue)
+        switch ((DialogueProperties.Mode) _mode.intValue)
         {
             case DialogueProperties.Mode.MainCharacter:
-                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
-                    "");
-                    //$"{(DialogueProperties.Character)_character.intValue} - {_sentence.stringValue.Substring(0,40)}...");
+                if (_sentence.stringValue == String.Empty)
+                {
+                    property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                        $"{(DialogueProperties.Character) _character.intValue}");
+                }
+                else if (_sentence.stringValue.Length < 40)
+                {
+                    property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                        $"{(DialogueProperties.Character) _character.intValue} - {_sentence.stringValue}...");
+                }
+                else
+                {
+                    property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                        $"{(DialogueProperties.Character) _character.intValue} - {_sentence.stringValue.Substring(0, 40)}...");
+                }
+
                 break;
             case DialogueProperties.Mode.SideCharacter:
-                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
-                    "");
-                    //$"{_name.stringValue} - {_sentence.stringValue.Substring(0,40)}...");
+                if (_sentence.stringValue == String.Empty)
+                {
+                    property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                        $"{_name.stringValue}");
+                }
+                else if(_sentence.stringValue.Length < 40)
+                {
+                    property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                        $"{_name.stringValue} - {_sentence.stringValue}...");
+                }
+                else
+                {
+                    property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                        $"{_name.stringValue} - {_sentence.stringValue.Substring(0, 40)}...");
+                }
+
                 break;
             case DialogueProperties.Mode.Choice:
-                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded, 
-                    "");
-                    //$"Choice");
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                    $"Choice");
                 break;
         }
-        
-        
+
+
         //Sentence {Convert.ToInt32(label.ToString().Substring(label.ToString().Length-1,1))+1}
 
         if (property.isExpanded)
@@ -68,8 +89,8 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                     */
 
             DrawModeProperty(position, 1);
-            
-            switch ((DialogueProperties.Mode)_mode.intValue)
+
+            switch ((DialogueProperties.Mode) _mode.intValue)
             {
                 case DialogueProperties.Mode.MainCharacter:
                     DrawCharacterProperty(position, 2);
@@ -81,11 +102,11 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                     DrawMessageProperty(position, 3);
                     break;
                 case DialogueProperties.Mode.Choice:
-                    DrawChoiceProperty(position,2);
+                    DrawChoiceProperty(position, 2);
                     break;
             }
         }
-        
+
         EditorGUI.EndProperty();
     }
 
@@ -98,10 +119,10 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         {
             totalLines += 11;
         }
-        
+
         return (lineHeight * totalLines);
     }
-    
+
     private void DrawModeProperty(Rect position, int line)
     {
         EditorGUIUtility.labelWidth = 60;
@@ -114,7 +135,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
         EditorGUI.PropertyField(drawArea, _mode, new GUIContent("Mode"));
     }
-    
+
     private void DrawCharacterProperty(Rect position, int line)
     {
         EditorGUIUtility.labelWidth = 60;
@@ -127,7 +148,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.half, line, 1);
         EditorGUI.PropertyField(drawArea, _character, new GUIContent("Name"));
     }
-    
+
     private void DrawNameProperty(Rect position, int line)
     {
         EditorGUIUtility.labelWidth = 60;
@@ -140,7 +161,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
         EditorGUI.PropertyField(drawArea, _name, new GUIContent("Name"));
     }
-    
+
     private void DrawMoodProperty(Rect position, int line)
     {
         // float xPos = position.min.x + (position.width * .5f);
@@ -163,7 +184,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 5);
         EditorGUI.PropertyField(drawArea, _sentence, new GUIContent("Message"));
     }
-    
+
     private void DrawChoiceProperty(Rect position, int line)
     {
         EditorStyles.textField.wordWrap = true;
@@ -179,7 +200,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     private Rect DrawProperty(Rect position, PositionInLine pos, HorizontalSize size, int line, float heightScale)
     {
         float xPos = position.min.x;
-        
+
         switch (pos)
         {
             case PositionInLine.front:
@@ -189,9 +210,9 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                 xPos = position.min.x + (position.width * .51f);
                 break;
         }
-        
-        float yPos = position.min.y + (lineHeight*line);
-        if (line > 1) yPos += 5 * (line-1);
+
+        float yPos = position.min.y + (lineHeight * line);
+        if (line > 1) yPos += 5 * (line - 1);
 
         float width = position.size.x;
         switch (size)
@@ -203,18 +224,18 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                 width = position.size.x * 0.5f;
                 break;
         }
-        
+
         float height = lineHeight * heightScale;
-        
-        return new Rect(xPos, yPos,width,height);
+
+        return new Rect(xPos, yPos, width, height);
     }
-    
+
     private enum HorizontalSize
     {
         half,
         full
     }
-    
+
     private enum PositionInLine
     {
         front,
