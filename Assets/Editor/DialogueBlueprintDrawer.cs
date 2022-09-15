@@ -123,7 +123,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
 
         if (property.isExpanded)
         {
-            totalLines += 11;
+            totalLines += 16;
         }
 
         return (lineHeight * totalLines);

@@ -2,11 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.UI;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class DialogueDisplay : MonoBehaviour
@@ -112,6 +108,8 @@ public class DialogueDisplay : MonoBehaviour
                     StartCoroutine(TypeLine());
                     break;
                 case DialogueProperties.Mode.Choice:
+                    choices.Clear();
+                
                     dialogAnimator.SetBool("ChoicePhrase", true);
                     choicesAnimator.SetBool("ChoicePhrase", true);
 
@@ -123,7 +121,7 @@ public class DialogueDisplay : MonoBehaviour
 
                         go.transform.SetSiblingIndex(go.transform.parent.childCount - 2);
 
-                        go.GetComponent<Button>().onClick.AddListener(() => ChangeDialog(path.blueprint));
+                        go.GetComponent<Button>().onClick.AddListener(() => ChangeDialog(path.blueprint, path.eventKey, path.eventValue));
                         go.transform.GetChild(0).GetComponent<TMP_Text>().text = path.choice;
 
                         choices.Add(go);
@@ -156,11 +154,13 @@ public class DialogueDisplay : MonoBehaviour
         Debug.Log("End of all Line");
     }
 
-    void ChangeDialog(Dialogue dialogue)
+    void ChangeDialog(Dialogue dialogue, string key, bool value)
     {
         dialogAnimator.SetBool("ChoicePhrase", false);
         choicesAnimator.SetBool("ChoicePhrase", false);
 
+        EventHorizon.Instance.UpdateEvent(key, value);
+        
         activeDialogue = dialogue;
         StartLine();
     }
