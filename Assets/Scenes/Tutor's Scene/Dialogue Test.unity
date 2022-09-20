@@ -449,9 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c098992de936442bc8e6fe89084565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventList:
-  - eventName: 
-    status: 0
+  eventList: []
 --- !u!4 &755518280
 Transform:
   m_ObjectHideFlags: 0
