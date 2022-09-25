@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "Dialog/Character Face")]
 public class CharacterFace : ScriptableObject
 {
+    [FormerlySerializedAs("name")]
     [Header("Name")]
-    [SerializeField] private string name;
+    [SerializeField] private string fullName;
     [SerializeField] private string nickname;
     
     [Header("Face")]
@@ -13,7 +15,7 @@ public class CharacterFace : ScriptableObject
     [SerializeField] private Sprite sad;
     [SerializeField] private Sprite curious;
     
-    public string Name => name;
+    public string FullName => fullName;
     public string Nickname => nickname;
     
     public Sprite Neutral => neutral;

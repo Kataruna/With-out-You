@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SpriteTurner : MonoBehaviour
 {
-    [SerializeField] private Camera camera;
+    [SerializeField] private Camera activeCamera;
     
     void FixedUpdate()
     {
-        transform.LookAt(camera.transform);
+        transform.LookAt(activeCamera.transform);
     }
 }
