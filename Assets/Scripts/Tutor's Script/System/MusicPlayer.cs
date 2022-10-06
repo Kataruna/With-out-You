@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MusicPlayer : MonoBehaviour
@@ -11,23 +12,32 @@ public class MusicPlayer : MonoBehaviour
 
     [Header("Setting")]
     [SerializeField] private Playlist playlist;
-    [SerializeField] private GameObject trackPrefab;
+    [SerializeField] private Button trackPrefab;
+    [SerializeField] private float fadeTime = 0.5f;
 
     [Header("Object Assign")]
     [SerializeField] private Transform playlistHolder;
     [SerializeField] private AudioSource audioSource;
+    
+    private Color _black;
+    private Color _white;
 
+    private ButtonClick _activeSong;
+    
     #endregion
 
     #region - Unity's Method -
     
     void Awake()
     {
-        if(trackPrefab.name != "Song Detail") Debug.LogWarning("Warning Wrong Prefab Detected");
+        if(trackPrefab.name != "Song") Debug.LogWarning("Warning Wrong Prefab Detected");
     }
 
     private void Start()
     {
+        _white = trackPrefab.GetComponent<Image>().color;
+        _black = trackPrefab.transform.GetChild(0).GetComponent<TMP_Text>().color;
+        
         ReloadPlaylist();
     }
 
@@ -37,15 +47,21 @@ public class MusicPlayer : MonoBehaviour
 
     private void ReloadPlaylist()
     {
+        _activeSong = null;
+        
         foreach (SongDetail song in playlist.song)
         {
-            GameObject trackList = Instantiate(trackPrefab, playlistHolder);
+            Button trackList = Instantiate(trackPrefab, playlistHolder);
 
-            trackList.name = $"{song.trackName} - {song.artist}";
+            if(song.artist != "" ) trackList.name = $"{song.trackName} - {song.artist}";
+            else trackList.name = $"{song.trackName}";
 
-            trackList.transform.GetChild(0).GetComponent<TMP_Text>().text = song.trackName;
-            trackList.transform.GetChild(1).GetComponent<TMP_Text>().text = song.artist;
+            ButtonClick thisButton = trackList.GetComponent<ButtonClick>();
             
+            thisButton.SetText(trackList.name);
+            thisButton.SetupButton(_black, _white);
+            thisButton.SetFadeTime(fadeTime);
+
             trackList.GetComponent<Button>().onClick.AddListener(() => PlayMusic(song));
         }
     }
@@ -63,6 +79,11 @@ public class MusicPlayer : MonoBehaviour
         VolumeSetup(song.defaultVolume);
         
         audioSource.Play();
+
+        if(_activeSong != null)_activeSong.Press();
+        
+        _activeSong = EventSystem.current.currentSelectedGameObject.GetComponent<ButtonClick>();
+        _activeSong.Press();
     }
 
     #endregion
