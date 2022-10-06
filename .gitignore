@@ -75,3 +75,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 Assets/Model/PolygonPrototype/URP_ExtractMe.unitypackage.meta
+ProjectSettings/ProjectVersion.txt
