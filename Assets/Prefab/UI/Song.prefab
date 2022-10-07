@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1508471576549696312}
   - component: {fileID: 7024954428902575068}
   - component: {fileID: -5244853430282464725}
+  - component: {fileID: 6317499395017504187}
   m_Layer: 5
   m_Name: Song
   m_TagString: Untagged
@@ -138,6 +139,19 @@ MonoBehaviour:
   button: {fileID: 7024954428902575068}
   text: {fileID: 8733796050476095694}
   fadeTime: 0
+--- !u!114 &6317499395017504187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042813044238846398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99697638ecc07d4a906a684be669296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &4602207261844843199
 GameObject:
   m_ObjectHideFlags: 0

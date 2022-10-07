@@ -49,6 +49,22 @@ public class ButtonClick : MonoBehaviour
             StartCoroutine(FadingToColor(text, _black));
         }
     }
+
+    public void ForceSelect()
+    {
+        _isPressed = true;
+        
+        StartCoroutine(FadingToColor(button, _black));
+        StartCoroutine(FadingToColor(text, _white));
+    }
+
+    public void ForceDeselect()
+    {
+        _isPressed = false;
+        
+        StartCoroutine(FadingToColor(button, _white));
+        StartCoroutine(FadingToColor(text, _black));
+    }
     
     IEnumerator FadingToColor(Button focusUI,Color targetColor)
     {

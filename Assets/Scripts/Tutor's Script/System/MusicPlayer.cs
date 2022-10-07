@@ -10,6 +10,8 @@ public class MusicPlayer : MonoBehaviour
 {
     #region - Variable Decleration -
 
+    public int ActiveIndex => _activeIndex;
+    
     [Header("Setting")]
     [SerializeField] private Playlist playlist;
     [SerializeField] private Button trackPrefab;
@@ -18,11 +20,14 @@ public class MusicPlayer : MonoBehaviour
     [Header("Object Assign")]
     [SerializeField] private Transform playlistHolder;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private MusicControl musicControl;
     
     private Color _black;
     private Color _white;
 
+    private int _activeIndex;
     private ButtonClick _activeSong;
+    private List<Button> _songList = new List<Button>();
     
     #endregion
 
@@ -47,22 +52,32 @@ public class MusicPlayer : MonoBehaviour
 
     private void ReloadPlaylist()
     {
+        int i = 0;
+        
+        _activeIndex = -1;
         _activeSong = null;
+        _songList.Clear();
         
         foreach (SongDetail song in playlist.song)
         {
             Button trackList = Instantiate(trackPrefab, playlistHolder);
 
+            _songList.Add(trackList);
+
             if(song.artist != "" ) trackList.name = $"{song.trackName} - {song.artist}";
             else trackList.name = $"{song.trackName}";
 
-            ButtonClick thisButton = trackList.GetComponent<ButtonClick>();
+            trackList.GetComponent<IndexHolder>().SetIndex(i);
             
+            ButtonClick thisButton = trackList.GetComponent<ButtonClick>();
+
             thisButton.SetText(trackList.name);
             thisButton.SetupButton(_black, _white);
             thisButton.SetFadeTime(fadeTime);
 
             trackList.GetComponent<Button>().onClick.AddListener(() => PlayMusic(song));
+            
+            i++;
         }
     }
 
@@ -78,12 +93,21 @@ public class MusicPlayer : MonoBehaviour
         
         VolumeSetup(song.defaultVolume);
         
-        audioSource.Play();
+        musicControl.Play();
 
         if(_activeSong != null)_activeSong.Press();
+
+        GameObject songButtonItSelf = EventSystem.current.currentSelectedGameObject;
         
-        _activeSong = EventSystem.current.currentSelectedGameObject.GetComponent<ButtonClick>();
+        _activeSong = songButtonItSelf.GetComponent<ButtonClick>();
+        _activeIndex = songButtonItSelf.GetComponent<IndexHolder>().Index;
+        
         _activeSong.Press();
+    }
+
+    public void PlayMusic(int index)
+    {
+        
     }
 
     #endregion

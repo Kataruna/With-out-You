@@ -593,7 +593,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706760745
 GameObject:
@@ -938,7 +938,7 @@ GameObject:
   - component: {fileID: 903988265}
   - component: {fileID: 903988264}
   m_Layer: 0
-  m_Name: Speaker
+  m_Name: iPod Speaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1047,13 +1047,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903988263}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 525.4309, y: 231.20427, z: 4.221622}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.1759681, z: -0, w: 0.98439586}
+  m_LocalPosition: {x: -496.41293, y: 33.711025, z: -197.89651}
+  m_LocalScale: {x: 2.4489796, y: 2.4489796, z: 2.4489796}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1779844872}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961739749
 GameObject:
@@ -2383,6 +2383,7 @@ RectTransform:
   - {fileID: 49598162}
   - {fileID: 894379396}
   - {fileID: 250858653}
+  - {fileID: 903988265}
   m_Father: {fileID: 706760749}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 20.27, z: 0}
@@ -2447,6 +2448,7 @@ MonoBehaviour:
   fadeTime: 0.25
   playlistHolder: {fileID: 1327190409}
   audioSource: {fileID: 903988264}
+  musicControl: {fileID: 894379399}
 --- !u!1 &2021009002
 GameObject:
   m_ObjectHideFlags: 0
@@ -2631,11 +2633,11 @@ MonoBehaviour:
   m_Content: {fileID: 1327190409}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 20
+  m_ScrollSensitivity: 1
   m_Viewport: {fileID: 2027266142}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 2021009003}
@@ -2741,5 +2743,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
