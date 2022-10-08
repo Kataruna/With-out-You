@@ -88,14 +88,11 @@ public class MusicPlayer : MonoBehaviour
     
     private void PlayMusic(SongDetail song)
     {
-        audioSource.clip = song.trackFile;
-        audioSource.volume = song.defaultVolume;
-        
-        VolumeSetup(song.defaultVolume);
+        SetupSpeaker(song);
         
         musicControl.Play();
 
-        if(_activeSong != null)_activeSong.Press();
+        if(_activeSong != null) _activeSong.Press();
 
         GameObject songButtonItSelf = EventSystem.current.currentSelectedGameObject;
         
@@ -105,9 +102,32 @@ public class MusicPlayer : MonoBehaviour
         _activeSong.Press();
     }
 
+    /// <summary>
+    /// Play Music command that use current position and plus or minus to identify song
+    /// </summary>
+    /// <param name="index">Normally use 1 /n-1 for previous song and +1 for next song</param>
     public void PlayMusic(int index)
     {
+        SongDetail song = playlist.song[_activeIndex+index];
         
+        SetupSpeaker(song);
+        
+        musicControl.Play();
+        
+        if(_activeSong != null) _activeSong.Press();
+
+        _activeSong = _songList[_activeIndex+index].GetComponent<ButtonClick>();
+        _activeIndex += index;
+        
+        _activeSong.Press();
+    }
+
+    public void SetupSpeaker(SongDetail song)
+    {
+        audioSource.clip = song.trackFile;
+        audioSource.volume = song.defaultVolume;
+        
+        VolumeSetup(song.defaultVolume);
     }
 
     #endregion
