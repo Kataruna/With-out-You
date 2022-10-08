@@ -45,6 +45,14 @@ public class MusicPlayer : MonoBehaviour
         
         ReloadPlaylist();
     }
+    
+    private void FixedUpdate()
+    {
+        if (!audioSource.isPlaying && musicControl.IsPlay)
+        {
+            PlayMusic(1);
+        }
+    }
 
     #endregion
 
@@ -105,10 +113,11 @@ public class MusicPlayer : MonoBehaviour
     /// <summary>
     /// Play Music command that use current position and plus or minus to identify song
     /// </summary>
-    /// <param name="index">Normally use 1 /n-1 for previous song and +1 for next song</param>
-    public void PlayMusic(int index)
+    /// <param name="increment">Normally use 1 <br/>
+    /// -1 for previous song and +1 for next song</param>
+    public void PlayMusic(int increment)
     {
-        SongDetail song = playlist.song[_activeIndex+index];
+        SongDetail song = playlist.song[_activeIndex+increment];
         
         SetupSpeaker(song);
         
@@ -116,8 +125,8 @@ public class MusicPlayer : MonoBehaviour
         
         if(_activeSong != null) _activeSong.Press();
 
-        _activeSong = _songList[_activeIndex+index].GetComponent<ButtonClick>();
-        _activeIndex += index;
+        _activeSong = _songList[_activeIndex+increment].GetComponent<ButtonClick>();
+        _activeIndex += increment;
         
         _activeSong.Press();
     }

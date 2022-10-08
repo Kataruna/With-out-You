@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class MusicControl : MonoBehaviour
 {
+    public bool IsPlay => isPlay;
+
     [SerializeField] private float previousCooldown = 1f;
     [SerializeField] private bool isPlay;
     [SerializeField] private AudioSource musicPlay;
