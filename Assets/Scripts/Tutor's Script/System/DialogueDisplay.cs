@@ -109,6 +109,8 @@ public class DialogueDisplay : MonoBehaviour
                     StartCoroutine(TypeLine());
                     break;
                 case DialogueProperties.Mode.Choice:
+                    ClearChoice();
+                    
                     _choices.Clear();
                 
                     dialogAnimator.SetBool(ChoicePhrase, true);
@@ -160,7 +162,8 @@ public class DialogueDisplay : MonoBehaviour
         dialogAnimator.SetBool(ChoicePhrase, false);
         choicesAnimator.SetBool(ChoicePhrase, false);
 
-        EventHorizon.Instance.UpdateEvent(key, value);
+        if(key != String.Empty)
+            EventHorizon.Instance.UpdateEvent(key, value);
         
         activeDialogue = dialogue;
         StartLine();
