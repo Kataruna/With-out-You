@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Interaction : MonoBehaviour, IInteractable
 {
     [SerializeField] private EventRecord eventKey;
+    [SerializeField] private UnityEvent OnInteraction;
     private Controller _input;
 
     private void Awake()
@@ -30,5 +32,6 @@ public class Interaction : MonoBehaviour, IInteractable
     private void UpdateEvent()
     {
         EventHorizon.Instance.UpdateEvent(eventKey.eventName, eventKey.status);
+        OnInteraction.Invoke();
     }
 }

@@ -21,6 +21,7 @@ public class MusicPlayer : MonoBehaviour
     [SerializeField] private Transform playlistHolder;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private MusicControl musicControl;
+    [SerializeField] private Animator animator;
     
     private Color _black;
     private Color _white;
@@ -137,6 +138,16 @@ public class MusicPlayer : MonoBehaviour
         audioSource.volume = song.defaultVolume;
         
         VolumeSetup(song.defaultVolume);
+    }
+
+    public void EnterMusicPlayer()
+    {
+        animator.SetTrigger("Enter");
+    }
+
+    public void ExitMusicPlayer()
+    {
+        animator.SetTrigger("Exit");
     }
 
     #endregion

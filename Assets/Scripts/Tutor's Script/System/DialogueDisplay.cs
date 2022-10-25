@@ -54,7 +54,7 @@ public class DialogueDisplay : MonoBehaviour
 
     private void Start()
     {
-        StartLine();
+        CleanMessage();
         _controller.UI.Interact.performed += _ => DialogueInteraction();
     }
 
@@ -93,13 +93,12 @@ public class DialogueDisplay : MonoBehaviour
 
     void NextLine()
     {
+        _line++;
+        
         if (_line < activeDialogue.dialogue.Length)
         {
             Debug.Log($"Line: {_line}");
             Debug.Log($"Dialogue Size: {activeDialogue.dialogue.Length}");
-
-            _line++;
-            if (_line == activeDialogue.dialogue.Length) return;
 
             switch (activeDialogue.dialogue[_line].mode)
             {
@@ -141,7 +140,7 @@ public class DialogueDisplay : MonoBehaviour
 
     void DialogueInteraction()
     {
-        if (_line == activeDialogue.dialogue.Length)
+        if (_line == activeDialogue.dialogue.Length - 1 && message.text == activeDialogue.dialogue[_line].message)
             ConversationEnd();
         else if (message.text == activeDialogue.dialogue[_line].message)
             NextLine();
@@ -154,7 +153,15 @@ public class DialogueDisplay : MonoBehaviour
 
     void ConversationEnd()
     {
+        ExitDialogue();
         Debug.Log("End of all Line");
+        CleanMessage();
+    }
+
+    void CleanMessage()
+    {
+        message.text = String.Empty;
+        speaker.text = String.Empty;
     }
 
     void ChangeDialog(Dialogue dialogue, string key, bool value)
@@ -175,6 +182,18 @@ public class DialogueDisplay : MonoBehaviour
         {
             Destroy(go);
         }
+    }
+
+    public void EnterDialogue(Dialogue dialogue)
+    {
+        activeDialogue = dialogue;
+        
+        dialogAnimator.SetTrigger("Enter");
+    }
+
+    public void ExitDialogue()
+    {
+        dialogAnimator.SetTrigger("Exit");
     }
 
     #endregion
