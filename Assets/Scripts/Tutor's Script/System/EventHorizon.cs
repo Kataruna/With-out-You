@@ -3,24 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventHorizon : MonoBehaviour
+public class EventHorizon : Singleton<EventHorizon>
 {
     public Dictionary<string, bool> EventsHorizon => eventHorizon;
     
     public List<EventRecord> eventList = new List<EventRecord>();
     private Dictionary<string, bool> eventHorizon = new Dictionary<string, bool>();
-    
-    public static EventHorizon Instance;
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else Destroy(Instance);
-        
         foreach (var events in eventList)
         {
             eventHorizon[events.eventName] = events.status;

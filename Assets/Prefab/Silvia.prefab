@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
+  animator: {fileID: 0}
   movementSpeed: 10
   moveAccordingToCamera: 1
 --- !u!114 &4058790622923425473

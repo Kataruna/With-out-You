@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class PlayerInteraction : MonoBehaviour
+public class PlayerInteraction : Singleton<PlayerInteraction>
 {
     [SerializeField] private GameObject activeInteraction;
 
@@ -14,9 +14,14 @@ public class PlayerInteraction : MonoBehaviour
 
         switch (other.tag)
         {
+            case "Story":
             case "NPC":
                 activeInteraction = other.gameObject;
-                activeInteraction.gameObject.GetComponent<Interaction>().EnableInput();
+                activeInteraction.gameObject.TryGetComponent(out Interaction interacted);
+
+                if (interacted.ForceInteract) interacted.UpdateEvent();
+                else interacted.EnableInput();
+                
                 break;
         }
     }
@@ -28,5 +33,10 @@ public class PlayerInteraction : MonoBehaviour
             activeInteraction.gameObject.GetComponent<Interaction>().DisableInput();
             activeInteraction = null;
         }
+    }
+
+    public void ClearInteraction()
+    {
+        activeInteraction = null;
     }
 }

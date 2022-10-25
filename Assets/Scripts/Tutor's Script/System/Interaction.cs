@@ -6,10 +6,23 @@ using UnityEngine.Events;
 
 public class Interaction : MonoBehaviour, IInteractable
 {
+    public bool ForceInteract => forceInteract;
+    
+    [SerializeField] private Type type;
     [SerializeField] private EventRecord eventKey;
+    [SerializeField] private Dialogue dialogue;
+    [SerializeField] private bool forceInteract;
+    
     [SerializeField] private UnityEvent OnInteraction;
+
     private Controller _input;
 
+    public enum Type
+    {
+        Event,
+        Dialogue
+    }
+    
     private void Awake()
     {
         _input = new Controller();
@@ -29,9 +42,25 @@ public class Interaction : MonoBehaviour, IInteractable
         _input.Disable();
     }
 
-    private void UpdateEvent()
+    public void UpdateEvent()
     {
-        EventHorizon.Instance.UpdateEvent(eventKey.eventName, eventKey.status);
-        OnInteraction.Invoke();
+        switch (type)
+        {
+            case Type.Event:
+                EventHorizon.Instance.UpdateEvent(eventKey.eventName, eventKey.status);
+                OnInteraction.Invoke();
+                break;
+            case Type.Dialogue:
+                DisplayDialog();
+                break;
+        }
+        
+        PlayerInteraction.Instance.ClearInteraction();
+        gameObject.SetActive(false);
+    }
+
+    public void DisplayDialog()
+    {
+        DialogueDisplay.Instance.EnterDialogue(dialogue);
     }
 }

@@ -22,20 +22,20 @@ MonoBehaviour:
   - mode: 0
     character: 1
     name: 
-    mood: 0
+    mood: 3
     message: "\u0E40\u0E18\u0E2D\u0E04\u0E37\u0E2D Silvia \u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21
       ?"
     choices: []
   - mode: 0
     character: 0
     name: 
-    mood: 0
+    mood: 3
     message: "\u0E43\u0E0A\u0E48..................................."
     choices: []
   - mode: 0
     character: 0
     name: 
-    mood: 0
+    mood: 3
     message: "(\u0E40\u0E1B\u0E47\u0E19\u0E44\u0E1B\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49)"
     choices: []
   - mode: 0

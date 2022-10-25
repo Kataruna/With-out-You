@@ -1,16 +1,19 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
- public class PlayerController : MonoBehaviour
+ public class PlayerController : Singleton<PlayerController>
 {
     #region - Variable Declaration -
-    
+
     [Header("Object Assign")]
     [SerializeField] private Transform mainCamera;
+    [SerializeField] private Animator animator;
     
     [Header("Player Attribute")]
     [SerializeField] private float movementSpeed = 20f;
     [SerializeField] private bool moveAccordingToCamera;
+
+    private bool _isControlable = true;
 
     //Backdoor Variable
     private Vector2 _movementValue;
@@ -27,7 +30,13 @@ using UnityEngine.InputSystem;
     //Unity's Input System Method
     public void OnMove(InputValue value) 
     {
-        _movementValue = value.Get<Vector2>();
+        if(_isControlable) _movementValue = value.Get<Vector2>();
+        else _movementValue = Vector2.zero;
+
+        if(_movementValue.x == 0f) return;
+        
+        if(_movementValue.x < 0) animator.SetBool("Left", true);
+        else animator.SetBool("Left", false);
     }
 
     #endregion
@@ -58,6 +67,11 @@ using UnityEngine.InputSystem;
     {
         transform.position +=
             position * (movementSpeed * Time.deltaTime);
+    }
+
+    public void SetControlState(bool value)
+    {
+        _isControlable = value;
     }
 
     #endregion

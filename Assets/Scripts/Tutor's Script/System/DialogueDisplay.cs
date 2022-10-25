@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueDisplay : MonoBehaviour
+public class DialogueDisplay : Singleton<DialogueDisplay>
 {
     #region - Variable Decleration -
 
@@ -18,6 +18,9 @@ public class DialogueDisplay : MonoBehaviour
     [Header("Dialogue UI")]
     [SerializeField] private TMP_Text speaker;
     [SerializeField] private TMP_Text message;
+
+    [SerializeField] private CharacterDisplay silvia;
+    [SerializeField] private CharacterDisplay jane;
     //[SerializeField] private TMP_Text mood;
 
     [Header("Animator Controller")]
@@ -27,6 +30,7 @@ public class DialogueDisplay : MonoBehaviour
     [Header("Object Assign")]
     [SerializeField] private Transform choiceHolder;
     [SerializeField] private GameObject choicePrefab;
+    [SerializeField] private Sprite empty;
 
     private int _line;
     private List<GameObject> _choices = new List<GameObject>();
@@ -64,6 +68,8 @@ public class DialogueDisplay : MonoBehaviour
 
     void StartLine()
     {
+        PlayerController.Instance.SetControlState(false);
+
         _line = 0;
         StartCoroutine(TypeName());
         StartCoroutine(TypeLine());
@@ -73,6 +79,8 @@ public class DialogueDisplay : MonoBehaviour
     {
         message.text = String.Empty;
 
+        ImageMap();
+        
         foreach (char c in activeDialogue.dialogue[_line].message)
         {
             message.text += c;
@@ -156,6 +164,7 @@ public class DialogueDisplay : MonoBehaviour
         ExitDialogue();
         Debug.Log("End of all Line");
         CleanMessage();
+        PlayerController.Instance.SetControlState(true);
     }
 
     void CleanMessage()
@@ -188,13 +197,71 @@ public class DialogueDisplay : MonoBehaviour
     {
         activeDialogue = dialogue;
         
+        ClearImage();
         dialogAnimator.SetTrigger("Enter");
     }
 
     public void ExitDialogue()
     {
+        ClearImage();
         dialogAnimator.SetTrigger("Exit");
     }
 
+    public void ImageMap()
+    {
+        DialogueProperties rightNow = activeDialogue.dialogue[_line];
+        
+        switch (rightNow.character)
+        {
+            case DialogueProperties.Character.January:
+                switch (rightNow.mood)
+                {
+                    case DialogueProperties.Mood.Angry:
+                        jane.image.sprite = jane.face.Angry;
+                        break;
+                    case DialogueProperties.Mood.Curious:
+                        jane.image.sprite = jane.face.Curious;
+                        break;
+                    case DialogueProperties.Mood.Neutral:
+                        jane.image.sprite = jane.face.Neutral;
+                        break;
+                    case DialogueProperties.Mood.Sad:
+                        jane.image.sprite = jane.face.Sad;
+                        break;
+                }
+                break;
+            case DialogueProperties.Character.Silvia:
+                switch (rightNow.mood)
+                {
+                    case DialogueProperties.Mood.Angry:
+                        silvia.image.sprite = silvia.face.Angry;
+                        break;
+                    case DialogueProperties.Mood.Curious:
+                        silvia.image.sprite = silvia.face.Curious;
+                        break;
+                    case DialogueProperties.Mood.Neutral:
+                        silvia.image.sprite = silvia.face.Neutral;
+                        break;
+                    case DialogueProperties.Mood.Sad:
+                        silvia.image.sprite = silvia.face.Sad;
+                        break;
+                }
+                break;
+        }
+    }
+
+    public void ClearImage()
+    {
+        jane.image.sprite = empty;
+        silvia.image.sprite = empty;
+    }
+
     #endregion
+}
+
+[Serializable]
+public class CharacterDisplay
+{
+    public CharacterFace face;
+    public Image image;
 }
