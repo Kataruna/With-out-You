@@ -23,6 +23,13 @@ public class PlayerInteraction : Singleton<PlayerInteraction>
                 else interacted.EnableInput();
                 
                 break;
+            case "Travel":
+                activeInteraction = other.gameObject;
+                activeInteraction.gameObject.TryGetComponent(out Traveler travel);
+                
+                travel.EnableInput();
+                
+                break;
         }
     }
 
@@ -30,7 +37,13 @@ public class PlayerInteraction : Singleton<PlayerInteraction>
     {
         if (other.gameObject == activeInteraction)
         {
-            activeInteraction.gameObject.GetComponent<Interaction>().DisableInput();
+            activeInteraction.gameObject.TryGetComponent(out Interaction interacted);
+            activeInteraction.gameObject.TryGetComponent(out Traveler travel);
+                
+            if(travel != null) travel.DisableInput();
+            if(interacted != null)interacted.DisableInput();
+            
+            
             activeInteraction = null;
         }
     }

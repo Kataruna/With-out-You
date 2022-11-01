@@ -10,11 +10,16 @@ public class DialogueProperties
     public Mood mood;
     public string message;
     public Choices[] choices;
+    public string eventKey;
+    public bool eventStatus;
     
     public enum Character
     {
         Silvia,
         January,
+        Jane,
+        Silvy,
+        Unknown,
     }
 
     public enum Mood
@@ -23,6 +28,7 @@ public class DialogueProperties
         Angry,
         Sad,
         Curious,
+        Happy,
     }
 
     public enum Mode
@@ -30,7 +36,8 @@ public class DialogueProperties
         MainCharacter,
         SideCharacter,
         Choice,
-        SwitchMood
+        SwitchMood,
+        UpdateEvent,
     }
 }
 
