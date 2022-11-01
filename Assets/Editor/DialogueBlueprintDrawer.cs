@@ -78,6 +78,10 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                 property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
                     $"Choice");
                 break;
+            case DialogueProperties.Mode.SwitchMood:
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                    $"{(DialogueProperties.Character) _character.intValue}");
+                break;
         }
 
 
@@ -107,6 +111,10 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                     break;
                 case DialogueProperties.Mode.Choice:
                     DrawChoiceProperty(position, 2);
+                    break;
+                case DialogueProperties.Mode.SwitchMood:
+                    DrawCharacterProperty(position, 2);
+                    DrawMoodProperty(position, 2);
                     break;
             }
         }

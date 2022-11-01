@@ -29,7 +29,8 @@ public class DialogueProperties
     {
         MainCharacter,
         SideCharacter,
-        Choice
+        Choice,
+        SwitchMood
     }
 }
 

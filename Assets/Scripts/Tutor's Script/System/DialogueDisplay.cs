@@ -115,6 +115,10 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     if (speaker.text != activeDialogue.dialogue[_line].character.ToString()) StartCoroutine(TypeName());
                     StartCoroutine(TypeLine());
                     break;
+                case DialogueProperties.Mode.SwitchMood:
+                    ImageMap();
+                    NextLine();
+                    break;
                 case DialogueProperties.Mode.Choice:
                     ClearChoice();
                     
@@ -148,6 +152,8 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
 
     void DialogueInteraction()
     {
+        if (activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.Choice) return;
+
         if (_line == activeDialogue.dialogue.Length - 1 && message.text == activeDialogue.dialogue[_line].message)
             ConversationEnd();
         else if (message.text == activeDialogue.dialogue[_line].message)
