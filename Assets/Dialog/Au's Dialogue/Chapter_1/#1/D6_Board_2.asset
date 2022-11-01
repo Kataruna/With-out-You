@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
   m_Name: D6_Board_2
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - mode: 0
+    character: 0
+    name: 
+    mood: 0
+    message: "\u0E40\u0E2D\u0E4A\u0E30 \u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27\u0E19\u0E30\u0E17\u0E33\u0E44\u0E21\u0E01\u0E31\u0E19
+      \u0E17\u0E33\u0E44\u0E21\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E40\u0E17\u0E28\u0E01\u0E32\u0E25\u0E04\u0E23\u0E34\u0E2A\u0E15\u0E4C\u0E21\u0E32\u0E2A\u0E16\u0E36\u0E07\u0E40\u0E02\u0E35\u0E22\u0E19\u0E1B\u0E35\u0E1C\u0E34\u0E14
+      \u0E15\u0E49\u0E2D\u0E07\u0E40\u0E1B\u0E47\u0E19\u0E1B\u0E35 2007 \u0E2A\u0E34
+      \u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48 2006"
+    choices: []
