@@ -142,6 +142,12 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     }
 
                     break;
+                case DialogueProperties.Mode.UpdateEvent:
+                    if(activeDialogue.dialogue[_line].eventKey != String.Empty)
+                        EventHorizon.Instance.UpdateEvent(activeDialogue.dialogue[_line].eventKey, 
+                                                            activeDialogue.dialogue[_line].eventStatus);
+                    DialogueInteraction();
+                    break;
             }
         }
         else

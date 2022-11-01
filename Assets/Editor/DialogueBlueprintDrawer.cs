@@ -13,6 +13,8 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     private SerializedProperty _mood;
     private SerializedProperty _sentence;
     private SerializedProperty _choices;
+    private SerializedProperty _eventKey;
+    private SerializedProperty _eventStatus;
 
     private float lineHeight = EditorGUIUtility.singleLineHeight;
 
@@ -32,6 +34,8 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         _mood = property.FindPropertyRelative("mood");
         _sentence = property.FindPropertyRelative("message");
         _choices = property.FindPropertyRelative("choices");
+        _eventKey = property.FindPropertyRelative("eventKey");
+        _eventStatus = property.FindPropertyRelative("eventStatus");
 
         //Draw foldOutBox
         Rect foldOutBox = new Rect(position.xMin, position.yMin, position.size.x, lineHeight);
@@ -82,6 +86,10 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                 property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
                     $"{(DialogueProperties.Character) _character.intValue}");
                 break;
+            case DialogueProperties.Mode.UpdateEvent:
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                    "Update Event Horizon");
+                break;
         }
 
 
@@ -115,6 +123,9 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                 case DialogueProperties.Mode.SwitchMood:
                     DrawCharacterProperty(position, 2);
                     DrawMoodProperty(position, 2);
+                    break;
+                case DialogueProperties.Mode.UpdateEvent:
+                    DrawEventProperty(position, 2);
                     break;
             }
         }
@@ -209,6 +220,22 @@ public class DialogueBlueprintDrawer : PropertyDrawer
 
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
         EditorGUI.PropertyField(drawArea, _choices, new GUIContent("Message"));
+    }
+    
+    private void DrawEventProperty(Rect position, int line)
+    {
+        EditorGUIUtility.labelWidth = 60;
+
+        // float xPos = position.min.x;
+        // float yPos = position.min.y + (lineHeight * 2.25f);
+        // float width = position.size.x * .4f;
+        // float height = lineHeight;
+
+        Rect drawAreaKey = DrawProperty(position, PositionInLine.front, HorizontalSize.half, line, 1);
+        Rect drawAreaStatus = DrawProperty(position, PositionInLine.back, HorizontalSize.half, line, 1);
+        
+        EditorGUI.PropertyField(drawAreaKey, _eventKey, new GUIContent("Key"));
+        EditorGUI.PropertyField(drawAreaStatus, _eventStatus, new GUIContent("Status"));
     }
 
     private Rect DrawProperty(Rect position, PositionInLine pos, HorizontalSize size, int line, float heightScale)
