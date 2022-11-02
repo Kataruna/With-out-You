@@ -20,18 +20,22 @@ MonoBehaviour:
     message: "\u0E09\u0E31\u0E19\u0E08\u0E30\u0E1E\u0E32\u0E40\u0E18\u0E2D\u0E44\u0E1B
       \u0E08\u0E38\u0E14\u0E17\u0E35\u0E48\u0E2A\u0E27\u0E22\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14\u0E02\u0E2D\u0E07\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E19\u0E35\u0E49"
     choices: []
-  - mode: 0
-    character: 1
-    name: 
-    mood: 0
-    message: "\u0E43\u0E2A\u0E48\u0E0A\u0E38\u0E14\u0E2A\u0E27\u0E22 \u0E46 \u0E21\u0E32\u0E14\u0E49\u0E27\u0E22\u0E2B\u0E25\u0E48\u0E30"
-    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 0
     character: 1
     name: 
     mood: 0
     message: "\u0E09\u0E31\u0E19\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E18\u0E2D\u0E14\u0E39"
     choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 2
     character: 1
     name: 
@@ -48,3 +52,8 @@ MonoBehaviour:
       blueprint: {fileID: 11400000, guid: e4957e2308930dd4c909401e6a18981f, type: 2}
       eventKey: 
       eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
