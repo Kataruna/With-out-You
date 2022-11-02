@@ -28,7 +28,7 @@ public class PlayerInteraction : Singleton<PlayerInteraction>
                 activeInteraction.gameObject.TryGetComponent(out Traveler travel);
                 
                 travel.EnableInput();
-                
+
                 break;
         }
     }
