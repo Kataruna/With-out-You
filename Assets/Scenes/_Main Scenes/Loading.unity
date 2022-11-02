@@ -666,6 +666,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
+      propertyPath: eventList.Array.data[0].status
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
+        type: 3}
+      propertyPath: eventList.Array.data[2].status
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
+        type: 3}
       propertyPath: eventList.Array.data[0].eventName
       value: D1
       objectReference: {fileID: 0}
