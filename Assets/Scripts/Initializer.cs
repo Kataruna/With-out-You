@@ -11,6 +11,7 @@ public class Initializer : MonoBehaviour
     private void Awake()
     {
         Scene loadingScreenScene = SceneManager.GetSceneByName(LOADING_SCENE_NAME);
+
         if (loadingScreenScene == null || !loadingScreenScene.isLoaded)
         {
             SceneManager.LoadScene(LOADING_SCENE_NAME, LoadSceneMode.Additive);

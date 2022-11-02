@@ -5,12 +5,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
-[DefaultExecutionOrder(-1)]
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private Object[] additiveList;
 
-    private void Awake()
+    public void LoadRequireScene()
     {
         foreach (Object scene in additiveList)
         {
