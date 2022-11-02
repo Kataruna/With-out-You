@@ -11,6 +11,7 @@ using UnityEngine.InputSystem;
     
     [Header("Player Attribute")]
     [SerializeField] private float movementSpeed = 20f;
+    [SerializeField] private float sprintSpeedMultiply = 2f;
     [SerializeField] private bool moveAccordingToCamera;
 
     private bool _isControlable = true;
@@ -65,8 +66,12 @@ using UnityEngine.InputSystem;
 
     private void Move(Vector3 position) //
     {
-        transform.position +=
-            position * (movementSpeed * Time.deltaTime);
+        if(Input.GetKeyDown(KeyCode.LeftShift)) transform.position += position * (movementSpeed * sprintSpeedMultiply * Time.deltaTime);
+        else
+        {
+            transform.position +=
+                position * (movementSpeed * Time.deltaTime);
+        }
     }
 
     public void SetControlState(bool value)

@@ -15,6 +15,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     private SerializedProperty _choices;
     private SerializedProperty _eventKey;
     private SerializedProperty _eventStatus;
+    private SerializedProperty _event;
 
     private float lineHeight = EditorGUIUtility.singleLineHeight;
 
@@ -36,6 +37,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         _choices = property.FindPropertyRelative("choices");
         _eventKey = property.FindPropertyRelative("eventKey");
         _eventStatus = property.FindPropertyRelative("eventStatus");
+        _event = property.FindPropertyRelative("events");
 
         //Draw foldOutBox
         Rect foldOutBox = new Rect(position.xMin, position.yMin, position.size.x, lineHeight);
@@ -90,6 +92,10 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                 property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
                     "Update Event Horizon");
                 break;
+            case DialogueProperties.Mode.Event:
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                    "Events");
+                break;
         }
 
 
@@ -126,6 +132,9 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                     break;
                 case DialogueProperties.Mode.UpdateEvent:
                     DrawEventProperty(position, 2);
+                    break;
+                case DialogueProperties.Mode.Event:
+                    DrawEventsProperty(position, 2);
                     break;
             }
         }
@@ -236,6 +245,20 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         
         EditorGUI.PropertyField(drawAreaKey, _eventKey, new GUIContent("Key"));
         EditorGUI.PropertyField(drawAreaStatus, _eventStatus, new GUIContent("Status"));
+    }
+    
+    private void DrawEventsProperty(Rect position, int line)
+    {
+        EditorGUIUtility.labelWidth = 60;
+
+        // float xPos = position.min.x;
+        // float yPos = position.min.y + (lineHeight * 2.25f);
+        // float width = position.size.x * .4f;
+        // float height = lineHeight;
+
+        Rect drawAreaKey = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
+
+        EditorGUI.PropertyField(drawAreaKey, _event, new GUIContent("Event"));
     }
 
     private Rect DrawProperty(Rect position, PositionInLine pos, HorizontalSize size, int line, float heightScale)

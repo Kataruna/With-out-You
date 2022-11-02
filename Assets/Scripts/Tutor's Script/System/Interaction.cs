@@ -57,6 +57,7 @@ public class Interaction : MonoBehaviour, IInteractable
         
         PlayerInteraction.Instance.ClearInteraction();
         gameObject.SetActive(false);
+        DisableInput();
     }
 
     public void DisplayDialog()

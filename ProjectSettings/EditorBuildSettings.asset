@@ -6,20 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Scenes/Loading.unity
+    path: Assets/Scenes/_Main Scenes/Loading.unity
     guid: 6e75b4e893aead543a2e69457f745c39
   - enabled: 1
-    path: Assets/Scenes/Main Scenes/Interface.unity
+    path: Assets/Scenes/_Main Scenes/Interface.unity
     guid: fcaeca0116a199c43b692c12ed308876
   - enabled: 1
-    path: Assets/Scenes/Main Scenes/Library.unity
+    path: Assets/Scenes/_Main Scenes/Library1.unity
     guid: 9eb8374c78f0c594793233930982a882
   - enabled: 1
-    path: Assets/Scenes/Main Scenes/Park.unity
+    path: Assets/Scenes/_Main Scenes/Park1.unity
     guid: fceb16fbccede44409918141e5efe88c
   - enabled: 1
-    path: Assets/Scenes/Main Scenes/Graveyard.unity
+    path: Assets/Scenes/_Main Scenes/Graveyard1.unity
     guid: 3d485036b5eed1d44adf5d5c4941821d
+  - enabled: 1
+    path: Assets/Scenes/_Main Scenes/Library2.unity
+    guid: baf1f896ed0ee394cb957d9b93716ac9
+  - enabled: 1
+    path: Assets/Scenes/_Main Scenes/Park2.unity
+    guid: bae730b8a0d1de2419bfdd25c7814b7e
+  - enabled: 1
+    path: Assets/Scenes/_Main Scenes/Library3.unity
+    guid: 742aec1438d27a54c9810b1882f4dc1f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9c76cc5f0a6218a4fa05bcdce25dae04,
       type: 2}

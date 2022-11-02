@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 [Serializable]
 public class DialogueProperties
@@ -12,6 +13,7 @@ public class DialogueProperties
     public Choices[] choices;
     public string eventKey;
     public bool eventStatus;
+    public UnityEvent events;
     
     public enum Character
     {
@@ -38,6 +40,7 @@ public class DialogueProperties
         Choice,
         SwitchMood,
         UpdateEvent,
+        Event,
     }
 }
 

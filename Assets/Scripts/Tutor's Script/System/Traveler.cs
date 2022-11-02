@@ -23,7 +23,11 @@ public class Traveler : MonoBehaviour
     
     public void Travel()
     {
-        if(requireEvent == String.Empty || EventHorizon.Instance.EventsHorizon[requireEvent]) LoadingScreenController.Instance.LoadNextScene($"{nextScene}{sceneOrder}");
+        if (requireEvent == String.Empty || EventHorizon.Instance.EventsHorizon[requireEvent])
+        {
+            DisableInput();
+            LoadingScreenController.Instance.LoadNextScene($"{nextScene}{sceneOrder}");
+        }
     }
 
     private void FixedUpdate()

@@ -211,12 +211,15 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         
         ClearImage();
         dialogAnimator.SetTrigger("Enter");
+        
+        Debug.LogWarning("Enter Dialogue");
     }
 
     public void ExitDialogue()
     {
         ClearImage();
         dialogAnimator.SetTrigger("Exit");
+        activeDialogue = null;
     }
 
     public void ImageMap()

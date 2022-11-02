@@ -4465,12 +4465,22 @@ PrefabInstance:
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.data[0].eventName
+      value: D1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
+        type: 3}
+      propertyPath: eventList.Array.data[1].eventName
       value: MetJane
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
+        type: 3}
+      propertyPath: eventList.Array.data[2].eventName
+      value: BackInTime
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151976, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
