@@ -21,6 +21,11 @@ MonoBehaviour:
       \u0E09\u0E31\u0E19\u0E01\u0E47\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48\u0E04\u0E19\u0E2B\u0E31\u0E27\u0E14\u0E35
       \u0E40\u0E25\u0E22\u0E40\u0E23\u0E35\u0E22\u0E19\u0E15\u0E32\u0E21\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E44\u0E21\u0E48\u0E17\u0E31\u0E19"
     choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 0
     character: 1
     name: 
@@ -28,6 +33,11 @@ MonoBehaviour:
     message: "\u0E09\u0E31\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E08\u0E30\u0E40\u0E2A\u0E35\u0E22\u0E1E\u0E48\u0E2D\u0E02\u0E2D\u0E07\u0E09\u0E31\u0E19\u0E44\u0E1B
       \u0E01\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E40\u0E02\u0E49\u0E32\u0E40\u0E23\u0E35\u0E22\u0E19\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48"
     choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 0
     character: 1
     name: 
@@ -35,12 +45,22 @@ MonoBehaviour:
     message: "\u0E16\u0E36\u0E07\u0E08\u0E30\u0E25\u0E33\u0E1A\u0E32\u0E01\u0E41\u0E15\u0E48\u0E21\u0E31\u0E19\u0E01\u0E47\u0E2A\u0E19\u0E38\u0E01\u0E14\u0E35\u0E19\u0E30
       hahaha"
     choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 0
     character: 0
     name: 
     mood: 0
     message: "(\u0E19\u0E31\u0E48\u0E19\u0E2A\u0E34\u0E19\u0E30 \u0E09\u0E31\u0E19\u0E25\u0E37\u0E21\u0E44\u0E1B\u0E40\u0E25\u0E22\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E04\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27\u0E15\u0E48\u0E2D\u0E08\u0E32\u0E01\u0E19\u0E35\u0E49)"
     choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 2
     character: 0
     name: 
@@ -48,11 +68,16 @@ MonoBehaviour:
     message: "(\u0E19\u0E31\u0E48\u0E19\u0E2A\u0E34\u0E19\u0E30 \u0E09\u0E31\u0E19\u0E25\u0E37\u0E21\u0E44\u0E1B\u0E40\u0E25\u0E22\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E04\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27\u0E15\u0E48\u0E2D\u0E08\u0E32\u0E01\u0E19\u0E35\u0E49)"
     choices:
     - choice: "\u0E43\u0E2B\u0E49\u0E09\u0E31\u0E19\u0E25\u0E2D\u0E07\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E18\u0E2D\u0E14\u0E39\u0E19\u0E30"
-      blueprint: {fileID: 0}
+      blueprint: {fileID: 11400000, guid: 5de0c81824530b641ac7bf13b168dcfe, type: 2}
       eventKey: 
       eventValue: 0
     - choice: "\u0E09\u0E31\u0E19\u0E01\u0E47\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E40\u0E01\u0E48\u0E07\u0E2D\u0E30\u0E44\u0E23\u0E21\u0E32\u0E01
         \u0E41\u0E15\u0E48\u0E09\u0E31\u0E19\u0E08\u0E30\u0E25\u0E2D\u0E07\u0E14\u0E39"
-      blueprint: {fileID: 0}
+      blueprint: {fileID: 11400000, guid: c34ca8c929a9d3348acc5fadcbc4dc95, type: 2}
       eventKey: 
       eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
