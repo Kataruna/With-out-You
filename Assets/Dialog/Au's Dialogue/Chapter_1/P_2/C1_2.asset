@@ -14,19 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - mode: 0
-    character: 1
+    character: 2
     name: 
-    mood: 0
+    mood: 4
     message: "\u0E40\u0E23\u0E35\u0E22\u0E01\u0E09\u0E31\u0E19\u0E27\u0E48\u0E32
       Jane \u0E01\u0E47\u0E44\u0E14\u0E49\u0E19\u0E30"
     choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 0
-    character: 1
+    character: 2
     name: 
-    mood: 0
+    mood: 3
     message: "\u0E40\u0E18\u0E2D\u0E21\u0E35\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E48\u0E19\u0E44\u0E2B\u0E21
       ?"
     choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 2
     character: 1
     name: 
@@ -44,3 +54,8 @@ MonoBehaviour:
       blueprint: {fileID: 11400000, guid: e3e4f9a098242684f8dc0617ff12ca3b, type: 2}
       eventKey: 
       eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []

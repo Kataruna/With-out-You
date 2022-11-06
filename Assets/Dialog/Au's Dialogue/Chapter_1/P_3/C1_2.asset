@@ -14,14 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - mode: 0
-    character: 1
+    character: 2
     name: 
-    mood: 0
+    mood: 3
     message: "\u0E04\u0E37\u0E2D\u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E04\u0E48\u0E2D\u0E22\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E01\u0E32\u0E23\u0E41\u0E23\u0E40\u0E07\u0E32\u0E2A\u0E31\u0E01\u0E40\u0E17\u0E48\u0E32\u0E44\u0E2B\u0E23\u0E48
       \u0E40\u0E18\u0E2D\u0E08\u0E30\u0E1E\u0E2D\u0E41\u0E19\u0E30\u0E19\u0E33\u0E2B\u0E19\u0E48\u0E2D\u0E22\u0E44\u0E14\u0E49\u0E44\u0E2B\u0E21
       \u0E27\u0E48\u0E32\u0E09\u0E31\u0E19\u0E04\u0E27\u0E23\u0E17\u0E33\u0E22\u0E31\u0E07\u0E44\u0E07
       ?"
     choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   - mode: 2
     character: 1
     name: 
@@ -41,3 +46,8 @@ MonoBehaviour:
       blueprint: {fileID: 11400000, guid: 4e652f0677c451b4fa83d2ab6d36d4bf, type: 2}
       eventKey: 
       eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []

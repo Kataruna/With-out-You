@@ -28,7 +28,7 @@ MonoBehaviour:
   - mode: 0
     character: 2
     name: 
-    mood: 0
+    mood: 3
     message: "\u0E40\u0E18\u0E2D\u0E19\u0E35\u0E48\u0E0A\u0E2D\u0E1A\u0E16\u0E32\u0E21\u0E2D\u0E30\u0E44\u0E23\u0E41\u0E1B\u0E25\u0E01
       \u0E46"
     choices: []
@@ -40,7 +40,7 @@ MonoBehaviour:
   - mode: 0
     character: 2
     name: 
-    mood: 0
+    mood: 3
     message: "\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E23\u0E36\u0E40\u0E1B\u0E25\u0E48\u0E32
       ?"
     choices: []
@@ -57,11 +57,11 @@ MonoBehaviour:
     choices:
     - choice: "\u0E09\u0E31\u0E19\u0E40\u0E23\u0E35\u0E22\u0E19\u0E08\u0E19\u0E25\u0E37\u0E21\u0E27\u0E31\u0E19\u0E40\u0E27\u0E25\u0E32\u0E19\u0E48\u0E30
         \u0E44\u0E21\u0E48\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E2B\u0E23\u0E2D\u0E01"
-      blueprint: {fileID: 0}
+      blueprint: {fileID: 11400000, guid: 7b5c505f8e6b5494292d56c9ff19e169, type: 2}
       eventKey: 
       eventValue: 0
     - choice: "\u0E09\u0E31\u0E19\u0E41\u0E04\u0E48\u0E25\u0E37\u0E21 \u0E0A\u0E48\u0E27\u0E07\u0E19\u0E35\u0E49\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E08\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E44\u0E21\u0E48\u0E04\u0E48\u0E2D\u0E22\u0E44\u0E14\u0E49"
-      blueprint: {fileID: 0}
+      blueprint: {fileID: 11400000, guid: 06ee695fdab151247b688d2bc2de250c, type: 2}
       eventKey: 
       eventValue: 0
     eventKey: 
