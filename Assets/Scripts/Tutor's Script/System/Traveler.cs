@@ -11,11 +11,15 @@ public class Traveler : MonoBehaviour
         Park,
         Graveyard
     }
+
+    public bool ForceInteract => forceInteract;
     
     [SerializeField] private Scene nextScene;
     [SerializeField, Tooltip("ลำดับการปรากฏของซีนนี้")] private int sceneOrder;
+    [SerializeField] private bool forceInteract;
     [SerializeField] private string requireEvent;
     [SerializeField] private GameObject icon;
+    
    
     private bool _showIcon = false;
     

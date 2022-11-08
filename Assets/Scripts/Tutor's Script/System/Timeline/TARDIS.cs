@@ -10,4 +10,11 @@ public class TARDIS : Singleton<TARDIS>
     public WorldProperties.Timeline activeTimeline;
     public WorldProperties.World activeWorld;
     public int orderOfAppearance;
+    
+    public void SetDestination(WorldProperties.Timeline timeline, WorldProperties.World world, int order)
+    {
+        activeTimeline = timeline;
+        activeWorld = world;
+        orderOfAppearance = order;
+    }
 }

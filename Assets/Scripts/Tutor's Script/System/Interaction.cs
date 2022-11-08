@@ -6,12 +6,26 @@ using UnityEngine.Events;
 
 public class Interaction : MonoBehaviour, IInteractable
 {
+    public Type SelectedType => type;
+    public EventRecord EventRecord => eventKey;
+    public Dialogue DialogueBlueprint => dialogue;
     public bool ForceInteract => forceInteract;
+
+    public bool AffectTimeline => affectTimeline;
+    public WorldProperties.Timeline Timeline => timeline;
+    public WorldProperties.World WorldLine => worldLine;
+    public int WorldOrder => worldOrder;
+    
+    public UnityEvent OnInteract => OnInteraction;
     
     [SerializeField] private Type type;
     [SerializeField] private EventRecord eventKey;
     [SerializeField] private Dialogue dialogue;
     [SerializeField] private bool forceInteract;
+    [SerializeField] private bool affectTimeline;
+    [SerializeField] private WorldProperties.Timeline timeline;
+    [SerializeField] private WorldProperties.World worldLine;
+    [SerializeField] private int worldOrder;
     
     [SerializeField] private UnityEvent OnInteraction;
 
@@ -63,5 +77,15 @@ public class Interaction : MonoBehaviour, IInteractable
     public void DisplayDialog()
     {
         DialogueDisplay.Instance.EnterDialogue(dialogue);
+    }
+
+    public void SetEventKey(string key)
+    {
+        eventKey.eventName = key;
+    }
+
+    public void SetEventValue(bool status)
+    {
+        eventKey.status = status;
     }
 }
