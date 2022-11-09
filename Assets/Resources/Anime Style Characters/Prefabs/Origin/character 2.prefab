@@ -4046,7 +4046,7 @@ MonoBehaviour:
   SpriteBlendMat: {fileID: 2100000, guid: 281af96683144fc419e9c8ea11dd25b3, type: 2}
   animeStyleCharactersAsset: {fileID: 11400000, guid: d2fdedece4350744d91222babd0fedc2,
     type: 2}
-  assetHash: 30510
+  assetHash: 32036
 --- !u!114 &9211800655828337732
 MonoBehaviour:
   m_ObjectHideFlags: 0
