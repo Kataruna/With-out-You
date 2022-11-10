@@ -17,8 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E09\u0E31\u0E19\u0E08\u0E30\u0E1E\u0E32\u0E40\u0E18\u0E2D\u0E44\u0E1B\u0E17\u0E35\u0E48
-      \u0E46 \u0E09\u0E31\u0E19\u0E0A\u0E2D\u0E1A\u0E44\u0E1B\u0E40\u0E27\u0E25\u0E32\u0E17\u0E35\u0E48\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E40\u0E1A\u0E37\u0E48\u0E2D"
+    message: I'll take you where I like to go when I'm bored.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -29,7 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E43\u0E2B\u0E49\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E2B\u0E25\u0E48\u0E30"
+    message: Be prepared.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -40,7 +39,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E01\u0E32\u0E23\u0E1C\u0E08\u0E0D\u0E20\u0E31\u0E22\u0E23\u0E2D\u0E40\u0E18\u0E2D\u0E2D\u0E22\u0E39\u0E48"
+    message: You're in for an adventure.
     choices:
     - choice: "\u0E07\u0E31\u0E49\u0E19\u0E1E\u0E23\u0E38\u0E48\u0E07\u0E19\u0E35\u0E49\u0E43\u0E2B\u0E49\u0E09\u0E31\u0E19\u0E44\u0E1B\u0E23\u0E2D\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19
         ?"
@@ -63,13 +62,11 @@ MonoBehaviour:
     mood: 0
     message: "\u0E09\u0E31\u0E19\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E18\u0E2D\u0E14\u0E39"
     choices:
-    - choice: "\u0E07\u0E31\u0E49\u0E19\u0E1E\u0E23\u0E38\u0E48\u0E07\u0E19\u0E35\u0E49\u0E43\u0E2B\u0E49\u0E09\u0E31\u0E19\u0E44\u0E1B\u0E23\u0E2D\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19
-        ?"
+    - choice: So, where should I go to wait the next day ?
       blueprint: {fileID: 11400000, guid: 4d1059d299c72ad40b900a4597c5c49d, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E44\u0E14\u0E49\u0E2A\u0E34 \u0E41\u0E25\u0E49\u0E27\u0E40\u0E18\u0E2D\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E09\u0E31\u0E19\u0E14\u0E39
-        ?"
+    - choice: Yes, but where are we going ?
       blueprint: {fileID: 11400000, guid: e4957e2308930dd4c909401e6a18981f, type: 2}
       eventKey: 
       eventValue: 0

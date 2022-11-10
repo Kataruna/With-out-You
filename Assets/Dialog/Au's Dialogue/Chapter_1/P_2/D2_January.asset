@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 4
     name: 
     mood: 0
-    message: "\u0E19\u0E35\u0E48\u0E40\u0E18\u0E2D\u0E15\u0E23\u0E07\u0E19\u0E31\u0E48\u0E19\u0E2B\u0E19\u0E48\u0E30"
+    message: Hey !! you over there.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -28,8 +28,7 @@ MonoBehaviour:
     character: 4
     name: 
     mood: 3
-    message: "\u0E40\u0E18\u0E2D\u0E04\u0E37\u0E2D Silvia \u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21
-      ?"
+    message: Silvia right ?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -40,7 +39,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 3
-    message: "\u0E43\u0E0A\u0E48..................................."
+    message: ahh yess....
     choices: []
     eventKey: 
     eventStatus: 0
@@ -51,7 +50,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 3
-    message: "(\u0E40\u0E1B\u0E47\u0E19\u0E44\u0E1B\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49)"
+    message: (Impossiple)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -84,9 +83,8 @@ MonoBehaviour:
     character: 1
     name: 
     mood: 0
-    message: "\u0E09\u0E31\u0E19\u0E0A\u0E37\u0E48\u0E2D January \u0E2D\u0E22\u0E39\u0E48\u0E2B\u0E49\u0E2D\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E40\u0E18\u0E2D
-      \u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E40\u0E2B\u0E47\u0E19\u0E40\u0E18\u0E2D\u0E44\u0E21\u0E48\u0E21\u0E32\u0E40\u0E23\u0E35\u0E22\u0E19
-      \u0E40\u0E25\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E2B\u0E48\u0E27\u0E07"
+    message: "January is my name, and I'm in the same class as you. I was concerned
+      when I noticed you\_were\_not taking classes today."
     choices: []
     eventKey: 
     eventStatus: 0
@@ -97,8 +95,7 @@ MonoBehaviour:
     character: 1
     name: 
     mood: 3
-    message: "\u0E40\u0E2B\u0E47\u0E19\u0E21\u0E32\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E22\u0E49\u0E32\u0E22\u0E21\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\u0E04\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27
-      \u0E43\u0E19\u0E0A\u0E19\u0E1A\u0E17\u0E41\u0E1A\u0E1A\u0E19\u0E35\u0E49"
+    message: I heard you came here alone, in a town like this.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -109,8 +106,8 @@ MonoBehaviour:
     character: 1
     name: 
     mood: 0
-    message: "\u0E04\u0E19\u0E43\u0E19\u0E04\u0E23\u0E32\u0E2A\u0E1A\u0E2D\u0E01\u0E09\u0E31\u0E19\u0E21\u0E32\u0E27\u0E48\u0E32
-      \u0E16\u0E49\u0E32\u0E08\u0E30\u0E2B\u0E32\u0E15\u0E31\u0E27\u0E40\u0E18\u0E2D\u0E15\u0E49\u0E2D\u0E07\u0E21\u0E32\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\u0E35\u0E49"
+    message: I was informed by someone from the class that I needed to come here
+      to see you
     choices: []
     eventKey: 
     eventStatus: 0
@@ -124,13 +121,12 @@ MonoBehaviour:
     message: "\u0E04\u0E19\u0E43\u0E19\u0E04\u0E23\u0E32\u0E2A\u0E1A\u0E2D\u0E01\u0E09\u0E31\u0E19\u0E21\u0E32\u0E27\u0E48\u0E32
       \u0E16\u0E49\u0E32\u0E08\u0E30\u0E2B\u0E32\u0E15\u0E31\u0E27\u0E40\u0E18\u0E2D\u0E15\u0E49\u0E2D\u0E07\u0E21\u0E32\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\u0E35\u0E49"
     choices:
-    - choice: "\u0E19\u0E31\u0E48\u0E19\u0E40\u0E18\u0E2D\u0E08\u0E23\u0E34\u0E07
-        \u0E46 \u0E2B\u0E23\u0E2D Jane ?"
+    - choice: Jane, Is that you ?
       blueprint: {fileID: 11400000, guid: cba7fc8886577d9418990ad299c6dc7c, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "Jan... January \u0E22\u0E34\u0E19\u0E14\u0E35\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01
-        \u0E09\u0E31\u0E19\u0E2A\u0E1A\u0E32\u0E22\u0E14\u0E35 \u0E41\u0E04\u0E48\u0E09\u0E31\u0E19\u0E08\u0E33\u0E27\u0E31\u0E19\u0E1C\u0E34\u0E14\u0E19\u0E34\u0E14\u0E2B\u0E19\u0E48\u0E2D\u0E22"
+    - choice: Jan... January It's a pleasure to meet you. I'm fine. I just remembered
+        the day incorrectly.
       blueprint: {fileID: 11400000, guid: 2674868e82fe47240acc0e57ba0648c6, type: 2}
       eventKey: 
       eventValue: 0

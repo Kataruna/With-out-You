@@ -17,8 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: "\u0E40\u0E23\u0E35\u0E22\u0E01\u0E09\u0E31\u0E19\u0E27\u0E48\u0E32
-      Jane \u0E01\u0E47\u0E44\u0E14\u0E49\u0E19\u0E30"
+    message: You can call me Jane.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -29,8 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E40\u0E18\u0E2D\u0E21\u0E35\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E48\u0E19\u0E44\u0E2B\u0E21
-      ?"
+    message: What about you, got a nickname ?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -44,13 +42,11 @@ MonoBehaviour:
     message: "\u0E40\u0E18\u0E2D\u0E21\u0E35\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E48\u0E19\u0E44\u0E2B\u0E21
       ?"
     choices:
-    - choice: "\u0E09\u0E31\u0E19\u0E40\u0E2D\u0E07\u0E44\u0E07 Silvy \u0E40\u0E18\u0E2D\u0E08\u0E33\u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E2B\u0E23\u0E2D
-        Jane"
+    - choice: Oh, I've heard her name called in class.
       blueprint: {fileID: 11400000, guid: cd8826058a65e914db8e5ed84ac10613, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E04\u0E23\u0E2D\u0E1A\u0E04\u0E23\u0E31\u0E27\u0E40\u0E23\u0E35\u0E22\u0E01\u0E09\u0E31\u0E19\u0E27\u0E48\u0E32
-        Silvy"
+    - choice: My family call me Silvy.
       blueprint: {fileID: 11400000, guid: e3e4f9a098242684f8dc0617ff12ca3b, type: 2}
       eventKey: 
       eventValue: 0

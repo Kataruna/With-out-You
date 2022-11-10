@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: "Silvy \u0E22\u0E34\u0E19\u0E14\u0E35\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01"
+    message: Nice to meet you Silvy.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -28,9 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E40\u0E23\u0E32\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E01\u0E31\u0E19\u0E41\u0E25\u0E49\u0E27
-      \u0E07\u0E31\u0E49\u0E19\u0E15\u0E48\u0E2D\u0E08\u0E32\u0E01\u0E19\u0E35\u0E49\u0E40\u0E23\u0E32\u0E01\u0E47\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E01\u0E31\u0E19\u0E19\u0E30
-      Silvy"
+    message: We already know each other already , so we're friends from now on, Silvy.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -45,13 +43,12 @@ MonoBehaviour:
       Jane \u0E01\u0E47\u0E44\u0E14\u0E49\u0E2A\u0E48\u0E27\u0E19\u0E09\u0E31\u0E19\u0E08\u0E30\u0E40\u0E23\u0E35\u0E22\u0E01\u0E40\u0E18\u0E2D\u0E27\u0E48\u0E32
       Silvy \u0E15\u0E01\u0E25\u0E07\u0E44\u0E2B\u0E21 ?"
     choices:
-    - choice: "\u0E15\u0E01\u0E25\u0E07"
-      blueprint: {fileID: 11400000, guid: 48131861043500c409581f9d3b155c3c, type: 2}
+    - choice: Silvy, this is Silvy. Jane, you do not even recognize me ?
+      blueprint: {fileID: 11400000, guid: b5020febf0e5dc141adab700fb966745, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E40\u0E18\u0E2D\u0E08\u0E33\u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E08\u0E23\u0E34\u0E07
-        \u0E46 \u0E2B\u0E23\u0E2D Jane \u0E09\u0E31\u0E19 Silvy \u0E44\u0E07"
-      blueprint: {fileID: 11400000, guid: b5020febf0e5dc141adab700fb966745, type: 2}
+    - choice: Yes.
+      blueprint: {fileID: 11400000, guid: 48131861043500c409581f9d3b155c3c, type: 2}
       eventKey: 
       eventValue: 0
     eventKey: 

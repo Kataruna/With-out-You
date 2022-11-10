@@ -17,9 +17,8 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 0
-    message: "\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E09\u0E31\u0E19\u0E40\u0E08\u0E2D\u0E41\u0E15\u0E48\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E41\u0E22\u0E48
-      \u0E46 \u0E41\u0E15\u0E48\u0E01\u0E47\u0E22\u0E31\u0E07\u0E21\u0E35\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E14\u0E35
-      \u0E46 \u0E2D\u0E22\u0E39\u0E48"
+    message: Even though today was completely terrible for me, it was still a good
+      day.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -30,8 +29,8 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 4
-    message: "\u0E09\u0E31\u0E19\u0E40\u0E2D\u0E32\u0E14\u0E2D\u0E01\u0E44\u0E21\u0E49\u0E17\u0E35\u0E48\u0E40\u0E23\u0E32\u0E2A\u0E2D\u0E07\u0E04\u0E19\u0E1B\u0E25\u0E39\u0E01\u0E14\u0E49\u0E27\u0E22\u0E01\u0E31\u0E19\u0E21\u0E32\u0E43\u0E2B\u0E49\u0E14\u0E49\u0E27\u0E22\u0E2B\u0E25\u0E30
-      \u0E2B\u0E27\u0E31\u0E07\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E08\u0E30\u0E0A\u0E2D\u0E1A\u0E19\u0E30\u2026"
+    message: Today I brought flowers that we both planted together. I hope you like
+      it...
     choices: []
     eventKey: 
     eventStatus: 0
@@ -42,8 +41,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 2
-    message: "\u0E40\u0E17\u0E28\u0E01\u0E32\u0E25\u0E04\u0E23\u0E34\u0E2A\u0E21\u0E32\u0E2A\u0E15\u0E4C\u0E08\u0E30\u0E16\u0E36\u0E07\u0E41\u0E25\u0E49\u0E27\u0E19\u0E30
-      \u0E1B\u0E35\u0E19\u0E35\u0E48\u0E44\u0E21\u0E48\u0E21\u0E35\u0E40\u0E18\u0E2D\u0E2D\u0E22\u0E39\u0E48\u0E14\u0E49\u0E27\u0E22\u0E01\u0E31\u0E19\u0E09\u0E31\u0E19\u0E04\u0E07\u0E40\u0E2B\u0E07\u0E32\u0E41\u0E22\u0E48"
+    message: Christmas is nearing! I'd be lonely this year if we weren't together.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -54,20 +52,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 2
-    message: "\u0E09\u0E31\u0E19\u0E04\u0E34\u0E14\u0E16\u0E36\u0E07\u0E40\u0E18\u0E2D\u0E08\u0E23\u0E34\u0E07
-      \u0E46 \u0E19\u0E30 Jane \u0E09\u0E31\u0E19\u0E2D\u0E22\u0E32\u0E01\u0E08\u0E30\u0E40\u0E08\u0E2D\u0E40\u0E18\u0E2D\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07"
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-  - mode: 0
-    character: 0
-    name: 
-    mood: 4
-    message: "\u0E23\u0E39\u0E1B\u0E17\u0E35\u0E48\u0E40\u0E18\u0E2D\u0E16\u0E48\u0E32\u0E22\u0E43\u0E2B\u0E49\u0E09\u0E31\u0E19\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48
-      \u0E09\u0E31\u0E19\u0E0A\u0E2D\u0E1A\u0E21\u0E31\u0E19\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14\u0E40\u0E25\u0E22"
+    message: "Jane, I truly miss you. I'd\_like to see you again."
     choices: []
     eventKey: 
     eventStatus: 0
@@ -78,11 +63,56 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 2
-    message: "\u0E2B\u0E32\u0E01\u0E22\u0E49\u0E2D\u0E19\u0E40\u0E27\u0E25\u0E32\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E44\u0E14\u0E49
-      \u0E09\u0E31\u0E19\u0E2D\u0E22\u0E32\u0E01\u0E08\u0E30\u0E16\u0E48\u0E32\u0E1A\u0E23\u0E39\u0E1B\u0E02\u0E2D\u0E07\u0E40\u0E18\u0E2D\u0E1A\u0E49\u0E32\u0E07"
+    message: Since she left me, her camera still with me.
     choices: []
     eventKey: 
     eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  - mode: 0
+    character: 0
+    name: 
+    mood: 2
+    message: I can see why you keep it with you at all times.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  - mode: 0
+    character: 0
+    name: 
+    mood: 2
+    message: "It makes me recognize.\_Those who have abandoned us have not vanished.
+      And still beside me."
+    choices: []
+    eventKey: BackInTime
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  - mode: 0
+    character: 0
+    name: 
+    mood: 2
+    message: I appreciate the photo you took here for me.
+    choices: []
+    eventKey: BackInTime
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  - mode: 0
+    character: 0
+    name: 
+    mood: 2
+    message: I would love to capture some images of you if I could travel back into
+      the past.
+    choices: []
+    eventKey: BackInTime
+    eventStatus: 1
     events:
       m_PersistentCalls:
         m_Calls: []
