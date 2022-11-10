@@ -17,8 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 1
-    message: "\u0E44\u0E07 Silvy \u0E40\u0E18\u0E2D\u0E21\u0E32\u0E2A\u0E32\u0E22\u0E44\u0E1B
-      15 \u0E19\u0E32\u0E17\u0E35\u0E19\u0E30"
+    message: Hey, Silvy. You're already 15 minutes late.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -29,8 +28,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "\u0E09\u0E31\u0E19\u0E02\u0E2D\u0E42\u0E17\u0E29\u0E08\u0E23\u0E34\u0E07
-      \u0E46 \u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E15\u0E31\u0E49\u0E07\u0E43\u0E08\u0E08\u0E30\u0E21\u0E32\u0E2A\u0E32\u0E22"
+    message: I sorry for being late I didn't meant to be.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -41,7 +39,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: "\u0E09\u0E31\u0E19\u0E25\u0E49\u0E2D\u0E40\u0E25\u0E48\u0E19 \u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E08\u0E23\u0E34\u0E07\u0E08\u0E31\u0E07\u0E01\u0E47\u0E44\u0E14\u0E49"
+    message: You don't have to be serious, I'm just kidding.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -52,8 +50,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(\u0E21\u0E31\u0E19\u0E44\u0E14\u0E49\u0E1C\u0E25 \u0E01\u0E25\u0E49\u0E2D\u0E07\u0E16\u0E48\u0E32\u0E22\u0E23\u0E39\u0E1B\u0E19\u0E35\u0E49\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E23\u0E32\u0E22\u0E49\u0E2D\u0E19\u0E40\u0E27\u0E25\u0E32\u0E08\u0E23\u0E34\u0E07
-      \u0E46 \u0E14\u0E49\u0E27\u0E22)"
+    message: (It works,  this camera truly transported me back in time.)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -64,8 +61,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(\u0E41\u0E15\u0E48\u0E21\u0E31\u0E19\u0E44\u0E21\u0E48\u0E2A\u0E21\u0E40\u0E2B\u0E15\u0E38\u0E2A\u0E21\u0E1C\u0E25\u0E40\u0E25\u0E22
-      \u0E17\u0E33\u0E44\u0E21\u0E21\u0E31\u0E19\u0E16\u0E36\u0E07\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E22\u0E49\u0E2D\u0E19\u0E40\u0E27\u0E25\u0E32\u0E44\u0E14\u0E49)"
+    message: (But, it is nonsensical. Why does it allow me to go back in time ?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -76,8 +72,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(\u0E41\u0E25\u0E49\u0E27\u0E16\u0E49\u0E32\u0E22\u0E49\u0E2D\u0E19\u0E21\u0E32\u0E41\u0E25\u0E49\u0E27
-      \u0E17\u0E33\u0E44\u0E21\u0E22\u0E31\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E22\u0E31\u0E07\u0E1B\u0E31\u0E08\u0E08\u0E38\u0E1A\u0E31\u0E19\u0E14\u0E49\u0E27\u0E22)"
+    message: (And why, if I return, do I have to come back to the present ?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -88,7 +83,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E01\u0E25\u0E44\u0E01\u0E21\u0E31\u0E19\u0E43\u0E2B\u0E49\u0E44\u0E14\u0E49)"
+    message: (Gotta understand how it works.)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -99,10 +94,8 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E19\u0E35\u0E48 \u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E42\u0E01\u0E23\u0E18\u0E40\u0E18\u0E2D\u0E08\u0E23\u0E34\u0E07
-      \u0E46 \u0E09\u0E31\u0E19\u0E41\u0E04\u0E48\u0E25\u0E49\u0E2D\u0E40\u0E25\u0E48\u0E19
-      \u0E40\u0E18\u0E2D\u0E44\u0E21\u0E48\u0E42\u0E01\u0E23\u0E18\u0E09\u0E31\u0E19\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21
-      ?"
+    message: I'm not really mad with you I'm just kidding. You're not upset with
+      me, are you ?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -118,12 +111,11 @@ MonoBehaviour:
       \u0E40\u0E18\u0E2D\u0E44\u0E21\u0E48\u0E42\u0E01\u0E23\u0E18\u0E09\u0E31\u0E19\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21
       ?"
     choices:
-    - choice: "\u0E2D\u0E48\u0E2D \u0E44\u0E21\u0E48 \u0E09\u0E31\u0E19\u0E01\u0E33\u0E25\u0E31\u0E07\u0E04\u0E34\u0E14\u0E2D\u0E30\u0E44\u0E23\u0E19\u0E34\u0E14\u0E2B\u0E19\u0E48\u0E2D\u0E22"
+    - choice: "Oh no, I'm just\_overthinking things."
       blueprint: {fileID: 11400000, guid: e1abdf290b4db7442899a6c93c9a24a7, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E09\u0E31\u0E19\u0E04\u0E34\u0E14\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E42\u0E01\u0E23\u0E18\u0E09\u0E31\u0E19\u0E08\u0E23\u0E34\u0E07
-        \u0E46 \u0E2B\u0E19\u0E34"
+    - choice: I believe you're angry at me.
       blueprint: {fileID: 11400000, guid: 89701e137547d7c44b9f3244df4c7523, type: 2}
       eventKey: 
       eventValue: 0

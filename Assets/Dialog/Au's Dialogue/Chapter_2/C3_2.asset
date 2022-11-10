@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E15\u0E32\u0E21\u0E09\u0E31\u0E19\u0E21\u0E32\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22"
+    message: Follow me !
     choices: []
     eventKey: 
     eventStatus: 0

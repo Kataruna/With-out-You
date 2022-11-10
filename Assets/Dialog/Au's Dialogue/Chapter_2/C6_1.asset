@@ -17,8 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: "\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E02\u0E2D\u0E1A\u0E04\u0E38\u0E13\u0E21\u0E32\u0E01\u0E19\u0E30
-      \u0E17\u0E35\u0E48\u0E40\u0E18\u0E2D\u0E21\u0E32"
+    message: Thank a lot for coming today.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -29,7 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E09\u0E31\u0E19\u0E04\u0E34\u0E14\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E08\u0E30\u0E44\u0E21\u0E48\u0E21\u0E32\u0E0B\u0E30\u0E2D\u0E35\u0E01"
+    message: I think you would not come.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -40,8 +39,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: "\u0E07\u0E31\u0E49\u0E19\u0E44\u0E27\u0E49\u0E21\u0E35\u0E42\u0E2D\u0E01\u0E32\u0E2A
-      \u0E40\u0E23\u0E32\u0E21\u0E32\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\u0E14\u0E49\u0E27\u0E22\u0E01\u0E31\u0E19\u0E2D\u0E35\u0E01\u0E19\u0E30"
+    message: Let's give it a shot. We've met once more.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -52,8 +50,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E09\u0E31\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E1B\u0E17\u0E33\u0E07\u0E32\u0E19\u0E41\u0E25\u0E49\u0E27
-      \u0E02\u0E2D\u0E15\u0E31\u0E27\u0E01\u0E48\u0E2D\u0E19\u0E19\u0E30"
+    message: I have to go, See you next time.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -86,8 +83,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(\u0E40\u0E18\u0E2D\u0E40\u0E01\u0E48\u0E07\u0E21\u0E32\u0E01\u0E40\u0E25\u0E22\u0E19\u0E30
-      \u0E17\u0E35\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E44\u0E14\u0E49\u0E14\u0E49\u0E27\u0E22\u0E15\u0E31\u0E27\u0E04\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27)"
+    message: "(She's brilliant at it that can exist on her\_own.)"
     choices: []
     eventKey: 
     eventStatus: 0
@@ -98,7 +94,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(\u0E09\u0E31\u0E19\u0E2D\u0E22\u0E32\u0E01\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E18\u0E2D\u0E44\u0E14\u0E49\u0E1A\u0E49\u0E32\u0E07\u0E08\u0E31\u0E07)"
+    message: (I sincerely wish to help you somehow.)
     choices: []
     eventKey: 
     eventStatus: 0

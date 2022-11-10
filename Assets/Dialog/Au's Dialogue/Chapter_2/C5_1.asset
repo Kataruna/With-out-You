@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E1F\u0E31\u0E07\u0E14\u0E39\u0E41\u0E25\u0E49\u0E27\u0E19\u0E48\u0E32\u0E40\u0E1A\u0E37\u0E48\u0E2D\u0E41\u0E22\u0E48\u0E40\u0E25\u0E22 "
+    message: It's quite tedious to listen to.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -28,8 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E44\u0E2B\u0E19 \u0E46 \u0E01\u0E47\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\u0E04\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27\u0E41\u0E25\u0E49\u0E27
-      \u0E25\u0E2D\u0E07\u0E2D\u0E2D\u0E01\u0E21\u0E32\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E17\u0E28\u0E01\u0E32\u0E25\u0E14\u0E39\u0E01\u0E47\u0E44\u0E14\u0E49\u0E19\u0E30"
+    message: After all, if you're free. You may hang out during the festival.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -42,11 +41,11 @@ MonoBehaviour:
     mood: 0
     message: 
     choices:
-    - choice: "\u0E44\u0E27\u0E49\u0E09\u0E31\u0E19\u0E08\u0E30\u0E25\u0E2D\u0E07\u0E40\u0E01\u0E47\u0E1A\u0E44\u0E1B\u0E04\u0E34\u0E14\u0E14\u0E39\u0E19\u0E30"
+    - choice: I'll think about it.
       blueprint: {fileID: 11400000, guid: a87a573354fee564e893fce95ef81453, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E01\u0E25\u0E49\u0E32\u0E44\u0E1B\u0E44\u0E2B\u0E19\u0E21\u0E32\u0E44\u0E2B\u0E19\u0E04\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27\u0E2B\u0E19\u0E48\u0E30"
+    - choice: I wouldn't go anywhere by myself.
       blueprint: {fileID: 11400000, guid: ae42f95425b94634c891d7706e7df5ed, type: 2}
       eventKey: 
       eventValue: 0
