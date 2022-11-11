@@ -17,8 +17,8 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "F3 \u0E19\u0E48\u0E32\u0E08\u0E30\u0E40\u0E1B\u0E47\u0E19\u0E14\u0E2D\u0E01\u0E17\u0E35\u0E48\u0E14\u0E39\u0E41\u0E25\u0E22\u0E32\u0E01
-      \u0E41\u0E15\u0E48\u0E09\u0E31\u0E19\u0E08\u0E30\u0E25\u0E2D\u0E07\u0E1B\u0E25\u0E39\u0E01\u0E21\u0E31\u0E19\u0E14\u0E39"
+    message: Rose? It's probably a difficult flower to care for. But I'll try to
+      grow it.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -29,8 +29,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "\u0E40\u0E18\u0E2D\u0E08\u0E30\u0E2D\u0E22\u0E39\u0E48\u0E14\u0E39\u0E41\u0E25\u0E21\u0E31\u0E19\u0E44\u0E1B\u0E08\u0E19\u0E2D\u0E2D\u0E01\u0E14\u0E2D\u0E01\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21
-      ?"
+    message: You'll be there to take care of it until it blooms, right?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -41,8 +40,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: "\u0E01\u0E47\u0E41\u0E19\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E41\u0E25\u0E49\u0E27\u0E2A\u0E34
-      \u0E09\u0E31\u0E19\u0E08\u0E30\u0E14\u0E39\u0E41\u0E25\u0E21\u0E31\u0E19\u0E40\u0E2D\u0E07"
+    message: That's for sure. I'll take care of it myself.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -53,7 +51,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E40\u0E18\u0E2D\u0E23\u0E2D\u0E14\u0E39\u0E1C\u0E25\u0E07\u0E32\u0E19\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22"
+    message: You can sit and watch the results.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -64,8 +62,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E40\u0E2D\u0E48\u0E2D\u0E2D\u0E2D\u0E2D\u0E2D \u0E40\u0E18\u0E2D\u0E40\u0E2B\u0E47\u0E19\u0E1A\u0E2D\u0E23\u0E4C\u0E14\u0E1B\u0E23\u0E30\u0E01\u0E32\u0E28\u0E44\u0E2B\u0E21
-      \u0E17\u0E35\u0E48\u0E08\u0E30\u0E21\u0E35\u0E07\u0E32\u0E19\u0E40\u0E17\u0E28\u0E01\u0E32\u0E25\u0E04\u0E23\u0E34\u0E2A\u0E15\u0E4C\u0E21\u0E32\u0E2A"
+    message: Did you see the bulletin board? To hold a Christmas Festival.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -79,11 +76,11 @@ MonoBehaviour:
     message: "\u0E40\u0E2D\u0E48\u0E2D\u0E2D\u0E2D\u0E2D\u0E2D \u0E40\u0E18\u0E2D\u0E40\u0E2B\u0E47\u0E19\u0E1A\u0E2D\u0E23\u0E4C\u0E14\u0E1B\u0E23\u0E30\u0E01\u0E32\u0E28\u0E44\u0E2B\u0E21
       \u0E17\u0E35\u0E48\u0E08\u0E30\u0E21\u0E35\u0E07\u0E32\u0E19\u0E40\u0E17\u0E28\u0E01\u0E32\u0E25\u0E04\u0E23\u0E34\u0E2A\u0E15\u0E4C\u0E21\u0E32\u0E2A"
     choices:
-    - choice: "\u0E01\u0E47\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E2B\u0E47\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E41\u0E25\u0E49\u0E27\u0E2A\u0E34"
+    - choice: I saw it.
       blueprint: {fileID: 11400000, guid: 5d11fdc231d8c7b4a81812b74a6da2a1, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E04\u0E48\u0E2D\u0E22\u0E2A\u0E19\u0E43\u0E08\u0E40\u0E17\u0E48\u0E32\u0E44\u0E2B\u0E23\u0E48"
+    - choice: I haven't seen.
       blueprint: {fileID: 11400000, guid: 9c5772be3184a0042a038d7f17f404d2, type: 2}
       eventKey: 
       eventValue: 0

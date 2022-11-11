@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: "\u0E44\u0E07 Silvy"
+    message: Yo!! Silvy
     choices: []
     eventKey: 
     eventStatus: 0
@@ -28,9 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E42\u0E17\u0E29\u0E17\u0E35\u0E19\u0E30\u0E09\u0E31\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E40\u0E25\u0E34\u0E01\u0E07\u0E32\u0E19
-      \u0E40\u0E18\u0E2D\u0E08\u0E30\u0E01\u0E25\u0E31\u0E1A\u0E41\u0E25\u0E49\u0E27\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21
-      ?"
+    message: Sorry, I just returned from work. You're going to back, right?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -43,13 +41,12 @@ MonoBehaviour:
     mood: 0
     message: 
     choices:
-    - choice: "\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E35\u0E1A \u0E09\u0E31\u0E19\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E01\u0E25\u0E31\u0E1A\u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49"
+    - choice: Don't panic, I haven't back yet.
       blueprint: {fileID: 11400000, guid: c09a88a40ea0e694db75ab9ee4c1d564, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E09\u0E31\u0E19\u0E01\u0E33\u0E25\u0E31\u0E07\u0E23\u0E2D\u0E40\u0E18\u0E2D\u0E2D\u0E22\u0E39\u0E48
-        \u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E35\u0E1A\u0E01\u0E47\u0E44\u0E14\u0E49"
-      blueprint: {fileID: 0}
+    - choice: I'll be waiting for you. You do not have to hurry.
+      blueprint: {fileID: 11400000, guid: 8a3d14bf8afd69042b12b047dc6f4108, type: 2}
       eventKey: 
       eventValue: 0
     eventKey: 

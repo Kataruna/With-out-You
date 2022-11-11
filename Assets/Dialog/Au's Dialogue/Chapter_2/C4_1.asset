@@ -28,7 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: Let's go to the next point. Follow me.
+    message: Let's go to the next point, Follow me.
     choices: []
     eventKey: 
     eventStatus: 0

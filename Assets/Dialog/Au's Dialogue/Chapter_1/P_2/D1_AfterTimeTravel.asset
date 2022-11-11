@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 1
-    message: What in the earth happened today? Everything was terrible.
+    message: (What in the earth happened today? Everything was terrible.)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -28,8 +28,8 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 3
-    message: "Why are there just seniors in the class,\_the days, months, and years
-      have passed."
+    message: "(Why are there just seniors in the class,\_the days, months, and years
+      have passed.)"
     choices: []
     eventKey: 
     eventStatus: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 1
-    message: Are all of these folks insane ?
+    message: (Are all of these folks insane?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 0
-    message: But whatever. Another awful day is on the way.
+    message: (But whatever. Another awful day is on the way.)
     choices: []
     eventKey: 
     eventStatus: 0

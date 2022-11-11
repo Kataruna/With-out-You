@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: You must have studied extremely hard. get some sleep.
+    message: You must have studied extremely hard, get some sleep.
     choices: []
     eventKey: 
     eventStatus: 0

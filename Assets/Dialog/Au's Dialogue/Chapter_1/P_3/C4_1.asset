@@ -28,7 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: See you Silvy don't be late.
+    message: See you Silvy, don't be late.
     choices: []
     eventKey: 
     eventStatus: 0

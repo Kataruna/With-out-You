@@ -61,7 +61,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: (But, it is nonsensical. Why does it allow me to go back in time ?)
+    message: (But, it is nonsensical. Why does it allow me to go back in time?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: (And why, if I return, do I have to come back to the present ?)
+    message: (And why, if I return, do I have to come back to the present?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
     name: 
     mood: 3
     message: I'm not really mad with you I'm just kidding. You're not upset with
-      me, are you ?
+      me, are you?
     choices: []
     eventKey: 
     eventStatus: 0

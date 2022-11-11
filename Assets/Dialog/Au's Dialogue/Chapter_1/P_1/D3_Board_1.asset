@@ -18,7 +18,7 @@ MonoBehaviour:
     name: 
     mood: 0
     message: Is Christmas arriving once again? It truly meant a lot to me that I
-      was with you last year
+      was with you last year.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
     name: 
     mood: 4
     message: Today I brought flowers that we both planted together. I hope you like
-      it...
+      it.
     choices: []
     eventKey: 
     eventStatus: 0

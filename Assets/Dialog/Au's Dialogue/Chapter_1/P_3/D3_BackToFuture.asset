@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: (What, how did I get here ?)
+    message: (What, how did I get here?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 1
-    message: (Jane's gravestone ?, why ?)
+    message: (Jane's gravestone? Why?)
     choices: []
     eventKey: 
     eventStatus: 0

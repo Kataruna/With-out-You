@@ -29,7 +29,7 @@ MonoBehaviour:
     name: 
     mood: 0
     message: You've only recently moved here, right? So I'll gladly show you around.
-      What is this town based on ?
+      What is this town based on?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
       blueprint: {fileID: 11400000, guid: 5de0c81824530b641ac7bf13b168dcfe, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: Yes, but where are we going ?
+    - choice: Yes, but where are we going?
       blueprint: {fileID: 11400000, guid: c34ca8c929a9d3348acc5fadcbc4dc95, type: 2}
       eventKey: 
       eventValue: 0

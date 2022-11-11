@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: Come here this way !
+    message: Come here this way!
     choices: []
     eventKey: 
     eventStatus: 0

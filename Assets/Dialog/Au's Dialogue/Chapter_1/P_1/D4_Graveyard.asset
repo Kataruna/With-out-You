@@ -30,7 +30,7 @@ MonoBehaviour:
     name: 
     mood: 4
     message: Today I brought flowers that we both planted together. I hope you like
-      it...
+      it.
     choices: []
     eventKey: 
     eventStatus: 0

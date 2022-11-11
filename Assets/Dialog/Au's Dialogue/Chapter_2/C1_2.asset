@@ -39,7 +39,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: What make you nervous ?
+    message: What make you nervous?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
     mood: 0
     message: "\u0E09\u0E31\u0E19\u0E2D\u0E22\u0E32\u0E01\u0E43\u0E2B\u0E49\u0E40\u0E18\u0E2D\u0E1C\u0E48\u0E2D\u0E19\u0E04\u0E25\u0E32\u0E22\u0E19\u0E30"
     choices:
-    - choice: So, what are we going to do today ?
+    - choice: So, what are we going to do today?
       blueprint: {fileID: 11400000, guid: bdafdcb470bf910489a8b9eada92e0e8, type: 2}
       eventKey: 
       eventValue: 0

@@ -36,11 +36,11 @@ MonoBehaviour:
     message: "\u0E08\u0E33\u0E44\u0E14\u0E49\u0E2A\u0E34 \u0E40\u0E18\u0E2D\u0E04\u0E19\u0E17\u0E35\u0E48\u0E40\u0E2D\u0E32\u0E41\u0E15\u0E48\u0E15\u0E31\u0E49\u0E07\u0E43\u0E08\u0E40\u0E23\u0E35\u0E22\u0E19
       \u0E40\u0E2D\u0E32\u0E41\u0E15\u0E48\u0E40\u0E02\u0E49\u0E32\u0E2B\u0E49\u0E2D\u0E07\u0E2A\u0E21\u0E38\u0E14\u0E17\u0E38\u0E01\u0E40\u0E22\u0E47\u0E19"
     choices:
-    - choice: It's not like that But so be it.
+    - choice: It's not like that, but so be it.
       blueprint: {fileID: 11400000, guid: 9d697fdc186102643bf3deaa350b8678, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: Silvy, this is Silvy. Jane, you do not even recognize me ?
+    - choice: Silvy, this is Silvy. Jane, you do not even recognize me?
       blueprint: {fileID: 11400000, guid: b5020febf0e5dc141adab700fb966745, type: 2}
       eventKey: 
       eventValue: 0

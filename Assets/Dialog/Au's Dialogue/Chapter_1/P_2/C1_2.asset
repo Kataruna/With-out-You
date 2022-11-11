@@ -28,7 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: What about you, got a nickname ?
+    message: What about you, got a nickname?
     choices: []
     eventKey: 
     eventStatus: 0

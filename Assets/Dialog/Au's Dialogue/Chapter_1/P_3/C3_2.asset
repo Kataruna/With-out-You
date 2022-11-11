@@ -62,11 +62,11 @@ MonoBehaviour:
     mood: 0
     message: "\u0E09\u0E31\u0E19\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E18\u0E2D\u0E14\u0E39"
     choices:
-    - choice: So, where should I go to wait the next day ?
+    - choice: So, where should I go to wait the next day?
       blueprint: {fileID: 11400000, guid: 4d1059d299c72ad40b900a4597c5c49d, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: Yes, but where are we going ?
+    - choice: Yes, but where are we going?
       blueprint: {fileID: 11400000, guid: e4957e2308930dd4c909401e6a18981f, type: 2}
       eventKey: 
       eventValue: 0

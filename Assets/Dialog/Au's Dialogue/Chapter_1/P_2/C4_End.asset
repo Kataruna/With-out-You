@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: (What am I dreaming about ? What happened ?)
+    message: (What am I dreaming about? What happened?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
     name: 
     mood: 3
     message: "(I'm completely confused. But how is it possible that Jane\_don't recognize
-      me ?)"
+      me?)"
     choices: []
     eventKey: 
     eventStatus: 0

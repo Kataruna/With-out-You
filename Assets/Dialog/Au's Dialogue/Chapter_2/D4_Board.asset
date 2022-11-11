@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: This is a place to check. to be informed, Attend in the upcoming festivals.
+    message: This is a place to check. to be informed, attend in the upcoming festivals.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: Where did you go ? Normally around Christmas ?
+    message: Where did you go? Normally around Christmas?
     choices: []
     eventKey: 
     eventStatus: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: "\u0E08\u0E23\u0E34\u0E07\u0E2B\u0E23\u0E2D \u0E02\u0E2D\u0E1A\u0E43\u0E08\u0E21\u0E32\u0E01\u0E19\u0E30\u0E17\u0E35\u0E48\u0E40\u0E18\u0E2D\u0E22\u0E2D\u0E21\u0E44\u0E1B\u0E01\u0E31\u0E1A\u0E09\u0E31\u0E19"
+    message: Really? Thank you very much for accepting to accompany me.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -27,9 +27,8 @@ MonoBehaviour:
   - mode: 0
     character: 2
     name: 
-    mood: 0
-    message: "\u0E44\u0E21\u0E48\u0E27\u0E48\u0E32\u0E09\u0E31\u0E19\u0E08\u0E30\u0E22\u0E49\u0E2D\u0E19\u0E40\u0E27\u0E25\u0E32\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E01\u0E35\u0E48\u0E04\u0E23\u0E31\u0E49\u0E07\u0E15\u0E48\u0E2D\u0E01\u0E35\u0E48\u0E04\u0E23\u0E31\u0E49\u0E07
-      \u0E40\u0E18\u0E2D\u0E01\u0E47\u0E1B\u0E0F\u0E34\u0E40\u0E2A\u0E18\u0E09\u0E31\u0E19\u0E15\u0E25\u0E2D\u0E14"
+    mood: 3
+    message: You always reject me, no matter how many times I go back in time.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -40,7 +39,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(\u0E2D\u0E30\u0E44\u0E23\u0E01\u0E31\u0E19!!! \u0E40\u0E18\u0E2D\u0E01\u0E47\u0E40\u0E04\u0E22\u0E22\u0E49\u0E2D\u0E19\u0E40\u0E27\u0E25\u0E32\u0E14\u0E49\u0E27\u0E22\u0E01\u0E25\u0E49\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E19\u0E35\u0E48\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E31\u0E49\u0E19\u0E2B\u0E23\u0E2D)"
+    message: (What!!! Did you ever go back in time with this camera?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -51,7 +50,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(\u0E09\u0E31\u0E19\u0E08\u0E30\u0E43\u0E2B\u0E49\u0E40\u0E18\u0E2D\u0E23\u0E39\u0E49\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E27\u0E48\u0E32\u0E09\u0E31\u0E19\u0E01\u0E47\u0E43\u0E0A\u0E49\u0E21\u0E31\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E22\u0E49\u0E2D\u0E19\u0E40\u0E27\u0E25\u0E32\u0E01\u0E25\u0E31\u0E22\u0E21\u0E32\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E19)"
+    message: (I can't let you know that I'm also using it to turn back time.)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -64,12 +63,11 @@ MonoBehaviour:
     mood: 0
     message: 
     choices:
-    - choice: "\u0E40\u0E18\u0E2D\u0E2B\u0E21\u0E32\u0E22\u0E16\u0E36\u0E07\u0E2D\u0E30\u0E44\u0E23\u0E2B\u0E23\u0E2D
-        ?"
+    - choice: What do you mean?
       blueprint: {fileID: 11400000, guid: d489a0ed3a543a24b91f2129e5313e6c, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E22\u0E49\u0E2D\u0E19\u0E40\u0E27\u0E25\u0E32 ?"
+    - choice: Time reverted?
       blueprint: {fileID: 11400000, guid: 31839de481657604b92f1d2599262922, type: 2}
       eventKey: 
       eventValue: 0

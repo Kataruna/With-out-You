@@ -17,8 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E04\u0E37\u0E2D\u0E16\u0E49\u0E32\u0E40\u0E18\u0E2D\u0E44\u0E21\u0E48\u0E15\u0E34\u0E14\u0E18\u0E38\u0E23\u0E30\u0E2D\u0E30\u0E44\u0E23
-      \u0E2D\u0E35\u0E01 2 \u0E40\u0E14\u0E37\u0E2D\u0E19\u0E02\u0E49\u0E32\u0E07\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E23\u0E32\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22\u0E01\u0E31\u0E19\u0E19\u0E30"
+    message: Let's go together in the next two months if you don't have any business.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -29,7 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E2D\u0E22\u0E32\u0E01\u0E40\u0E14\u0E34\u0E19\u0E04\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27"
+    message: I don't want to be alone.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -42,13 +41,11 @@ MonoBehaviour:
     mood: 0
     message: 
     choices:
-    - choice: "\u0E21\u0E31\u0E19\u0E41\u0E19\u0E48\u0E19\u0E2D\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E41\u0E25\u0E49\u0E27
-        \u0E09\u0E31\u0E19\u0E2D\u0E22\u0E32\u0E01\u0E44\u0E1B\u0E01\u0E31\u0E1A\u0E40\u0E18\u0E2D"
+    - choice: Of course, I'll be with you.
       blueprint: {fileID: 11400000, guid: bc30ab5a212c93a4f8ce1ddd11976592, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E21\u0E31\u0E19\u0E2D\u0E35\u0E01\u0E15\u0E31\u0E49\u0E07 2 \u0E40\u0E14\u0E37\u0E2D\u0E19
-        \u0E44\u0E27\u0E49\u0E44\u0E01\u0E25\u0E49 \u0E46 \u0E04\u0E48\u0E2D\u0E22\u0E21\u0E32\u0E0A\u0E27\u0E19\u0E09\u0E31\u0E19\u0E01\u0E47\u0E44\u0E14\u0E49"
+    - choice: It'll be another two months before you can invite me.
       blueprint: {fileID: 11400000, guid: d5ede83034086f64b84fa9629d753efe, type: 2}
       eventKey: 
       eventValue: 0

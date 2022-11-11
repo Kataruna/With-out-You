@@ -17,8 +17,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: "\u0E01\u0E47\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13\u0E40\u0E01\u0E37\u0E2D\u0E1A
-      2 \u0E2D\u0E32\u0E17\u0E34\u0E15\u0E22\u0E4C\u0E44\u0E14\u0E49\u0E41\u0E25\u0E49\u0E27"
+    message: It's been almost two weeks.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -29,8 +28,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E40\u0E18\u0E2D\u0E19\u0E35\u0E48\u0E0A\u0E2D\u0E1A\u0E16\u0E32\u0E21\u0E2D\u0E30\u0E44\u0E23\u0E41\u0E1B\u0E25\u0E01
-      \u0E46"
+    message: You like to ask strange questions.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -41,8 +39,7 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 3
-    message: "\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E23\u0E36\u0E40\u0E1B\u0E25\u0E48\u0E32
-      ?"
+    message: Are you alright?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -55,12 +52,11 @@ MonoBehaviour:
     mood: 0
     message: 
     choices:
-    - choice: "\u0E09\u0E31\u0E19\u0E40\u0E23\u0E35\u0E22\u0E19\u0E08\u0E19\u0E25\u0E37\u0E21\u0E27\u0E31\u0E19\u0E40\u0E27\u0E25\u0E32\u0E19\u0E48\u0E30
-        \u0E44\u0E21\u0E48\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E2B\u0E23\u0E2D\u0E01"
+    - choice: I studied till I forgot about the time.
       blueprint: {fileID: 11400000, guid: 7b5c505f8e6b5494292d56c9ff19e169, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: "\u0E09\u0E31\u0E19\u0E41\u0E04\u0E48\u0E25\u0E37\u0E21 \u0E0A\u0E48\u0E27\u0E07\u0E19\u0E35\u0E49\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E08\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E44\u0E21\u0E48\u0E04\u0E48\u0E2D\u0E22\u0E44\u0E14\u0E49"
+    - choice: I just forgot. Lately I feel like I can't remember anything.
       blueprint: {fileID: 11400000, guid: 06ee695fdab151247b688d2bc2de250c, type: 2}
       eventKey: 
       eventValue: 0

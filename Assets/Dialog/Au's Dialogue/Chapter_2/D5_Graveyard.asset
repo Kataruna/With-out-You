@@ -17,7 +17,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 1
-    message: (What! Am I back in the present ?)
+    message: (What! Am I back in the present?)
     choices: []
     eventKey: 
     eventStatus: 0

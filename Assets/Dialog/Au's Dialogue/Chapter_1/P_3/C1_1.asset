@@ -18,7 +18,7 @@ MonoBehaviour:
     name: 
     mood: 3
     message: Well, I'm not sure I understand shading. Could you please give me some
-      advice ?
+      advice?
     choices: []
     eventKey: 
     eventStatus: 0
@@ -34,11 +34,11 @@ MonoBehaviour:
       \u0E27\u0E48\u0E32\u0E09\u0E31\u0E19\u0E04\u0E27\u0E23\u0E17\u0E33\u0E22\u0E31\u0E07\u0E44\u0E07
       ?"
     choices:
-    - choice: It's not that difficult. Why are you still unable ?
+    - choice: It's not that difficult. Why are you still unable?
       blueprint: {fileID: 11400000, guid: e523c55f2be2c7b4ea0ba11c017560fe, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: That concludes the basic content. !
+    - choice: That concludes the basic content!!!
       blueprint: {fileID: 11400000, guid: 4e652f0677c451b4fa83d2ab6d36d4bf, type: 2}
       eventKey: 
       eventValue: 0
