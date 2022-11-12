@@ -79,7 +79,7 @@ public class Traveler : MonoBehaviour
         Debug.Log($"Input is enabled on {gameObject.name}");
         _input.Player.Interact.performed += _ => Travel();
         
-        if(!forceInteract) icon.sprite = interfaceElement.OnHover;
+        UpdateIcon(true);
     }
 
     public void DisableInput()
@@ -88,7 +88,7 @@ public class Traveler : MonoBehaviour
         Debug.Log($"Input is disabled on {gameObject.name}");
         _input.Disable();
         
-        if(!forceInteract) icon.sprite = interfaceElement.Normal;
+        UpdateIcon(false);
     }
 
     public void SetRequireEvent(string eventName)
@@ -99,7 +99,23 @@ public class Traveler : MonoBehaviour
     [ContextMenu("Update Icon")]
     public void UpdateIcon()
     {
+        if (icon == null) return;
+        
         if (forceInteract) icon.sprite = interfaceElement.ForceInteract;
         else icon.sprite = interfaceElement.Normal;
     }
+    
+    public void UpdateIcon(bool isOnHover)
+    {
+        if (icon == null) return;
+        
+        if (forceInteract) icon.sprite = interfaceElement.ForceInteract;
+        else
+        {
+            if (isOnHover) icon.sprite = interfaceElement.OnHover;
+            else icon.sprite = interfaceElement.Normal;
+        }
+    }
+    
+    
 }
