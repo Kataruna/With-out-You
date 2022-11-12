@@ -28,6 +28,62 @@ MonoBehaviour:
   rangeEnd:
     m_OverrideState: 0
     m_Value: 30
+--- !u!114 &-6843762747668752207
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 1
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 0.9962259, y: 1, z: 0.89229864, w: -0.16085789}
+  midtones:
+    m_OverrideState: 0
+    m_Value: {x: 0.9248806, y: 0.9667409, z: 1, w: -0.2144772}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {x: 0.9768057, y: 1, z: 0.8884388, w: 0}
+  shadowsStart:
+    m_OverrideState: 1
+    m_Value: 0
+  shadowsEnd:
+    m_OverrideState: 1
+    m_Value: 0.3
+  highlightsStart:
+    m_OverrideState: 1
+    m_Value: 0.55
+  highlightsEnd:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &-113340357067552859
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.9962753, z: 0.9394363, w: 0}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 0.9776003, y: 0.965942, z: 1, w: -0.05361929}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 0.98748004, y: 1, z: 0.99445665, w: 0.05361931}
 --- !u!114 &-32820517437979890
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -86,6 +142,8 @@ MonoBehaviour:
   - {fileID: -32820517437979890}
   - {fileID: 3633226065279466220}
   - {fileID: -9175461973208781565}
+  - {fileID: -113340357067552859}
+  - {fileID: -6843762747668752207}
 --- !u!114 &1881579288749618558
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -101,7 +159,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
 --- !u!114 &3633226065279466220
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -117,7 +175,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   blueShadows:
     m_OverrideState: 1
     m_Value: 0
