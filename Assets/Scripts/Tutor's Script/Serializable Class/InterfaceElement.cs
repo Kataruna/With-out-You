@@ -9,6 +9,9 @@ public class InterfaceElement : ScriptableObject
     public Sprite InteractHover;
     public Sprite ForceInteract;
     public Sprite ForceInteractHover;
-    
-    public Sprite
+
+    public Sprite SwitchScene;
+    public Sprite SwitchSceneHover;
+    public Sprite ForceSwitchScene;
+    public Sprite ForceSwitchSceneHover;
 }
