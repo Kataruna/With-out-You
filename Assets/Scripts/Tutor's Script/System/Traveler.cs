@@ -67,10 +67,10 @@ public class Traveler : MonoBehaviour
     {
         _input = new Controller();
     }
-
-    private void Start()
+    
+    private void OnValidate()
     {
-        if (forceInteract) icon.sprite = interfaceElement.ForceInteract;
+        UpdateIcon();
     }
 
     public void EnableInput()
