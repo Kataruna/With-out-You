@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef822834f6ba49048a39a46ab303b983, type: 3}
+  m_Name: InteractIcon
+  m_EditorClassIdentifier: 
+  Normal: {fileID: 21300000, guid: 02a815648298c2148bacc8895e7be8a6, type: 3}
+  OnHover: {fileID: 21300000, guid: b4b5811ca6a98d840aeac32ecb15852f, type: 3}
+  ForceInteract: {fileID: 21300000, guid: 5ea42bec6b88cd54e8fde0b685a8f650, type: 3}

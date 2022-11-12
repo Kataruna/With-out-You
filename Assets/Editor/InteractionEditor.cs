@@ -18,6 +18,9 @@ public class InteractionEditor : Editor
     SerializedProperty worldOrder;
 
     SerializedProperty OnInteraction;
+
+    SerializedProperty interfaceElement;
+    SerializedProperty icon;
     
     private void OnEnable()
     {
@@ -32,6 +35,8 @@ public class InteractionEditor : Editor
         worldOrder = serializedObject.FindProperty("worldOrder");
         
         OnInteraction = serializedObject.FindProperty("OnInteraction");
+        interfaceElement = serializedObject.FindProperty("interfaceElement");
+        icon = serializedObject.FindProperty("icon");
     }
 
     public override void OnInspectorGUI()
@@ -55,14 +60,26 @@ public class InteractionEditor : Editor
                 interaction.SetEventValue(EditorGUILayout.Toggle(interaction.EventRecord.status));
                 
                 EditorGUILayout.EndHorizontal();
-                break;
+                
+                goto default;
+
             case Interaction.Type.Dialogue:
                 EditorGUILayout.PropertyField(dialogue);
+                
+                goto default;
+            
+            case Interaction.Type.Maintenance:
+                EditorGUILayout.PropertyField(interfaceElement);
+                EditorGUILayout.PropertyField(icon);
+                break;
+            
+            default:
+                EditorGUILayout.PropertyField(forceInteract);
+                EditorGUILayout.PropertyField(affectTimeline);
                 break;
         }
 
-        EditorGUILayout.PropertyField(forceInteract);
-        EditorGUILayout.PropertyField(affectTimeline);
+        
         
         if (interaction.AffectTimeline)
         {

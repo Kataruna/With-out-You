@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Interaction : MonoBehaviour, IInteractable
 {
@@ -28,13 +29,19 @@ public class Interaction : MonoBehaviour, IInteractable
     [SerializeField] private int worldOrder;
     
     [SerializeField] private UnityEvent OnInteraction;
+    
+    //Maintenance
+
+    [SerializeField] private InterfaceElement interfaceElement;
+    [FormerlySerializedAs("pinIcon"), SerializeField] private SpriteRenderer icon;
 
     private Controller _input;
 
     public enum Type
     {
         Event,
-        Dialogue
+        Dialogue,
+        Maintenance
     }
     
     private void Awake()
@@ -42,11 +49,18 @@ public class Interaction : MonoBehaviour, IInteractable
         _input = new Controller();
     }
 
+    private void Start()
+    {
+        if (forceInteract) icon.sprite = interfaceElement.ForceInteract;
+    }
+
     public void EnableInput()
     {
         _input.Enable();
         Debug.Log($"Input is enabled on {gameObject.name}");
         _input.Player.Interact.performed += _ => UpdateEvent();
+
+        if(!forceInteract) icon.sprite = interfaceElement.OnHover;
     }
 
     public void DisableInput()
@@ -54,6 +68,8 @@ public class Interaction : MonoBehaviour, IInteractable
         _input.Player.Interact.performed -= _ => UpdateEvent();
         Debug.Log($"Input is disabled on {gameObject.name}");
         _input.Disable();
+        
+        if(!forceInteract) icon.sprite = interfaceElement.Normal;
     }
 
     public void UpdateEvent()
@@ -87,5 +103,12 @@ public class Interaction : MonoBehaviour, IInteractable
     public void SetEventValue(bool status)
     {
         eventKey.status = status;
+    }
+    
+    [ContextMenu("Update Icon")]
+    public void UpdateIcon()
+    {
+        if (forceInteract) icon.sprite = interfaceElement.ForceInteract;
+        else icon.sprite = interfaceElement.Normal;
     }
 }

@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 7088146147009561319}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7731651781994511002
 MeshFilter:
@@ -111,10 +111,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c210b425bf8f174584cd6860557d5bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mode: 0
   nextScene: 1
   sceneOrder: 0
+  forceInteract: 0
+  isRequireEvent: 0
   requireEvent: 
-  icon: {fileID: 9129529649066062014}
+  interfaceElement: {fileID: 11400000, guid: adbe8af057ecb434793f1702ea684832, type: 2}
+  icon: {fileID: 5945080762290736858}
 --- !u!1 &9129529649066062014
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +130,7 @@ GameObject:
   - component: {fileID: 7088146147009561319}
   - component: {fileID: 5945080762290736858}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,9 +144,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9129529649066062014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.633, y: -0.00000023842, z: 0}
-  m_LocalScale: {x: 0.063082, y: 0.063082, z: 0.063082}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -1.159, y: -0.00000023842, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7731651781994510998}
   m_RootOrder: -1
