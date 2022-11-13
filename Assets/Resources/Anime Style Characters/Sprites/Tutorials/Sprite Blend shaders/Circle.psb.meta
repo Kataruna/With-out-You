@@ -91,6 +91,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: layer 1
@@ -112,7 +113,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -149, y: -174}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 153, y: 178}
   characterData:
     bones: []
     parts: []

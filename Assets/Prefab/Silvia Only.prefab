@@ -136,6 +136,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   animator: {fileID: 0}
   movementSpeed: 10
+  sprintSpeedMultiply: 2
   moveAccordingToCamera: 1
 --- !u!114 &4058790622923425473
 MonoBehaviour:
@@ -2143,7 +2144,7 @@ PrefabInstance:
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: assetHash
-      value: 30378
+      value: 32370
       objectReference: {fileID: 0}
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
