@@ -10,30 +10,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
-  m_Name: D3_Board_1
+  m_Name: D2_Flower1
   m_EditorClassIdentifier: 
   dialogue:
   - mode: 0
     character: 0
     name: 
-    mood: 0
-    message: Is Christmas arriving once again? It truly meant a lot to me that I
-      was with you last year.
+    mood: 4
+    message: Our flowerbeds were planted together It has now grown into a fabulous
+      flower. She must be very happy.
     choices: []
     eventKey: 
     eventStatus: 0
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 0
     name: 
-    mood: 4
-    message: Today I brought flowers that we both planted together. I hope you like
-      it.
+    mood: 0
+    message: I want you to take a look for yourself.
     choices: []
     eventKey: 
     eventStatus: 0
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 4
+    character: 0
+    name: 
+    mood: 0
+    message: I want you to take a look for yourself.
+    choices: []
+    eventKey: Test
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

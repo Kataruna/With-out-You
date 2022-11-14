@@ -27,20 +27,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 4
-    character: 0
-    name: 
-    mood: 1
-    message: What happened here Who's doing this crazy thing?
-    choices: []
-    eventKey: BackInTime
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
   - mode: 6
     character: 0
     name: 
@@ -73,7 +59,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 1
-    message: What happened here Who's doing this crazy thing?
+    message: What happened here. Who's doing this crazy thing?
     choices: []
     eventKey: 
     eventStatus: 0

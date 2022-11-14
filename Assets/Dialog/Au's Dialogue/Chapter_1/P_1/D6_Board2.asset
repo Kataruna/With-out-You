@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
-  m_Name: D6_Board_2
+  m_Name: D6_Board2
   m_EditorClassIdentifier: 
   dialogue:
   - mode: 0
