@@ -29,9 +29,9 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 1
-    message: The economy in that major city is poor. The cost of life is expensive,
+    message: 'The economy in that major city is poor. The cost of life is expensive,
       there are often vehicle accidents, flash floods, and pretending is common among
-      the people. I hate that place.
+      the people. I hate that place. '
     choices: []
     eventKey: 
     eventStatus: 0
@@ -86,10 +86,8 @@ MonoBehaviour:
   - mode: 4
     character: 0
     name: 
-    mood: 2
-    message: "\u0E09\u0E31\u0E19\u0E04\u0E34\u0E14\u0E16\u0E36\u0E07\u0E17\u0E35\u0E48\u0E41\u0E2B\u0E48\u0E07\u0E19\u0E35\u0E49
-      \u0E15\u0E2D\u0E19\u0E21\u0E35\u0E40\u0E18\u0E2D\u0E2D\u0E22\u0E39\u0E48\u0E08\u0E23\u0E34\u0E07
-      \u0E46"
+    mood: 0
+    message: I really miss being in this place with you.
     choices: []
     eventKey: D1
     eventStatus: 1
