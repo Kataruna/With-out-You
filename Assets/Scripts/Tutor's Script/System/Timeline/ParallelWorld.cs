@@ -9,9 +9,12 @@ public class ParallelWorld : MonoBehaviour
     private Dictionary<string, WorldLine> worldLineName = new Dictionary<string, WorldLine>();
 
     private TARDIS _tardis;
+    public static ParallelWorld Instance;
 
     private void Awake()
     {
+        Instance = this;
+        
         _tardis = TARDIS.Instance;
         
         foreach (var world in worldLines)

@@ -34,8 +34,11 @@ using UnityEngine.InputSystem;
         if(_isControlable) _movementValue = value.Get<Vector2>();
         else _movementValue = Vector2.zero;
 
-        if(_movementValue.x == 0f) return;
+        if(_movementValue.x != 0f || _movementValue.y != 0f) animator.SetBool("isMoving", true);
+        else animator.SetBool("isMoving", false);
         
+        if(_movementValue.x == 0f) return;
+
         if(_movementValue.x < 0) animator.SetBool("Left", true);
         else animator.SetBool("Left", false);
     }

@@ -148,6 +148,14 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                                                             activeDialogue.dialogue[_line].eventStatus);
                     DialogueInteraction();
                     break;
+                case DialogueProperties.Mode.TimelineChange:
+                    TARDIS.Instance.activeTimeline = activeDialogue.dialogue[_line].timeline;
+                    TARDIS.Instance.activeWorld = activeDialogue.dialogue[_line].world;
+                    
+                    if(activeDialogue.dialogue[_line].doChangeOnThisState) ParallelWorld.Instance.TimelineJump();
+                    
+                    DialogueInteraction();
+                    break;
             }
         }
         else

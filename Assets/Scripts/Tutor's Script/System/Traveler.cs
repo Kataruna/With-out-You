@@ -32,21 +32,34 @@ public class Traveler : MonoBehaviour
     
     [SerializeField] private bool isRequireEvent;
     [SerializeField] private string requireEvent;
+
+    [SerializeField] private bool doChangeTime;
+    [SerializeField] private WorldProperties.Timeline destinationTimeline;
+    [SerializeField] private WorldProperties.World destinationWorld;
+    
     
     [SerializeField] private InterfaceElement interfaceElement;
     [SerializeField] private SpriteRenderer icon;
-    
-   
+
     private bool _showIcon = false;
     
     private Controller _input;
+
+    private TARDIS _tardis;
     
     public void Travel()
     {
         if (requireEvent == String.Empty || EventHorizon.Instance.EventsHorizon[requireEvent])
         {
             DisableInput();
-            LoadingScreenController.Instance.LoadNextScene($"{nextScene}{sceneOrder}");
+            LoadingScreenController.Instance.LoadNextScene($"{nextScene}");
+            _tardis.orderOfAppearance = sceneOrder;
+
+            if (doChangeTime)
+            {
+                _tardis.activeTimeline = destinationTimeline;
+                _tardis.activeWorld = destinationWorld;
+            }
         }
     }
 
@@ -66,6 +79,8 @@ public class Traveler : MonoBehaviour
     private void Awake()
     {
         _input = new Controller();
+        
+        _tardis = TARDIS.Instance;
     }
     
     private void OnValidate()

@@ -14,6 +14,9 @@ public class DialogueProperties
     public string eventKey;
     public bool eventStatus;
     public UnityEvent events;
+    public WorldProperties.Timeline timeline;
+    public WorldProperties.World world;
+    public bool doChangeOnThisState;
     
     public enum Character
     {
@@ -41,6 +44,7 @@ public class DialogueProperties
         SwitchMood,
         UpdateEvent,
         Event,
+        TimelineChange,
     }
 }
 

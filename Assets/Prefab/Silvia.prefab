@@ -1018,7 +1018,7 @@ PrefabInstance:
     - target: {fileID: 5269750756127122248, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: m_Name
-      value: character 2
+      value: Silvia Sprite
       objectReference: {fileID: 0}
     - target: {fileID: 5425252691676062390, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
@@ -1068,12 +1068,12 @@ PrefabInstance:
     - target: {fileID: 6358389224868732165, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 4.575015
+      value: -2.5149856
       objectReference: {fileID: 0}
     - target: {fileID: 6358389224868732165, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 4.014986
+      value: 4.0150175
       objectReference: {fileID: 0}
     - target: {fileID: 6358389224868732165, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
@@ -1365,12 +1365,12 @@ PrefabInstance:
     - target: {fileID: 8283364544112809594, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 3.7199996
+      value: -3.3699987
       objectReference: {fileID: 0}
     - target: {fileID: 8283364544112809594, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 1.359999
+      value: 1.3599997
       objectReference: {fileID: 0}
     - target: {fileID: 8283364544112809594, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
@@ -2496,7 +2496,7 @@ PrefabInstance:
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: assetHash
-      value: 31920
+      value: 32308
       objectReference: {fileID: 0}
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
@@ -2664,7 +2664,7 @@ Animator:
   m_GameObject: {fileID: 5197308074193867101}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 439f4af1f5ac75641afef9ee8ae9dc78, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8770fd27c68d93f4688f59296b9f768b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

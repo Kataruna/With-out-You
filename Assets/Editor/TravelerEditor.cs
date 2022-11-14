@@ -15,6 +15,10 @@ public class TravelerEditor : Editor
     private SerializedProperty isRequireEvent;
     private SerializedProperty requireEvent;
 
+    private SerializedProperty doChangeTime;
+    private SerializedProperty destinationTimeline;
+    private SerializedProperty destinationWorld;
+
     private SerializedProperty interfaceElement;
     private SerializedProperty icon;
 
@@ -28,6 +32,10 @@ public class TravelerEditor : Editor
         
         isRequireEvent = serializedObject.FindProperty("isRequireEvent");
         requireEvent = serializedObject.FindProperty("requireEvent");
+        
+        doChangeTime = serializedObject.FindProperty("doChangeTime");
+        destinationTimeline = serializedObject.FindProperty("destinationTimeline");
+        destinationWorld = serializedObject.FindProperty("destinationWorld");
         
         icon = serializedObject.FindProperty("icon");
         interfaceElement = serializedObject.FindProperty("interfaceElement");
@@ -45,6 +53,14 @@ public class TravelerEditor : Editor
             case Traveler.Mode.Edit:
                 EditorGUILayout.PropertyField(nextScene);
                 EditorGUILayout.PropertyField(sceneOrder);
+                EditorGUILayout.PropertyField(doChangeTime);
+                if (doChangeTime.boolValue)
+                {
+                    EditorGUILayout.PropertyField(destinationTimeline);
+                    EditorGUILayout.PropertyField(destinationWorld);
+                    EditorGUILayout.Space(10);
+                }
+                
                 EditorGUILayout.PropertyField(forceInteract);
                 
                 EditorGUILayout.BeginHorizontal();
