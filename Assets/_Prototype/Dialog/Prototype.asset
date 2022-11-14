@@ -12,4 +12,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
   m_Name: Prototype
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - mode: 0
+    character: 0
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 1
+    character: 0
+    name: John
+    mood: 0
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 2
+    character: 0
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 3
+    character: 0
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 4
+    character: 0
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 5
+    character: 0
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 6
+    character: 0
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
