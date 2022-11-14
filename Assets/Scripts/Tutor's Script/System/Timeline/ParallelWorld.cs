@@ -29,7 +29,7 @@ public class ParallelWorld : MonoBehaviour
 
     private void Start()
     {
-        TimelineJump();
+         TimelineJump();
     }
 
     [ContextMenu("Timeline Jump")]

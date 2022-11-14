@@ -51,15 +51,23 @@ public class Traveler : MonoBehaviour
     {
         if (requireEvent == String.Empty || EventHorizon.Instance.EventsHorizon[requireEvent])
         {
-            DisableInput();
-            LoadingScreenController.Instance.LoadNextScene($"{nextScene}");
-            _tardis.orderOfAppearance = sceneOrder;
+            InstantTravel();
+        }
+    }
 
-            if (doChangeTime)
-            {
-                _tardis.activeTimeline = destinationTimeline;
-                _tardis.activeWorld = destinationWorld;
-            }
+    /// <summary>
+    /// Travel without condition
+    /// </summary>
+    private void InstantTravel()
+    {
+        DisableInput();
+        LoadingScreenController.Instance.LoadNextScene($"{nextScene}");
+        _tardis.orderOfAppearance = sceneOrder;
+
+        if (doChangeTime)
+        {
+            _tardis.activeTimeline = destinationTimeline;
+            _tardis.activeWorld = destinationWorld;
         }
     }
 

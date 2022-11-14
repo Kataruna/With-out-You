@@ -456,7 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeTimeline: 1
   activeWorld: 0
-  orderOfAppearance: 0
+  orderOfAppearance: 1
 --- !u!4 &1368090264
 Transform:
   m_ObjectHideFlags: 0
