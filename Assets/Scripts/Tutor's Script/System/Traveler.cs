@@ -46,7 +46,12 @@ public class Traveler : MonoBehaviour
     private Controller _input;
 
     private TARDIS _tardis;
-    
+
+    private void Start()
+    {
+        if(isRequireEvent) Status(false);
+    }
+
     public void Travel()
     {
         if (requireEvent == String.Empty || EventHorizon.Instance.EventsHorizon[requireEvent])
@@ -74,7 +79,6 @@ public class Traveler : MonoBehaviour
     private void FixedUpdate()
     {
         if(requireEvent == String.Empty || EventHorizon.Instance.EventsHorizon[requireEvent]) Status(true);
-        else Status(false);
     }
 
     public void Status(bool status)
