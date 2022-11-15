@@ -275,7 +275,7 @@ MonoBehaviour:
   - {fileID: 2141311800}
   - {fileID: 427640787}
   - {fileID: 815873791}
-  timeBetweenAnimations: 0
+  timeBetweenAnimations: 0.1
 --- !u!1 &28131885
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &349259759
 MonoBehaviour:
   m_ObjectHideFlags: 0
