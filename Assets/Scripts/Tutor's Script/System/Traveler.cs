@@ -74,6 +74,7 @@ public class Traveler : MonoBehaviour
     private void FixedUpdate()
     {
         if(requireEvent == String.Empty || EventHorizon.Instance.EventsHorizon[requireEvent]) Status(true);
+        else Status(false);
     }
 
     public void Status(bool status)
