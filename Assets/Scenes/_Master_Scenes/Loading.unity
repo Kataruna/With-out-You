@@ -709,7 +709,7 @@ PrefabInstance:
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.size
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
@@ -770,6 +770,21 @@ PrefabInstance:
         type: 3}
       propertyPath: eventList.Array.data[8].eventName
       value: Ball_4 AfterTalkWithJane
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
+        type: 3}
+      propertyPath: eventList.Array.data[9].eventName
+      value: Ball_5 Before back to present
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
+        type: 3}
+      propertyPath: eventList.Array.data[10].eventName
+      value: Ball_4 Talk with Tombstone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
+        type: 3}
+      propertyPath: eventList.Array.data[11].eventName
+      value: Ball_5 FindToWayToTimeReverse
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151976, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}

@@ -119,7 +119,15 @@ MonoBehaviour:
     mood: 0
     message: I was informed by someone from the class that I needed to come here
       to see you.
-    choices: []
+    choices:
+    - choice: Jane, Is that you?
+      blueprint: {fileID: 11400000, guid: cba7fc8886577d9418990ad299c6dc7c, type: 2}
+      eventKey: 
+      eventValue: 0
+    - choice: Jan... January It's a pleasure to meet you. I'm Fine.
+      blueprint: {fileID: 11400000, guid: 2674868e82fe47240acc0e57ba0648c6, type: 2}
+      eventKey: 
+      eventValue: 0
     eventKey: Ball_3 MetJane
     eventStatus: 1
     events:

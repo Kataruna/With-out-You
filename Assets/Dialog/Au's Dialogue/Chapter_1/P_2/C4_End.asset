@@ -85,17 +85,3 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 4
-    character: 3
-    name: 
-    mood: 0
-    message: 
-    choices: []
-    eventKey: Ball_4 AfterTalkWithJane
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
