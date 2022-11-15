@@ -92,7 +92,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: -4427534551421501743}
   - {fileID: 3476778046988487838}
-  m_RendererFeatureMap: d1bec097c83c8ec29e0ca08536ff3f30
+  - {fileID: 2721618581422504456}
+  m_RendererFeatureMap: d1bec097c83c8ec29e0ca08536ff3f30087aca17ae21c525
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -150,8 +151,6 @@ MonoBehaviour:
   settings: {fileID: 0}
   _effectMaterial: {fileID: 0}
   _blitShader: {fileID: 0}
-  _lutDepth: {fileID: 0}
-  _lutHeight: {fileID: 0}
 --- !u!114 &2721618581422504456
 MonoBehaviour:
   m_ObjectHideFlags: 0
