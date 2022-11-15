@@ -15,7 +15,7 @@ MonoBehaviour:
   edgeColor: {r: 0, g: 0, b: 0, a: 1}
   thickness: 1
   resolutionInvariant: 0
-  useDepth: 1
+  useDepth: 0
   useNormals: 0
   useColor: 1
   minDepthThreshold: 0
