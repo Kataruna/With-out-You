@@ -18,6 +18,9 @@ public class CameraRelocate : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             vcamOperator.Priority = 11;
+            other.TryGetComponent(out CameraProtocol player);
+            
+            player.Focus(false, vcamOperator);
         }
     }
 
@@ -26,6 +29,10 @@ public class CameraRelocate : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             vcamOperator.Priority = 0;
+            
+            other.TryGetComponent(out CameraProtocol player);
+            
+            player.Focus(true, vcamOperator);
         }
     }
 }

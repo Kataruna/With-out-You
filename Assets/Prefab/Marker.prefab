@@ -121,6 +121,8 @@ MonoBehaviour:
   timeline: 0
   worldLine: 0
   worldOrder: 0
+  isRequireEvent: 0
+  requireEvent: 
   OnInteraction:
     m_PersistentCalls:
       m_Calls: []
