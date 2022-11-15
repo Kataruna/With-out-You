@@ -16,6 +16,20 @@ MonoBehaviour:
   - mode: 0
     character: 2
     name: 
+    mood: 2
+    message: I recently lost my father. Before coming here.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 0
+    character: 2
+    name: 
     mood: 0
     message: "Well I\_have to do extra\_work as well. I am not a kind person. As
       a result, I couldn't keep up with the others."
@@ -25,17 +39,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-  - mode: 0
-    character: 2
-    name: 
-    mood: 2
-    message: I recently lost my father. Before coming here.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 2
     name: 
@@ -47,6 +53,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -58,6 +67,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 2
     character: 0
     name: 
@@ -77,3 +89,6 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
