@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 72451545850740685}
   - component: {fileID: 72451546883921332}
   - component: {fileID: 72451546883921335}
+  - component: {fileID: 5064704435042409106}
   m_Layer: 0
   m_Name: Silvia
   m_TagString: Untagged
@@ -196,6 +197,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeInteraction: {fileID: 0}
+--- !u!114 &5064704435042409106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72451545850740682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f531ac070bc39a340806dcf47991e51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 9
+  Target: {fileID: 72451545850740683}
+  Camera: {fileID: 4130608849437373215}
+  FadedAlpha: 0.33
+  RetainShadows: 1
+  TargetPositionOffset: {x: 0, y: 1, z: 0}
+  FadeSpeed: 2
+  ObjectsBlockingView: []
 --- !u!1 &4130608849437373202
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +276,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 3.21
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -2550,7 +2573,7 @@ PrefabInstance:
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: assetHash
-      value: 15596
+      value: 32184
       objectReference: {fileID: 0}
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}

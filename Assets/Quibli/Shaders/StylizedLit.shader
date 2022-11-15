@@ -41,6 +41,7 @@
         _CameraDistanceImpact("[DR_OUTLINE_ON]Camera Distance Impact", Range(0, 1)) = 0.5
 
         [MainTexture] _BaseMap("[FOLDOUT(Texture maps){8}]Albedo", 2D) = "white" {}
+        [MainColor] _BaseColor("Color", Color) = (1,1,1,1)
         [KeywordEnum(Multiply, Add)]_TextureBlendingMode("[]Blending Mode", Float) = 0
         _TextureImpact("[]Texture Impact", Range(0, 1)) = 1.0
 
@@ -87,6 +88,8 @@
         [HideInInspector][NoScaleOffset]unity_Lightmaps("unity_Lightmaps", 2DArray) = "" {}
         [HideInInspector][NoScaleOffset]unity_LightmapsInd("unity_LightmapsInd", 2DArray) = "" {}
         [HideInInspector][NoScaleOffset]unity_ShadowMasks("unity_ShadowMasks", 2DArray) = "" {}
+        
+        [HideInInspector] _Color("Base Color", Color) = (1, 1, 1, 1)
     }
 
     SubShader
@@ -129,6 +132,7 @@
             #pragma shader_feature_local _NORMALMAP
             // #pragma shader_feature_local_fragment _EMISSION
             #pragma shader_feature_local _RECEIVE_SHADOWS_OFF
+            #pragma shader_feature_local_fragment _SURFACE_TYPE_TRANSPARENT
 
             #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Version.hlsl"
 

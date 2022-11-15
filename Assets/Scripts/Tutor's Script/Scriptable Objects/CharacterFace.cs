@@ -14,6 +14,7 @@ public class CharacterFace : ScriptableObject
     [SerializeField] private Sprite angry;
     [SerializeField] private Sprite sad;
     [SerializeField] private Sprite curious;
+    [SerializeField] private Sprite happy;
     
     public string FullName => fullName;
     public string Nickname => nickname;
@@ -22,4 +23,5 @@ public class CharacterFace : ScriptableObject
     public Sprite Angry => angry;
     public Sprite Sad => sad;
     public Sprite Curious => curious;
+    public Sprite Happy => happy;
 }
