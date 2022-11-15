@@ -24,6 +24,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 2
     name: 
@@ -35,6 +38,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 2
     character: 1
     name: 
@@ -42,12 +48,12 @@ MonoBehaviour:
     message: "\u0E40\u0E18\u0E2D\u0E21\u0E35\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E48\u0E19\u0E44\u0E2B\u0E21
       ?"
     choices:
-    - choice: Oh, I've heard her name called in class.
+    - choice: Silvy, I am Silvy. Jane, you do not even recognize me?
       blueprint: {fileID: 11400000, guid: cd8826058a65e914db8e5ed84ac10613, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: My family call me Silvy.
-      blueprint: {fileID: 11400000, guid: e3e4f9a098242684f8dc0617ff12ca3b, type: 2}
+    - choice: Oh, I've heard her name called in class.
+      blueprint: {fileID: 11400000, guid: e0ec054de7d0d244fa9232cd6b1bb5aa, type: 2}
       eventKey: 
       eventValue: 0
     eventKey: 
@@ -55,3 +61,6 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

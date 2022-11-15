@@ -150,7 +150,7 @@ MonoBehaviour:
     message: I would love to capture some images of you if I could travel back into
       the past.
     choices: []
-    eventKey: BackInTime
+    eventKey: Jane Tombstone
     eventStatus: 1
     events:
       m_PersistentCalls:

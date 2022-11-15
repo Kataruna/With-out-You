@@ -24,6 +24,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 2
     name: 
@@ -35,6 +38,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 1
     name: 
@@ -46,6 +52,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 2
     character: 1
     name: 
@@ -53,7 +62,7 @@ MonoBehaviour:
     message: Bye, Silvy
     choices:
     - choice: Bye, Jane
-      blueprint: {fileID: 11400000, guid: 384c629c16cbff84bbd88df0d790b2e5, type: 2}
+      blueprint: {fileID: 11400000, guid: 680d50258c8314b42b11b550892d4720, type: 2}
       eventKey: 
       eventValue: 0
     eventKey: 
@@ -61,3 +70,6 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

@@ -17,8 +17,7 @@ MonoBehaviour:
     character: 0
     name: 
     mood: 0
-    message: It was a very difficult day today. I believe moving here was  a good
-      decision.
+    message: Today, it's a difficult day. I believe moving here was a good decision.
     choices: []
     eventKey: 
     eventStatus: 0

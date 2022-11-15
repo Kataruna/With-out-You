@@ -25,6 +25,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 2
     name: 
@@ -37,6 +40,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 2
     character: 1
     name: 
@@ -45,12 +51,12 @@ MonoBehaviour:
       Jane \u0E01\u0E47\u0E44\u0E14\u0E49\u0E2A\u0E48\u0E27\u0E19\u0E09\u0E31\u0E19\u0E08\u0E30\u0E40\u0E23\u0E35\u0E22\u0E01\u0E40\u0E18\u0E2D\u0E27\u0E48\u0E32
       Silvy \u0E15\u0E01\u0E25\u0E07\u0E44\u0E2B\u0E21 ?"
     choices:
-    - choice: Yes.
-      blueprint: {fileID: 11400000, guid: 48131861043500c409581f9d3b155c3c, type: 2}
-      eventKey: 
-      eventValue: 0
     - choice: It's not like that, but so be it.
       blueprint: {fileID: 11400000, guid: 9d697fdc186102643bf3deaa350b8678, type: 2}
+      eventKey: 
+      eventValue: 0
+    - choice: Yes.
+      blueprint: {fileID: 11400000, guid: 48131861043500c409581f9d3b155c3c, type: 2}
       eventKey: 
       eventValue: 0
     eventKey: 
@@ -58,3 +64,6 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

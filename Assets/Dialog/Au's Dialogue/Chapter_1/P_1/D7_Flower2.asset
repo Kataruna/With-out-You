@@ -55,3 +55,17 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+  - mode: 4
+    character: 0
+    name: 
+    mood: 2
+    message: Why did such a bad thing happen to me?
+    choices: []
+    eventKey: Ball_3 Flower gone
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

@@ -51,7 +51,7 @@ MonoBehaviour:
       it.
     choices: []
     eventKey: Ball_1 Board
-    eventStatus: 0
+    eventStatus: 1
     events:
       m_PersistentCalls:
         m_Calls: []

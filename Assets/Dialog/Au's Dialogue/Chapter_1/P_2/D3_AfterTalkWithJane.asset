@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
-  m_Name: C4_End
+  m_Name: D3_AfterTalkWithJane
   m_EditorClassIdentifier: 
   dialogue:
   - mode: 0
     character: 3
     name: 
     mood: 3
-    message: (What am I dreaming about? What happened?)
+    message: (What am I dreaming about ? What happened ?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
     name: 
     mood: 3
     message: "(I'm completely confused. But how is it possible that Jane\_don't recognize
-      me?)"
+      me ?)"
     choices: []
     eventKey: 
     eventStatus: 0
@@ -88,8 +88,9 @@ MonoBehaviour:
   - mode: 4
     character: 3
     name: 
-    mood: 0
-    message: 
+    mood: 2
+    message: "(I maybe\_miss you till the memory of the first time we met at this
+      location returns to me.)"
     choices: []
     eventKey: Ball_4 AfterTalkWithJane
     eventStatus: 1
