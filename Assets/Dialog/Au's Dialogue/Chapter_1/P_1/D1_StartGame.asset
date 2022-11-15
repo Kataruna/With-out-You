@@ -25,6 +25,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 0
     name: 
@@ -38,6 +41,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 0
     name: 
@@ -49,6 +55,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 0
     name: 
@@ -61,6 +70,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 0
     name: 
@@ -72,6 +84,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 0
     name: 
@@ -83,14 +98,20 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 4
     character: 0
     name: 
     mood: 0
     message: I really miss being in this place with you.
     choices: []
-    eventKey: D1
+    eventKey: Ball_1 D1
     eventStatus: 1
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
