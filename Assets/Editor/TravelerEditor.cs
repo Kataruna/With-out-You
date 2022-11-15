@@ -67,7 +67,7 @@ public class TravelerEditor : Editor
                 
                 EditorGUILayout.PropertyField(isRequireEvent);
                 if (isRequireEvent.boolValue)
-                    traveler.SetRequireEvent(EditorGUILayout.TextField(traveler.RequireEvent));
+                    EditorGUILayout.PropertyField(requireEvent, GUIContent.none);
                 
                 EditorGUILayout.EndHorizontal();
                 
