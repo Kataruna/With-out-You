@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 
     [Header("Object Assign")]
     [SerializeField] private Transform mainCamera;
-    [SerializeField] private Animator animator;
+    [SerializeField] private Animator characterAnimator;
+    [SerializeField] private Animator flipAnimator;
     
     [Header("Player Attribute")]
     [SerializeField] private float movementSpeed = 20f;
@@ -18,6 +19,8 @@ using UnityEngine.InputSystem;
 
     //Backdoor Variable
     private Vector2 _movementValue;
+    private static readonly int IsMoving = Animator.StringToHash("isMoving");
+    private static readonly int Left = Animator.StringToHash("Left");
 
     #endregion
 
@@ -34,13 +37,13 @@ using UnityEngine.InputSystem;
         if(_isControlable) _movementValue = value.Get<Vector2>();
         else _movementValue = Vector2.zero;
 
-        if(_movementValue.x != 0f || _movementValue.y != 0f) animator.SetBool("isMoving", true);
-        else animator.SetBool("isMoving", false);
+        if(_movementValue.x != 0f || _movementValue.y != 0f) characterAnimator.SetBool(IsMoving, true);
+        else characterAnimator.SetBool(IsMoving, false);
         
         if(_movementValue.x == 0f) return;
 
-        if(_movementValue.x < 0) animator.SetBool("Left", true);
-        else animator.SetBool("Left", false);
+        if(_movementValue.x < 0) flipAnimator.SetBool(Left, true);
+        else flipAnimator.SetBool(Left, false);
     }
 
     #endregion
