@@ -21,6 +21,9 @@ public class InteractionEditor : Editor
 
     SerializedProperty interfaceElement;
     SerializedProperty icon;
+
+    private SerializedProperty isRequireEvent;
+    private SerializedProperty requireEvent;
     
     private void OnEnable()
     {
@@ -37,6 +40,9 @@ public class InteractionEditor : Editor
         OnInteraction = serializedObject.FindProperty("OnInteraction");
         interfaceElement = serializedObject.FindProperty("interfaceElement");
         icon = serializedObject.FindProperty("icon");
+        
+        isRequireEvent = serializedObject.FindProperty("isRequireEvent");
+        requireEvent = serializedObject.FindProperty("requireEvent");
     }
 
     public override void OnInspectorGUI()
@@ -54,10 +60,10 @@ public class InteractionEditor : Editor
                 EditorGUILayout.BeginHorizontal();
                 
                 EditorGUILayout.LabelField("Event Settings",GUILayout.MaxWidth(100));
-                interaction.SetEventKey(EditorGUILayout.TextField(interaction.EventRecord.eventName));
+                EditorGUILayout.TextField(interaction.EventRecord.eventName);
                 
                 //EditorGUILayout.LabelField("Event Status", GUILayout.MaxWidth(100));
-                interaction.SetEventValue(EditorGUILayout.Toggle(interaction.EventRecord.status));
+                EditorGUILayout.Toggle(interaction.EventRecord.status);
                 
                 EditorGUILayout.EndHorizontal();
                 
@@ -75,17 +81,23 @@ public class InteractionEditor : Editor
             
             default:
                 EditorGUILayout.PropertyField(forceInteract);
-                EditorGUILayout.PropertyField(affectTimeline);
-                break;
-        }
 
-        
-        
-        if (interaction.AffectTimeline)
-        {
-            EditorGUILayout.PropertyField(timeline);
-            EditorGUILayout.PropertyField(worldLine);
-            EditorGUILayout.PropertyField(worldOrder);
+                EditorGUILayout.BeginHorizontal();
+                
+                EditorGUILayout.PropertyField(isRequireEvent);
+                if(isRequireEvent.boolValue)
+                    EditorGUILayout.PropertyField(requireEvent, GUIContent.none);
+                
+                EditorGUILayout.EndHorizontal();
+                
+                EditorGUILayout.PropertyField(affectTimeline);
+                if (affectTimeline.boolValue)
+                {
+                    EditorGUILayout.PropertyField(timeline);
+                    EditorGUILayout.PropertyField(worldLine);
+                    EditorGUILayout.PropertyField(worldOrder);
+                }
+                break;
         }
         
         EditorGUILayout.Space(10);

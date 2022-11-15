@@ -54,7 +54,7 @@ public class Traveler : MonoBehaviour
 
     public void Travel()
     {
-        if (requireEvent == String.Empty || EventHorizon.Instance.EventsHorizon[requireEvent])
+        if (!isRequireEvent || EventHorizon.Instance.EventsHorizon[requireEvent])
         {
             InstantTravel();
         }

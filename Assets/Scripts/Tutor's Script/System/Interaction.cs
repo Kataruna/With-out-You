@@ -11,8 +11,7 @@ public class Interaction : MonoBehaviour, IInteractable
     public EventRecord EventRecord => eventKey;
     public Dialogue DialogueBlueprint => dialogue;
     public bool ForceInteract => forceInteract;
-
-    public bool AffectTimeline => affectTimeline;
+    
     public WorldProperties.Timeline Timeline => timeline;
     public WorldProperties.World WorldLine => worldLine;
     public int WorldOrder => worldOrder;
@@ -28,6 +27,9 @@ public class Interaction : MonoBehaviour, IInteractable
     [SerializeField] private WorldProperties.World worldLine;
     [SerializeField] private int worldOrder;
     
+    [SerializeField] private bool isRequireEvent;
+    [SerializeField] private string requireEvent;
+    
     [SerializeField] private UnityEvent OnInteraction;
     
     //Maintenance
@@ -36,6 +38,8 @@ public class Interaction : MonoBehaviour, IInteractable
     [FormerlySerializedAs("pinIcon"), SerializeField] private SpriteRenderer icon;
 
     private Controller _input;
+
+    private bool _showIcon;
 
     public enum Type
     {
@@ -48,7 +52,12 @@ public class Interaction : MonoBehaviour, IInteractable
     {
         _input = new Controller();
     }
-    
+
+    private void Start()
+    {
+        if(isRequireEvent) Status(false);
+    }
+
     private void OnValidate()
     {
         UpdateIcon();
@@ -70,6 +79,19 @@ public class Interaction : MonoBehaviour, IInteractable
         _input.Disable();
         
         UpdateIcon(false);
+    }
+    
+    private void FixedUpdate()
+    {
+        if(!isRequireEvent || EventHorizon.Instance.EventsHorizon[requireEvent]) Status(true);
+    }
+
+    public void Status(bool status)
+    {
+        _showIcon = status;
+        
+        if(_showIcon) icon.gameObject.SetActive(true);
+        else icon.gameObject.SetActive(false);
     }
 
     public void UpdateEvent()
