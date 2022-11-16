@@ -69,3 +69,17 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+  - mode: 4
+    character: 3
+    name: 
+    mood: 3
+    message: 
+    choices: []
+    eventKey: Ball_4 Talk with Tombstone
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
