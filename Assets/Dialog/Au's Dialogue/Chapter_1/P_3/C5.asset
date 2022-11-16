@@ -55,17 +55,3 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 4
-    character: 3
-    name: 
-    mood: 4
-    message: 
-    choices: []
-    eventKey: Ball_5 Before back to present
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
