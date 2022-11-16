@@ -24,6 +24,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -35,6 +38,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 2
     name: 
@@ -46,6 +52,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -57,6 +66,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -68,6 +80,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -79,6 +94,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -90,6 +108,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 2
     name: 
@@ -102,6 +123,34 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 4
+    character: 2
+    name: 
+    mood: 0
+    message: "\u0E19\u0E35\u0E48 \u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E42\u0E01\u0E23\u0E18\u0E40\u0E18\u0E2D\u0E08\u0E23\u0E34\u0E07
+      \u0E46 \u0E09\u0E31\u0E19\u0E41\u0E04\u0E48\u0E25\u0E49\u0E2D\u0E40\u0E25\u0E48\u0E19
+      \u0E40\u0E18\u0E2D\u0E44\u0E21\u0E48\u0E42\u0E01\u0E23\u0E18\u0E09\u0E31\u0E19\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21
+      ?"
+    choices:
+    - choice: "Oh no, I'm just\_overthinking things."
+      blueprint: {fileID: 11400000, guid: e1abdf290b4db7442899a6c93c9a24a7, type: 2}
+      eventKey: 
+      eventValue: 0
+    - choice: I believe you're angry at me.
+      blueprint: {fileID: 11400000, guid: 89701e137547d7c44b9f3244df4c7523, type: 2}
+      eventKey: 
+      eventValue: 0
+    eventKey: Ball_5 First date
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 2
     character: 2
     name: 
@@ -124,3 +173,6 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

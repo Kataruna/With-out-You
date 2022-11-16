@@ -71,6 +71,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         PlayerController.Instance.SetControlState(false);
 
         _line = 0;
+
         StartCoroutine(TypeName());
         StartCoroutine(TypeLine());
     }
@@ -168,7 +169,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     {
         if (activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.Choice) return;
 
-        if (_line == activeDialogue.dialogue.Length - 1 && message.text == activeDialogue.dialogue[_line].message)
+        if (_line == activeDialogue.dialogue.Length - 1 && (message.text == activeDialogue.dialogue[_line].message || activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.UpdateEvent))
             ConversationEnd();
         else if (message.text == activeDialogue.dialogue[_line].message)
             NextLine();
