@@ -24,6 +24,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 2
     name: 
@@ -35,6 +38,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 2
     name: 
@@ -46,6 +52,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -57,6 +66,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -68,17 +80,20 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 2
     character: 3
     name: 
     mood: 0
     message: "(\u0E15\u0E48\u0E2D\u0E08\u0E32\u0E01\u0E19\u0E35\u0E49\u0E40\u0E23\u0E32\u0E08\u0E30\u0E44\u0E14\u0E49\u0E2D\u0E22\u0E39\u0E48\u0E14\u0E49\u0E27\u0E22\u0E01\u0E31\u0E19\u0E41\u0E25\u0E49\u0E27\u0E19\u0E30)"
     choices:
-    - choice: What should I do here ? Could you please give me some advice ?
+    - choice: What should I do here? Could you please give me some advice ?
       blueprint: {fileID: 11400000, guid: 22665687189a8404ca9a70786cb2f852, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: I've never been here before. Could you please guide me here ?
+    - choice: I've never been here before. Could you guide me?
       blueprint: {fileID: 11400000, guid: cbc5e2c4b86e4c84d9dc59b0083da642, type: 2}
       eventKey: 
       eventValue: 0
@@ -87,3 +102,6 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
