@@ -24,3 +24,20 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+  - mode: 4
+    character: 2
+    name: 
+    mood: 0
+    message: Come here this way!
+    choices: []
+    eventKey: Ball_5 First date
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

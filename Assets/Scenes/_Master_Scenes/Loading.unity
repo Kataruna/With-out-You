@@ -794,7 +794,7 @@ PrefabInstance:
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.data[13].eventName
-      value: Ball_6 Board
+      value: Ball_6 Playground
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
@@ -804,7 +804,7 @@ PrefabInstance:
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.data[15].eventName
-      value: Ball_8 Playground
+      value: Ball_8 Board
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}

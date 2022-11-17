@@ -55,20 +55,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 4
-    character: 2
-    name: 
-    mood: 0
-    message: 
-    choices: []
-    eventKey: Ball_6 Playground
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
   - mode: 2
     character: 2
     name: 

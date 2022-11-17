@@ -83,20 +83,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 4
-    character: 3
-    name: 
-    mood: 3
-    message: (But, it is nonsensical. Why does it allow me to go back in time?)
-    choices: []
-    eventKey: Ball_5 First date
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 

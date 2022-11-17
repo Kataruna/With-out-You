@@ -97,28 +97,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 4
-    character: 2
-    name: 
-    mood: 0
-    message: 
-    choices:
-    - choice: I never leave the house during the festival.
-      blueprint: {fileID: 11400000, guid: 2356beef7c336a241bc193973fe70bf0, type: 2}
-      eventKey: 
-      eventValue: 0
-    - choice: Every year I will be with my family.
-      blueprint: {fileID: 11400000, guid: ef1743d3f3694404cb01c43105fdab96, type: 2}
-      eventKey: 
-      eventValue: 0
-    eventKey: Ball_8 Board
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
   - mode: 2
     character: 2
     name: 
