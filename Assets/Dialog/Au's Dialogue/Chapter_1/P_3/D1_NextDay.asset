@@ -27,29 +27,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 4
-    character: 0
-    name: 
-    mood: 0
-    message: "\u0E09\u0E31\u0E19\u0E44\u0E14\u0E49\u0E22\u0E34\u0E19\u0E08\u0E32\u0E01\u0E04\u0E19\u0E43\u0E19\u0E04\u0E25\u0E32\u0E2A\u0E21\u0E32\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D
-      \u0E40\u0E01\u0E48\u0E07\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07 \u0E2D\u0E22\u0E32\u0E01\u0E08\u0E30\u0E43\u0E2B\u0E49\u0E40\u0E18\u0E2D\u0E0A\u0E48\u0E27\u0E22\u0E09\u0E31\u0E19"
-    choices:
-    - choice: Of couse let me take a look.
-      blueprint: {fileID: 11400000, guid: 91d5a22288777ee4ba8cb5d821869dd7, type: 2}
-      eventKey: 
-      eventValue: 0
-    - choice: What can I help?
-      blueprint: {fileID: 11400000, guid: ecfcd4b9aeb9466479f7a4439348dfbf, type: 2}
-      eventKey: 
-      eventValue: 0
-    eventKey: Ball_5 Before back to present
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
   - mode: 0
     character: 3
     name: 
@@ -96,7 +73,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: (I'm not sure what happened. Why ? Everything has changed since I shot
+    message: (I'm not sure what happened. Why? Everything has changed since I shot
       this photo at the graveyard.)
     choices: []
     eventKey: 
@@ -110,7 +87,7 @@ MonoBehaviour:
   - mode: 0
     character: 3
     name: 
-    mood: 0
+    mood: 3
     message: If that's the case, Jane will be here in a moment to...
     choices: []
     eventKey: 
@@ -164,7 +141,7 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
   - mode: 0
-    character: 3
+    character: 2
     name: 
     mood: 3
     message: I heard in class that you're good at everything, and I'd like you to
@@ -179,11 +156,10 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
   - mode: 2
-    character: 0
+    character: 2
     name: 
-    mood: 0
-    message: "\u0E09\u0E31\u0E19\u0E44\u0E14\u0E49\u0E22\u0E34\u0E19\u0E08\u0E32\u0E01\u0E04\u0E19\u0E43\u0E19\u0E04\u0E25\u0E32\u0E2A\u0E21\u0E32\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D
-      \u0E40\u0E01\u0E48\u0E07\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07 \u0E2D\u0E22\u0E32\u0E01\u0E08\u0E30\u0E43\u0E2B\u0E49\u0E40\u0E18\u0E2D\u0E0A\u0E48\u0E27\u0E22\u0E09\u0E31\u0E19"
+    mood: 3
+    message: 
     choices:
     - choice: Of couse let me take a look.
       blueprint: {fileID: 11400000, guid: 91d5a22288777ee4ba8cb5d821869dd7, type: 2}
