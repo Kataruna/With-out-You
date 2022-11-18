@@ -134,7 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
-  animator: {fileID: 0}
+  characterAnimator: {fileID: 0}
+  flipAnimator: {fileID: 0}
   movementSpeed: 10
   sprintSpeedMultiply: 2
   moveAccordingToCamera: 1
@@ -2144,7 +2145,7 @@ PrefabInstance:
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: assetHash
-      value: 32370
+      value: 33732
       objectReference: {fileID: 0}
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
