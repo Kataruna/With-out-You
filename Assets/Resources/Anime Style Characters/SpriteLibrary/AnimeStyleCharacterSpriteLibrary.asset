@@ -851,12 +851,20 @@ MonoBehaviour:
       m_Hash: 798544368
       m_Sprite: {fileID: -7104217590192988168, guid: db1c164a9d6366042bc13ef614108ca6,
         type: 3}
+    - m_Name: silvia
+      m_Hash: 122689161
+      m_Sprite: {fileID: -6741119164512693541, guid: 707915b5af172614b8463963775f0e49,
+        type: 3}
   - m_Name: Thigh R
     m_Hash: 178768777
     m_CategoryList:
     - m_Name: base skin
       m_Hash: 798544368
       m_Sprite: {fileID: 5057083948245042038, guid: db1c164a9d6366042bc13ef614108ca6,
+        type: 3}
+    - m_Name: silvia
+      m_Hash: 122689161
+      m_Sprite: {fileID: 7948245710329089554, guid: 707915b5af172614b8463963775f0e49,
         type: 3}
   - m_Name: Upper Body
     m_Hash: 608168995
