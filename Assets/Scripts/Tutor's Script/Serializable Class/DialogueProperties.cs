@@ -29,6 +29,7 @@ public class DialogueProperties
 
     public enum Mood
     {
+        None,
         Neutral,
         Angry,
         Sad,
