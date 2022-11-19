@@ -11,6 +11,7 @@ public class Interaction : MonoBehaviour, IInteractable
     public EventRecord EventRecord => eventKey;
     public Dialogue DialogueBlueprint => dialogue;
     public bool ForceInteract => forceInteract;
+    public bool IsEnable => _isEnable;
     
     public WorldProperties.Timeline Timeline => timeline;
     public WorldProperties.World WorldLine => worldLine;
@@ -39,7 +40,7 @@ public class Interaction : MonoBehaviour, IInteractable
 
     private Controller _input;
 
-    private bool _showIcon;
+    private bool _isEnable;
 
     public enum Type
     {
@@ -65,6 +66,8 @@ public class Interaction : MonoBehaviour, IInteractable
 
     public void EnableInput()
     {
+        if (_isEnable) return;
+
         _input.Enable();
         Debug.Log($"Input is enabled on {gameObject.name}");
         _input.Player.Interact.performed += _ => UpdateEvent();
@@ -88,9 +91,9 @@ public class Interaction : MonoBehaviour, IInteractable
 
     public void Status(bool status)
     {
-        _showIcon = status;
+        _isEnable = status;
         
-        if(_showIcon) icon.gameObject.SetActive(true);
+        if(_isEnable) icon.gameObject.SetActive(true);
         else icon.gameObject.SetActive(false);
     }
 

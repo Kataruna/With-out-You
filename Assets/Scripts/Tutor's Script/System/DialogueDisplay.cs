@@ -1,9 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 public class DialogueDisplay : Singleton<DialogueDisplay>
 {
@@ -21,6 +24,11 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
 
     [SerializeField] private CharacterDisplay silvia;
     [SerializeField] private CharacterDisplay jane;
+    [SerializeField] private float defaultScale;
+    [SerializeField] private float minimizeScale;
+    [SerializeField] private float scaleDuration;
+    [Space(5)]
+    [SerializeField] private float fadeDuration;
     //[SerializeField] private TMP_Text mood;
 
     [Header("Animator Controller")]
@@ -69,7 +77,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     void StartLine()
     {
         PlayerController.Instance.SetControlState(false);
-
+        
         _line = 0;
 
         StartCoroutine(TypeName());
@@ -80,7 +88,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     {
         message.text = String.Empty;
 
-        ImageMap();
+        ImageMap(false);
         
         foreach (char c in activeDialogue.dialogue[_line].message)
         {
@@ -113,11 +121,30 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
             {
                 case DialogueProperties.Mode.MainCharacter:
                 case DialogueProperties.Mode.SideCharacter:
-                    if (speaker.text != activeDialogue.dialogue[_line].character.ToString()) StartCoroutine(TypeName());
+                    if (speaker.text != activeDialogue.dialogue[_line].character.ToString())
+                    {
+                        switch(activeDialogue.dialogue[_line].character.ToString().ToLower())
+                        {
+                            case "silvy":
+                            case "silvia":
+                                jane.image.transform.DOScale(minimizeScale, scaleDuration);
+
+                                silvia.image.transform.DOScale(defaultScale, scaleDuration);
+                                break;
+                            
+                            case "jane":
+                            case "january":
+                                silvia.image.transform.DOScale(minimizeScale, scaleDuration);
+
+                                jane.image.transform.DOScale(defaultScale, scaleDuration);
+                                break;
+                        }
+                        StartCoroutine(TypeName());
+                    }
                     StartCoroutine(TypeLine());
                     break;
                 case DialogueProperties.Mode.SwitchMood:
-                    ImageMap();
+                    ImageMap(true);
                     NextLine();
                     break;
                 case DialogueProperties.Mode.Choice:
@@ -231,13 +258,18 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         activeDialogue = null;
     }
 
-    public void ImageMap()
+    /// <summary>
+    /// Read value from dialogue at current line and change Character face according to dialogue mood of speaker
+    /// </summary>
+    public void ImageMap(bool doFade)
     {
         DialogueProperties rightNow = activeDialogue.dialogue[_line];
         
         switch (rightNow.character)
         {
             case DialogueProperties.Character.January:
+            case DialogueProperties.Character.Jane:
+                jane.image.color = Color.white;
                 switch (rightNow.mood)
                 {
                     case DialogueProperties.Mood.Angry:
@@ -255,12 +287,15 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     case DialogueProperties.Mood.Happy:
                         jane.image.sprite = jane.face.Happy;
                         break;
-                    case DialogueProperties.Mood.None:
-                        jane.image.sprite = empty;
+                    default:
+                        if(!doFade) jane.image.sprite = empty;
+                        else jane.image.DOFade(0, fadeDuration).OnComplete(() => jane.image.sprite = empty);
                         break;
                 }
                 break;
             case DialogueProperties.Character.Silvia:
+            case DialogueProperties.Character.Silvy:
+                silvia.image.color = Color.white;
                 switch (rightNow.mood)
                 {
                     case DialogueProperties.Mood.Angry:
@@ -278,8 +313,9 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     case DialogueProperties.Mood.Happy:
                         silvia.image.sprite = silvia.face.Happy;
                         break;
-                    case DialogueProperties.Mood.None:
-                        silvia.image.sprite = empty;
+                    default:
+                        if(!doFade) silvia.image.sprite = empty;
+                        else silvia.image.DOFade(0, fadeDuration).OnComplete(() => jane.image.sprite = empty);
                         break;
                 }
                 break;
