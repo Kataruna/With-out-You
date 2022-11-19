@@ -16,17 +16,23 @@ public class PlayerInteraction : Singleton<PlayerInteraction>
         {
             case "Story":
             case "NPC":
-                activeInteraction = other.gameObject;
-                activeInteraction.gameObject.TryGetComponent(out Interaction interacted);
+                other.TryGetComponent(out Interaction interacted);
+                
+                if(!interacted.IsEnable) return;
+                
+                activeInteraction = interacted.gameObject;
 
                 if (interacted.ForceInteract) interacted.UpdateEvent();
                 else interacted.EnableInput();
                 
                 break;
             case "Travel":
-                activeInteraction = other.gameObject;
-                activeInteraction.gameObject.TryGetComponent(out Traveler travel);
+                other.gameObject.TryGetComponent(out Traveler travel);
                 
+                if(!travel.IsEnable) return;
+
+                activeInteraction = travel.gameObject;
+
                 if(travel.ForceInteract) travel.Travel();
                 else travel.EnableInput();
 

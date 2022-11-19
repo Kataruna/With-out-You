@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.082968056, g: 0.4994923, b: 0.9607602, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -395,11 +395,18 @@ MonoBehaviour:
   textSpeed: 0.015
   speaker: {fileID: 1451669379}
   message: {fileID: 2128734924}
+  silvia:
+    face: {fileID: 11400000, guid: 03bb035680c7ceb49996555617f3e4a7, type: 2}
+    image: {fileID: 0}
+  jane:
+    face: {fileID: 11400000, guid: e285a039134cfb040a924fc689707516, type: 2}
+    image: {fileID: 0}
   dialogAnimator: {fileID: 475232494}
   choicesAnimator: {fileID: 28131888}
   choiceHolder: {fileID: 28131886}
   choicePrefab: {fileID: 3525116612259210066, guid: 0ce2fa731b67a5a4994e93e8a9ea6c62,
     type: 3}
+  empty: {fileID: 0}
 --- !u!95 &475232494
 Animator:
   serializedVersion: 4

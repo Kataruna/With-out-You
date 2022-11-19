@@ -23,6 +23,7 @@ public class Traveler : MonoBehaviour
     public string RequireEvent => requireEvent;
     
     public bool ForceInteract => forceInteract;
+    public bool IsEnable => _isEnable;
     
     [SerializeField] private Mode mode;
     [SerializeField] private Scene nextScene;
@@ -41,7 +42,7 @@ public class Traveler : MonoBehaviour
     [SerializeField] private InterfaceElement interfaceElement;
     [SerializeField] private SpriteRenderer icon;
 
-    private bool _showIcon = false;
+    private bool _isEnable = false;
     
     private Controller _input;
 
@@ -54,7 +55,7 @@ public class Traveler : MonoBehaviour
 
     public void Travel()
     {
-        if (!isRequireEvent || EventHorizon.Instance.EventsHorizon[requireEvent])
+        if ((!isRequireEvent || EventHorizon.Instance.EventsHorizon[requireEvent]) && _isEnable)
         {
             InstantTravel();
         }
@@ -83,9 +84,9 @@ public class Traveler : MonoBehaviour
 
     public void Status(bool status)
     {
-        _showIcon = status;
+        _isEnable = status;
         
-        if(_showIcon) icon.gameObject.SetActive(true);
+        if(_isEnable) icon.gameObject.SetActive(true);
         else icon.gameObject.SetActive(false);
     }
 
@@ -103,6 +104,8 @@ public class Traveler : MonoBehaviour
 
     public void EnableInput()
     {
+        if(!_isEnable) return;
+        
         _input.Enable();
         Debug.Log($"Input is enabled on {gameObject.name}");
         _input.Player.Interact.performed += _ => Travel();

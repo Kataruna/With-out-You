@@ -1052,6 +1052,11 @@ MonoBehaviour:
   jane:
     face: {fileID: 11400000, guid: e285a039134cfb040a924fc689707516, type: 2}
     image: {fileID: 255553222}
+  defaultScale: 1
+  minimizeScale: 0.9
+  scaleDuration: 1
+  fadeOpacity: 100
+  fadeDuration: 1
   dialogAnimator: {fileID: 475232494}
   choicesAnimator: {fileID: 28131888}
   choiceHolder: {fileID: 28131886}
@@ -4402,8 +4407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8190ffdd753704408ccf92b0800daf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _silvia: {fileID: 0}
-  _january: {fileID: 0}
+  _silvia: {fileID: 11400000, guid: 03bb035680c7ceb49996555617f3e4a7, type: 2}
+  _january: {fileID: 11400000, guid: e285a039134cfb040a924fc689707516, type: 2}
 --- !u!1 &1822670827
 GameObject:
   m_ObjectHideFlags: 0
