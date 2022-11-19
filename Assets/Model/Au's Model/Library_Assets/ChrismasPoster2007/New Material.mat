@@ -73,7 +73,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _DETAILMAPBLENDINGMODE_MULTIPLY
-  - _TEXTUREBLENDINGMODE_MULTIPLY
+  - _TEXTUREBLENDINGMODE_ADD
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -202,7 +202,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RimEnabled: 0
-    - _SelfShadingSize: 0
+    - _SelfShadingSize: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularEnabled: 0
@@ -210,14 +210,14 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _TextureBlendingMode: 0
+    - _TextureBlendingMode: 1
     - _TextureImpact: 1
     - _UnityShadowOcclusion: 0
     - _VertexColorsEnabled: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.9811321, g: 0.38880488, b: 0.38412246, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorGradient: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
     - _DetailMapColor: {r: 1, g: 1, b: 1, a: 1}

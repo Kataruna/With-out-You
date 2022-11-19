@@ -27,11 +27,11 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 6
+  - mode: 0
     character: 0
     name: 
-    mood: 1
-    message: What happened here Who's doing this crazy thing?
+    mood: 4
+    message: Let's take a picture together, before I leave.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -41,31 +41,3 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 1
-  - mode: 0
-    character: 0
-    name: 
-    mood: 3
-    message: What!! What happened to her tombstone?
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 0
-    name: 
-    mood: 1
-    message: What happened here. Who's doing this crazy thing?
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0

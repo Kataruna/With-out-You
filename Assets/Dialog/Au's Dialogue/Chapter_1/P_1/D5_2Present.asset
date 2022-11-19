@@ -10,23 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
-  m_Name: D4_Graveyard
+  m_Name: D5_2Present
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 6
-    character: 0
-    name: 
-    mood: 0
-    message: 
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 1
-    world: 0
-    doChangeOnThisState: 1
   - mode: 0
     character: 0
     name: 
@@ -38,20 +24,20 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-    timeline: 1
+    timeline: 0
     world: 0
-    doChangeOnThisState: 1
+    doChangeOnThisState: 0
   - mode: 0
     character: 0
     name: 
     mood: 1
-    message: What happened here Who's doing this crazy thing?
+    message: What happened here. Who's doing this crazy thing?
     choices: []
     eventKey: 
     eventStatus: 0
     events:
       m_PersistentCalls:
         m_Calls: []
-    timeline: 1
+    timeline: 0
     world: 0
-    doChangeOnThisState: 1
+    doChangeOnThisState: 0
