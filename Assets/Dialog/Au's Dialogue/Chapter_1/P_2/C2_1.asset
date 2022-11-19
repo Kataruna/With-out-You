@@ -17,8 +17,8 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: Of course, I recognize you as the one who is actively learning. and
-      spend every evening at the library.
+    message: Of course. I recognize you, nerd girl wearing glasses sitting in front
+      of the room.
     choices:
     - choice: 
       blueprint: {fileID: 0}
@@ -29,6 +29,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
   - mode: 2
     character: 1
     name: 
@@ -40,7 +43,7 @@ MonoBehaviour:
       blueprint: {fileID: 11400000, guid: 9d697fdc186102643bf3deaa350b8678, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: Silvy, this is Silvy. Jane, you do not even recognize me?
+    - choice: Silvy, this is Silvy. Jane, you do not even remember me?
       blueprint: {fileID: 11400000, guid: b5020febf0e5dc141adab700fb966745, type: 2}
       eventKey: 
       eventValue: 0
@@ -49,3 +52,6 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

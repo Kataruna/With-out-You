@@ -52,8 +52,8 @@ MonoBehaviour:
       blueprint: {fileID: 11400000, guid: cd8826058a65e914db8e5ed84ac10613, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: Oh, I've heard her name called in class.
-      blueprint: {fileID: 11400000, guid: e0ec054de7d0d244fa9232cd6b1bb5aa, type: 2}
+    - choice: My family call me Silvy.
+      blueprint: {fileID: 11400000, guid: e3e4f9a098242684f8dc0617ff12ca3b, type: 2}
       eventKey: 
       eventValue: 0
     eventKey: 

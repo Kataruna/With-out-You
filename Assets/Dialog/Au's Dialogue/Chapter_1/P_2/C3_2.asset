@@ -17,8 +17,8 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 4
-    message: Of course, I recognize you as the one who is actively learning. and
-      spend every evening at the library.
+    message: Of course, I remember you as the one who is actively learning. and spend
+      every evening at the library.
     choices: []
     eventKey: 
     eventStatus: 0

@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3179369509492321206
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 6
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: Yellow_WithoutFlowers
   m_Shader: {fileID: 4800000, guid: 2a230514c860643f69b6a4d1871d3825, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -60,7 +73,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GradientRamp:
-        m_Texture: {fileID: 4009549975560633888}
+        m_Texture: {fileID: 965227361749700837}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -134,7 +147,7 @@ Material:
     - _OutlineDepthOffset: 0
     - _OutlineEnabled: 0
     - _OutlineScale: 1
-    - _OutlineWidth: 0.97
+    - _OutlineWidth: 1
     - _OverrideBakedGi: 0
     - _OverrideLightAttenuation: 0
     - _OverrideLightmapDir: 0
@@ -166,30 +179,17 @@ Material:
     - _FlatSpecularColor: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _LightAttenuation: {r: 0, g: 1, b: 0, a: 0}
     - _LightmapDirection: {r: 0, g: 1, b: 0, a: 0}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &1915989580327055870
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 6
---- !u!28 &4009549975560633888
+--- !u!28 &965227361749700837
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: z__GradientRampTex{"mode":0,"colorKeys":[{"color":{"r":0.11764705926179886,"g":0.11764705926179886,"b":0.11764705926179886,"a":1.0},"time":0.002944991225376725},{"color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"time":0.2705882489681244}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
+  m_Name: z__GradientRampTex{"mode":0,"colorKeys":[{"color":{"r":0.11764705926179886,"g":0.11764705926179886,"b":0.11764705926179886,"a":1.0},"time":0.4000000059604645},{"color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"time":0.5499961972236633}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -224,7 +224,7 @@ Texture2D:
   m_ColorSpace: 1
   m_PlatformBlob: 
   image data: 1024
-  _typelessdata: ff1e1e1eff1f1f1fff222222ff252525ff292929ff2c2c2cff2f2f2fff333333ff363636ff393939ff3c3c3cff404040ff434343ff464646ff4a4a4aff4d4d4dff505050ff545454ff575757ff5a5a5aff5d5d5dff616161ff646464ff676767ff6b6b6bff6e6e6eff717171ff757575ff787878ff7b7b7bff7e7e7eff828282ff858585ff888888ff8c8c8cff8f8f8fff929292ff969696ff999999ff9c9c9cff9f9f9fffa3a3a3ffa6a6a6ffa9a9a9ffadadadffb0b0b0ffb3b3b3ffb6b6b6ffbababaffbdbdbdffc0c0c0ffc4c4c4ffc7c7c7ffcacacaffcececeffd1d1d1ffd4d4d4ffd7d7d7ffdbdbdbffdededeffe1e1e1ffe5e5e5ffe8e8e8ffebebebffefefeffff2f2f2fff5f5f5fff8f8f8fffcfcfcffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  _typelessdata: ff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff1e1e1eff242424ff2a2a2aff303030ff363636ff3b3b3bff414141ff474747ff4d4d4dff535353ff595959ff5f5f5fff656565ff6a6a6aff707070ff767676ff7c7c7cff828282ff888888ff8e8e8eff949494ff9a9a9aff9f9f9fffa5a5a5ffabababffb1b1b1ffb7b7b7ffbdbdbdffc3c3c3ffc9c9c9ffcececeffd4d4d4ffdadadaffe0e0e0ffe6e6e6ffecececfff2f2f2fff8f8f8fffefefeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   m_StreamData:
     serializedVersion: 2
     offset: 0

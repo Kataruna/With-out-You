@@ -18,11 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/_Master_Scenes/Graveyard.unity
     guid: b3cfce51f393fb041bf168c6e1d7f52a
   - enabled: 1
-    path: Assets/Scenes/_Master_Scenes/Loading.unity
-    guid: 6e75b4e893aead543a2e69457f745c39
-  - enabled: 1
     path: Assets/Scenes/_Master_Scenes/Interface.unity
     guid: fcaeca0116a199c43b692c12ed308876
+  - enabled: 1
+    path: Assets/Scenes/_Master_Scenes/Loading.unity
+    guid: 6e75b4e893aead543a2e69457f745c39
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9c76cc5f0a6218a4fa05bcdce25dae04,
       type: 2}
