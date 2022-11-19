@@ -255,6 +255,9 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     case DialogueProperties.Mood.Happy:
                         jane.image.sprite = jane.face.Happy;
                         break;
+                    case DialogueProperties.Mood.None:
+                        jane.image.sprite = empty;
+                        break;
                 }
                 break;
             case DialogueProperties.Character.Silvia:
@@ -274,6 +277,9 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                         break;
                     case DialogueProperties.Mood.Happy:
                         silvia.image.sprite = silvia.face.Happy;
+                        break;
+                    case DialogueProperties.Mood.None:
+                        silvia.image.sprite = empty;
                         break;
                 }
                 break;
