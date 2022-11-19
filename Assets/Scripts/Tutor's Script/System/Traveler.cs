@@ -55,7 +55,7 @@ public class Traveler : MonoBehaviour
 
     public void Travel()
     {
-        if (!isRequireEvent || EventHorizon.Instance.EventsHorizon[requireEvent])
+        if ((!isRequireEvent || EventHorizon.Instance.EventsHorizon[requireEvent]) && _isEnable)
         {
             InstantTravel();
         }
@@ -104,6 +104,8 @@ public class Traveler : MonoBehaviour
 
     public void EnableInput()
     {
+        if(!_isEnable) return;
+        
         _input.Enable();
         Debug.Log($"Input is enabled on {gameObject.name}");
         _input.Player.Interact.performed += _ => Travel();

@@ -66,7 +66,7 @@ public class Interaction : MonoBehaviour, IInteractable
 
     public void EnableInput()
     {
-        if (_isEnable) return;
+        if (!_isEnable) return;
 
         _input.Enable();
         Debug.Log($"Input is enabled on {gameObject.name}");
