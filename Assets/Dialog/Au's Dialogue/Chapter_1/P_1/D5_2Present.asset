@@ -41,3 +41,17 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+  - mode: 4
+    character: 0
+    name: 
+    mood: 1
+    message: What happened here. Who's doing this crazy thing?
+    choices: []
+    eventKey: Ball_3 PresentTime
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0

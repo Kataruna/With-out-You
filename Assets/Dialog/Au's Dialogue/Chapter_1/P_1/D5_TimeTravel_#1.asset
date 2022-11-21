@@ -41,3 +41,31 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 1
+  - mode: 6
+    character: 0
+    name: 
+    mood: 4
+    message: Let's take a picture together, before I leave.
+    choices: []
+    eventKey: Ball_2 ReversePoint
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 1
+  - mode: 4
+    character: 0
+    name: 
+    mood: 4
+    message: Let's take a picture together, before I leave.
+    choices: []
+    eventKey: Ball_2 ReversePoint
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 1
