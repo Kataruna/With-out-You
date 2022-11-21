@@ -13,11 +13,27 @@ MonoBehaviour:
   m_Name: D4_Graveyard
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 6
+  - mode: 0
+    character: 0
+    name: 
+    mood: 4
+    message: Even though today was completely terrible for me, it was still a good
+      day.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 1
+    world: 0
+    doChangeOnThisState: 1
+  - mode: 0
     character: 0
     name: 
     mood: 0
-    message: 
+    message: Today I brought flowers that we both planted together. I hope you like
+      it.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -30,8 +46,8 @@ MonoBehaviour:
   - mode: 0
     character: 0
     name: 
-    mood: 3
-    message: What!! What happened to her tombstone?
+    mood: 0
+    message: Christmas is nearing! I'd be lonely this year if we weren't together.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -44,11 +60,98 @@ MonoBehaviour:
   - mode: 0
     character: 0
     name: 
-    mood: 1
-    message: What happened here Who's doing this crazy thing?
+    mood: 2
+    message: "Jane, I truly miss you. I'd\_like to see you again."
     choices: []
     eventKey: 
     eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 1
+    world: 0
+    doChangeOnThisState: 1
+  - mode: 0
+    character: 0
+    name: 
+    mood: 2
+    message: Since she left me, her camera still with me.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 1
+    world: 0
+    doChangeOnThisState: 1
+  - mode: 0
+    character: 0
+    name: 
+    mood: 2
+    message: I can see why you keep it with you at all times.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 1
+    world: 0
+    doChangeOnThisState: 1
+  - mode: 0
+    character: 0
+    name: 
+    mood: 2
+    message: "It makes me recognize.\_Those who have abandoned us have not vanished.
+      And still beside me."
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 1
+    world: 0
+    doChangeOnThisState: 1
+  - mode: 0
+    character: 0
+    name: 
+    mood: 4
+    message: I appreciate the photo you took here for me.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 1
+    world: 0
+    doChangeOnThisState: 1
+  - mode: 0
+    character: 0
+    name: 
+    mood: 4
+    message: I would love to capture some images of you if I could travel back into
+      the past.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 1
+    world: 0
+    doChangeOnThisState: 1
+  - mode: 4
+    character: 0
+    name: 
+    mood: 4
+    message: I would love to capture some images of you if I could travel back into
+      the past.
+    choices: []
+    eventKey: Jane Tombstone
+    eventStatus: 1
     events:
       m_PersistentCalls:
         m_Calls: []
