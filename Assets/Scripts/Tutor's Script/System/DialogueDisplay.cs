@@ -185,8 +185,19 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     DialogueInteraction();
                     break;
                 case DialogueProperties.Mode.Action:
-                    PlayableDirector actor = Director.Instance.Actors[activeDialogue.dialogue[_line].animatronic.ToString().ToLower()];
-                        
+                    // PlayableDirector actor = ParallelWorld.Instance.
+                    //     
+                    // actor.playableAsset = activeDialogue.dialogue[_line].actionScript;
+                    //
+                    // actor.RebuildGraph();
+                    // actor.time = 0f;
+                    // actor.Play();
+                    //
+                    ParallelWorld.Instance.WorldLines[ParallelWorld.Instance.GetWorldKey()].worldLineObject
+                        .TryGetComponent(out Director director);
+
+                    director.Animatronic.gameObject.TryGetComponent(out PlayableDirector actor);
+                    
                     actor.playableAsset = activeDialogue.dialogue[_line].actionScript;
                     
                     actor.RebuildGraph();

@@ -6,6 +6,8 @@ using UnityEngine;
 [DefaultExecutionOrder(-1)]
 public class ParallelWorld : MonoBehaviour
 {
+    public Dictionary<string, WorldLine> WorldLines => worldLineName;
+
     public List<WorldLine> worldLines = new List<WorldLine>();
     private Dictionary<string, WorldLine> worldLineName = new Dictionary<string, WorldLine>();
     
@@ -64,5 +66,11 @@ public class ParallelWorld : MonoBehaviour
         
         worldLineName[key].worldLineObject.SetActive(true);
         Debug.Log("Loaded");
+    }
+
+    public string GetWorldKey()
+    {
+        return _tardis.activeTimeline.ToString() + _tardis.activeWorld.ToString() +
+               _tardis.orderOfAppearance.ToString();
     }
 }

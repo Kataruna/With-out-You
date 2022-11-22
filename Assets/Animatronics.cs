@@ -25,15 +25,15 @@ public class Animatronics : MonoBehaviour
         selfAnim.gameObject.SetActive(false);
     }
 
-    private void OnEnable()
-    {
-        Director.Instance.Recruit(this);
-    }
-
-    private void OnDisable()
-    {
-        Director.Instance.Remove(this);
-    }
+    // private void OnEnable()
+    // {
+    //     Director.Instance.Recruit(this);
+    // }
+    //
+    // private void OnDisable()
+    // {
+    //     Director.Instance.Remove(this);
+    // }
 
     public void Walk()
     {
