@@ -13,7 +13,7 @@ public class Director : MonoBehaviour
     private Animatronics[] _users;
     private Dictionary<string, PlayableDirector> _actors = new Dictionary<string, PlayableDirector>();
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
         
