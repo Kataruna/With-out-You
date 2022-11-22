@@ -188,6 +188,9 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     PlayableDirector actor = Director.Instance.Actors[activeDialogue.dialogue[_line].animatronic.ToString().ToLower()];
                         
                     actor.playableAsset = activeDialogue.dialogue[_line].actionScript;
+                    
+                    actor.RebuildGraph();
+                    actor.time = 0f;
                     actor.Play();
                     
                     DialogueInteraction();
