@@ -24,6 +24,11 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 2
     name: 
@@ -35,17 +40,27 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 2
     name: 
     mood: 4
-    message: See you Silvy, don't be late.
+    message: Silvy, don't be late.
     choices: []
     eventKey: 
     eventStatus: 0
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 2
     name: 
@@ -57,6 +72,31 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+  - mode: 3
+    character: 2
+    name: 
+    mood: 5
+    message: Bye, Silvy
+    choices:
+    - choice: Bye, Jane
+      blueprint: {fileID: 11400000, guid: 033d6f1a092c2c143b6a4c90c689b3e1, type: 2}
+      eventKey: 
+      eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 2
     character: 1
     name: 
@@ -72,3 +112,8 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}

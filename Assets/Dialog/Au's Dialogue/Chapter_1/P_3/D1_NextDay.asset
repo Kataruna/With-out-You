@@ -27,6 +27,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 3
     name: 
@@ -41,6 +43,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 3
     name: 
@@ -55,6 +59,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 3
     name: 
@@ -69,6 +75,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 3
     name: 
@@ -84,11 +92,13 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 3
     name: 
     mood: 3
-    message: If that's the case, Jane will be here in a moment to...
+    message: (If that's the case, Jane will be here in a moment to...)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -98,6 +108,32 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+  - mode: 7
+    character: 2
+    name: 
+    mood: 3
+    message: 
+    choices:
+    - choice: Of couse let me take a look.
+      blueprint: {fileID: 11400000, guid: 91d5a22288777ee4ba8cb5d821869dd7, type: 2}
+      eventKey: 
+      eventValue: 0
+    - choice: What can I help?
+      blueprint: {fileID: 11400000, guid: ecfcd4b9aeb9466479f7a4439348dfbf, type: 2}
+      eventKey: 
+      eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 11400000, guid: fb02d245527fcc74588c32bef4cf75da, type: 2}
   - mode: 0
     character: 2
     name: 
@@ -112,6 +148,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 3
     name: 
@@ -126,6 +164,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 3
     name: 
@@ -140,6 +180,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 0
     character: 2
     name: 
@@ -155,6 +197,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 2
     character: 2
     name: 
@@ -177,3 +221,5 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
