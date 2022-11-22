@@ -18,21 +18,18 @@ public class Director : MonoBehaviour
         Instance = this;
     }
 
-    private void OnEnable()
-    {
-        _users = FindObjectsOfType<Animatronics>();
-
-        foreach (Animatronics user in _users)
-        {
-            Recruit(user);
-        }
-    }
-
-    private void Recruit(Animatronics user)
+    public void Recruit(Animatronics user)
     {
         string key = user.ActorName.ToString().ToLower();
         
         if(_actors.ContainsKey(key)) _actors[key] = user.GetComponent<PlayableDirector>();
         else _actors.Add(key, user.GetComponent<PlayableDirector>());
+    }
+
+    public void Remove(Animatronics user)
+    {
+        string key = user.ActorName.ToString().ToLower();
+
+        _actors.Remove(key);
     }
 }
