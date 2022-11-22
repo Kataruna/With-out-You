@@ -21,13 +21,14 @@ public class DiaryMenu : MonoBehaviour
 
     public void Open()
     {
+        diaryMenu.gameObject.SetActive(true);
         diaryMenu.DOFade(1f, duration);
         diaryMenu.interactable = true;
     }
 
     public void Close()
     {
-        diaryMenu.DOFade(0f, duration);
+        diaryMenu.DOFade(0f, duration).OnComplete(() => diaryMenu.gameObject.SetActive(false));
         diaryMenu.interactable = false;
     }
     
@@ -35,6 +36,7 @@ public class DiaryMenu : MonoBehaviour
     {
         diaryMenu.alpha = 0f;
         diaryMenu.interactable = false;
+        diaryMenu.gameObject.SetActive(false);
     }
     
     public void QuitGame()
