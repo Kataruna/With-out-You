@@ -213,6 +213,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         Debug.Log("End of all Line");
         CleanMessage();
         PlayerController.Instance.SetControlState(true);
+        PlayerInteraction.Instance.ClearInteraction();
     }
 
     void CleanMessage()

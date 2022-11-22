@@ -90,10 +90,10 @@ public class MusicPlayer : MonoBehaviour
         }
     }
 
-    private void VolumeSetup(float defaultVolume)
-    {
-        AudioSetting.Instance.SetMaxLoudness(defaultVolume);
-    }
+    // private void VolumeSetup(float defaultVolume)
+    // {
+    //     AudioSetting.Instance.SetMaxLoudness(defaultVolume);
+    // }
     
     private void PlayMusic(SongDetail song)
     {
@@ -137,7 +137,7 @@ public class MusicPlayer : MonoBehaviour
         audioSource.clip = song.trackFile;
         audioSource.volume = song.defaultVolume;
         
-        VolumeSetup(song.defaultVolume);
+        // VolumeSetup(song.defaultVolume);
     }
 
     public void EnterMusicPlayer()

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,27 +10,36 @@ public class DiaryMenu : MonoBehaviour
 {
     [SerializeField] private float duration = 0.5f;
 
-    [SerializeField] private GameObject diaryMenu;
+    [SerializeField] private CanvasGroup diaryMenu;
 
     private void Start()
     {
-        diaryMenu.SetActive(false);
+        ForceClose();
     }
 
     #region Custom Method
 
     public void Open()
     {
-        diaryMenu.SetActive(true);
+        diaryMenu.DOFade(1f, duration);
+        diaryMenu.interactable = true;
     }
 
     public void Close()
     {
-        diaryMenu.SetActive(false);
+        diaryMenu.DOFade(0f, duration);
+        diaryMenu.interactable = false;
+    }
+    
+    private void ForceClose()
+    {
+        diaryMenu.alpha = 0f;
+        diaryMenu.interactable = false;
     }
     
     public void QuitGame()
     {
+        Debug.LogWarning("Exit");
         Application.Quit();
     }
 
