@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class FadeAble : MonoBehaviour
 {
+    [SerializeField] private bool initialStage = true;
     private CanvasGroup _canvasGroup;
     private float _duration = 0.5f;
         
     private void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
+        _canvasGroup.gameObject.SetActive(initialStage);
     }
 
     public void Fade(bool appear)
