@@ -32,7 +32,7 @@ public class Interaction : MonoBehaviour, IInteractable
     [SerializeField] private string requireEvent;
     
     [SerializeField] private UnityEvent OnInteraction;
-    
+
     //Maintenance
 
     [SerializeField] private InterfaceElement interfaceElement;
@@ -41,6 +41,8 @@ public class Interaction : MonoBehaviour, IInteractable
     private Controller _input;
 
     private bool _isEnable;
+    
+    private PlayerInteraction _playerInteraction;
 
     public enum Type
     {
@@ -110,7 +112,7 @@ public class Interaction : MonoBehaviour, IInteractable
                 break;
         }
         
-        PlayerInteraction.Instance.ClearInteraction();
+        _playerInteraction.ClearInteraction();
         gameObject.SetActive(false);
         DisableInput();
     }
@@ -149,5 +151,10 @@ public class Interaction : MonoBehaviour, IInteractable
             if (isOnHover) icon.sprite = interfaceElement.OnHover;
             else icon.sprite = interfaceElement.Normal;
         }
+    }
+
+    public void SetPlayer(PlayerInteraction player)
+    {
+        _playerInteraction = player;
     }
 }

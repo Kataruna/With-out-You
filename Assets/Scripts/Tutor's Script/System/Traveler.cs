@@ -48,6 +48,8 @@ public class Traveler : MonoBehaviour
 
     private TARDIS _tardis;
 
+    private PlayerInteraction _playerInteraction;
+
     private void Start()
     {
         if(isRequireEvent) Status(false);
@@ -57,6 +59,7 @@ public class Traveler : MonoBehaviour
     {
         if ((!isRequireEvent || EventHorizon.Instance.EventsHorizon[requireEvent]) && _isEnable)
         {
+            _playerInteraction.ClearInteraction();
             InstantTravel();
         }
     }
@@ -147,6 +150,9 @@ public class Traveler : MonoBehaviour
             else icon.sprite = interfaceElement.Normal;
         }
     }
-    
-    
+
+    public void SetPlayer(PlayerInteraction player)
+    {
+        _playerInteraction = player;
+    }
 }
