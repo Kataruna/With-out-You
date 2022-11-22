@@ -55,12 +55,12 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         _controller = new Controller();
     }
 
-    private void OnEnable()
+    public void EnableInput()
     {
         _controller.Enable();
     }
 
-    private void OnDisable()
+    public void DisableInput()
     {
         _controller.Disable();
     }
@@ -68,7 +68,6 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     private void Start()
     {
         CleanMessage();
-        _controller.UI.Interact.performed += _ => DialogueInteraction();
     }
 
     #endregion
@@ -255,6 +254,9 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     {
         activeDialogue = dialogue;
         
+        EnableInput();
+        _controller.UI.Interact.performed += _ => DialogueInteraction();
+        
         ClearImage();
         dialogAnimator.SetTrigger("Enter");
         
@@ -266,6 +268,10 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         ClearImage();
         dialogAnimator.SetTrigger("Exit");
         activeDialogue = null;
+        
+        _controller.UI.Interact.performed -= _ => DialogueInteraction();
+        
+        DisableInput();
     }
 
     /// <summary>
