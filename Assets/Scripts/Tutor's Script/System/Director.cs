@@ -30,6 +30,9 @@ public class Director : MonoBehaviour
 
     private void Recruit(Animatronics user)
     {
-        _actors.Add(user.ActorName.ToString().ToLower(), user.GetComponent<PlayableDirector>());
+        string key = user.ActorName.ToString().ToLower();
+        
+        if(_actors.ContainsKey(key)) _actors[key] = user.GetComponent<PlayableDirector>();
+        else _actors.Add(key, user.GetComponent<PlayableDirector>());
     }
 }
