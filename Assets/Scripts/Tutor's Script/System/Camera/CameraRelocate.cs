@@ -7,10 +7,21 @@ using UnityEngine;
 public class CameraRelocate : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera vcamOperator;
+    [SerializeField] private CameraProtocol.Direction focusDirection;
+    [SerializeField, Tooltip("Change only in case of facing wrong Direction")] private CameraProtocol.Direction defocusDirection = CameraProtocol.Direction.North;
+
+    private bool _focusIsNorth;
+    private bool _focusIsEast;
+    
+    private bool _defocusIsNorth;
+    private bool _defocusIsEast;
 
     private void Start()
     {
         if(vcamOperator == null) gameObject.SetActive(false);
+        
+        DirectionConverter(focusDirection, out _focusIsNorth, out _focusIsEast);
+        DirectionConverter(defocusDirection, out _defocusIsNorth, out _defocusIsEast);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,7 +31,7 @@ public class CameraRelocate : MonoBehaviour
             vcamOperator.Priority = 11;
             other.TryGetComponent(out CameraProtocol player);
             
-            player.Focus(false, vcamOperator);
+            player.Focus(_focusIsNorth, _focusIsEast);
         }
     }
 
@@ -32,7 +43,33 @@ public class CameraRelocate : MonoBehaviour
             
             other.TryGetComponent(out CameraProtocol player);
             
-            player.Focus(true, vcamOperator);
+            player.Focus(_defocusIsNorth, _defocusIsEast);
+        }
+    }
+
+    private void DirectionConverter(CameraProtocol.Direction direction, out bool isNorth, out bool isRight)
+    {
+        isNorth = false;
+        isRight = false;
+        
+        switch (direction)
+        {
+            case CameraProtocol.Direction.North:
+                isNorth = true;
+                isRight = true;
+                break;
+            case CameraProtocol.Direction.East:
+                isNorth = false;
+                isRight = true;
+                break;
+            case CameraProtocol.Direction.South:
+                isNorth = true;
+                isRight = false;
+                break;
+            case CameraProtocol.Direction.West:
+                isNorth = false;
+                isRight = false;
+                break;
         }
     }
 }
