@@ -97,7 +97,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4058790622923425478}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -115,7 +115,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -5125,7 +5125,7 @@ PrefabInstance:
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
       propertyPath: assetHash
-      value: 32228
+      value: 34656
       objectReference: {fileID: 0}
     - target: {fileID: 9211800655828337733, guid: 3d5ccf58d3b078a4a9a576e35815f30b,
         type: 3}
