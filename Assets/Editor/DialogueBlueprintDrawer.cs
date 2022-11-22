@@ -19,6 +19,8 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     private SerializedProperty _timeline;
     private SerializedProperty _world;
     private SerializedProperty _doChangeOnThisState;
+    private SerializedProperty _animatronic;
+    private SerializedProperty _actionScript;
 
     private float lineHeight = EditorGUIUtility.singleLineHeight;
 
@@ -44,6 +46,8 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         _timeline = property.FindPropertyRelative("timeline");
         _world = property.FindPropertyRelative("world");
         _doChangeOnThisState = property.FindPropertyRelative("doChangeOnThisState");
+        _animatronic = property.FindPropertyRelative("animatronic");
+        _actionScript = property.FindPropertyRelative("actionScript");
 
         //Draw foldOutBox
         Rect foldOutBox = new Rect(position.xMin, position.yMin, position.size.x, lineHeight);
@@ -106,6 +110,10 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                 property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
                     "Timeline Change");
                 break;
+            case DialogueProperties.Mode.Action:
+                property.isExpanded = EditorGUI.Foldout(foldOutBox, property.isExpanded,
+                    "Action!");
+                break;
         }
 
 
@@ -151,6 +159,10 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                     DrawWorldProperty(position, 3);
                     DrawDoChangeTimelineProperty(position, 4);
                     break;
+                case DialogueProperties.Mode.Action:
+                    DrawAnimatronicProperty(position, 2);
+                    DrawActionScriptProperty(position, 3);
+                    break;
             }
         }
 
@@ -186,6 +198,14 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.half, line, 1);
         EditorGUI.PropertyField(drawArea, _character, new GUIContent("Name"));
+    }
+    
+    private void DrawAnimatronicProperty(Rect position, int line)
+    {
+        EditorGUIUtility.labelWidth = 60;
+        
+        Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.half, line, 1);
+        EditorGUI.PropertyField(drawArea, _animatronic, new GUIContent("Actor"));
     }
 
     private void DrawNameProperty(Rect position, int line)
@@ -265,6 +285,15 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
 
         EditorGUI.PropertyField(drawArea, _doChangeOnThisState, new GUIContent("Switch"));
+    }
+    
+    private void DrawActionScriptProperty(Rect position, int line)
+    {
+        EditorGUIUtility.labelWidth = 60;
+
+        Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
+
+        EditorGUI.PropertyField(drawArea, _actionScript, new GUIContent("Action Script"));
     }
 
     private Rect DrawProperty(Rect position, PositionInLine pos, HorizontalSize size, int line, float heightScale)

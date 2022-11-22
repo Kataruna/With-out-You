@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Timeline;
 
 [Serializable]
 public class DialogueProperties
@@ -17,7 +18,9 @@ public class DialogueProperties
     public WorldProperties.Timeline timeline;
     public WorldProperties.World world;
     public bool doChangeOnThisState;
-    
+    public Animatronics.Characters animatronic;
+    public TimelineAsset actionScript;
+
     public enum Character
     {
         Silvia,
@@ -46,6 +49,7 @@ public class DialogueProperties
         UpdateEvent,
         Event,
         TimelineChange,
+        Action,
     }
 }
 

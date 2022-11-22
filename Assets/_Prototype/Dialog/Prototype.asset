@@ -27,6 +27,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 1
     character: 0
     name: John
@@ -41,6 +43,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 2
     character: 0
     name: 
@@ -55,6 +59,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 3
     character: 0
     name: 
@@ -69,6 +75,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 4
     character: 0
     name: 
@@ -83,6 +91,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 5
     character: 0
     name: 
@@ -97,6 +107,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 6
     character: 0
     name: 
@@ -111,3 +123,21 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+  - mode: 7
+    character: 1
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 11400000, guid: 7e1023b0435967144a26fe751c903795, type: 2}

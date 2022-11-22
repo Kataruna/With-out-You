@@ -5,6 +5,7 @@ using System.Diagnostics;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 
@@ -181,6 +182,14 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     TARDIS.Instance.activeWorld = activeDialogue.dialogue[_line].world;
                     
                     if(activeDialogue.dialogue[_line].doChangeOnThisState) ParallelWorld.Instance.TimelineJump();
+                    
+                    DialogueInteraction();
+                    break;
+                case DialogueProperties.Mode.Action:
+                    PlayableDirector actor = Director.Instance.Actors[activeDialogue.dialogue[_line].animatronic.ToString()];
+                        
+                    actor.playableAsset = activeDialogue.dialogue[_line].actionScript;
+                    actor.Play();
                     
                     DialogueInteraction();
                     break;
