@@ -185,7 +185,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     DialogueInteraction();
                     break;
                 case DialogueProperties.Mode.Action:
-                    PlayableDirector actor = Director.Instance.Actors[activeDialogue.dialogue[_line].animatronic.ToString()];
+                    PlayableDirector actor = Director.Instance.Actors[activeDialogue.dialogue[_line].animatronic.ToString().ToLower()];
                         
                     actor.playableAsset = activeDialogue.dialogue[_line].actionScript;
                     actor.Play();
