@@ -16,7 +16,10 @@ public class Director : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        
+    }
+
+    private void OnEnable()
+    {
         _users = FindObjectsOfType<Animatronics>();
 
         foreach (Animatronics user in _users)
@@ -24,7 +27,7 @@ public class Director : MonoBehaviour
             Recruit(user);
         }
     }
-    
+
     private void Recruit(Animatronics user)
     {
         _actors.Add(user.ActorName.ToString().ToLower(), user.GetComponent<PlayableDirector>());
