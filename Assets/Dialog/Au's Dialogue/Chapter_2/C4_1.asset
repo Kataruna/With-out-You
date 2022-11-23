@@ -13,34 +13,6 @@ MonoBehaviour:
   m_Name: C4_1
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 0
-    character: 2
-    name: 
-    mood: 4
-    message: So, I feel like I've gotten a lot older.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 0
-    message: Let's go to the next point, Follow me.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
   - mode: 4
     character: 2
     name: 
@@ -55,3 +27,57 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 4
+    message: So, I feel like I've gotten a lot older.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 0
+    message: Let's go to the next point, Follow me.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 7
+    character: 2
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: Ball_7 Playground
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 11400000, guid: 635996b1133e65f41beea0b23c3f4b09, type: 2}
+    targetTime: 0

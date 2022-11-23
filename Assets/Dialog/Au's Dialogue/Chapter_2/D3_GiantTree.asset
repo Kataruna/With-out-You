@@ -27,6 +27,26 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 4
+    character: 2
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: Ball_6 Huge Tree
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -41,6 +61,9 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -56,6 +79,9 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -70,7 +96,10 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 4
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 7
     character: 2
     name: 
     mood: 0
@@ -84,3 +113,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 11400000, guid: 117fd593bd44f9540af860f2cf8074fe, type: 2}
+    targetTime: 0

@@ -16,6 +16,38 @@ MonoBehaviour:
   - mode: 0
     character: 2
     name: 
+    mood: 3
+    message: What make you nervous?
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+  - mode: 0
+    character: 2
+    name: 
+    mood: 3
+    message: Relax don't be serious all the time.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+  - mode: 0
+    character: 2
+    name: 
     mood: 4
     message: I'd like you to come outside, I always see you stay in library.
     choices: []
@@ -27,6 +59,8 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
   - mode: 2
     character: 2
     name: 
@@ -50,31 +84,5 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 3
-    message: Relax don't be serious all the time.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 3
-    message: What make you nervous?
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}

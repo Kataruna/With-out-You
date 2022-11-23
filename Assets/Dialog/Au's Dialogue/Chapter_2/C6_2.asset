@@ -27,104 +27,9 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 4
-    message: Thank a lot for coming today.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 3
-    message: I think you would not come.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 0
-    message: I have to go, See you next time.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 4
-    message: Bye, Silvy
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 3
-    name: 
-    mood: 4
-    message: Bye, Jane
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 3
-    name: 
-    mood: 3
-    message: "(She's brilliant at it that can exist on her\_own.)"
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-  - mode: 0
-    character: 3
-    name: 
-    mood: 3
-    message: (I sincerely wish to help you somehow.)
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 4
     character: 3
     name: 
@@ -139,3 +44,159 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 4
+    message: Thank a lot for coming today.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 3
+    message: I think you would not come.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 0
+    message: I have to go, See you next time.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 4
+    message: Bye, Silvy
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 3
+    name: 
+    mood: 4
+    message: Bye, Jane
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 3
+    character: 2
+    name: 
+    mood: 5
+    message: (I sincerely wish to help you somehow.)
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 7
+    character: 3
+    name: 
+    mood: 3
+    message: 
+    choices: []
+    eventKey: Ball_8 Board
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 11400000, guid: 4234c37fa5442fc469c839de2bdb3be6, type: 2}
+    targetTime: 0
+  - mode: 0
+    character: 3
+    name: 
+    mood: 3
+    message: "(She's brilliant at it that can exist on her\_own.)"
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 3
+    name: 
+    mood: 3
+    message: (I sincerely wish to help you somehow.)
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
