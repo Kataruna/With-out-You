@@ -10,6 +10,7 @@ public class Animatronics : MonoBehaviour
     
     [SerializeField] private Animator selfAnim;
     [SerializeField] private Characters actorName;
+    [SerializeField] private bool initialStage = false;
     
     private bool _facingRight = true;
     
@@ -22,7 +23,7 @@ public class Animatronics : MonoBehaviour
 
     private void Start()
     {
-        selfAnim.gameObject.SetActive(false);
+        selfAnim.gameObject.SetActive(initialStage);
     }
 
     // private void OnEnable()
