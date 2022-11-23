@@ -13,23 +13,6 @@ MonoBehaviour:
   m_Name: C4_2
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 4
-    character: 2
-    name: 
-    mood: 0
-    message: 
-    choices: []
-    eventKey: Ball_7 Playground
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
-    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -52,10 +35,27 @@ MonoBehaviour:
     character: 2
     name: 
     mood: 0
-    message: Let's go to the next point, Follow me.
+    message: Let's go to the next point, follow me.
     choices: []
     eventKey: 
     eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 3
+    character: 2
+    name: 
+    mood: 5
+    message: 
+    choices: []
+    eventKey: Ball_7 Playground
+    eventStatus: 1
     events:
       m_PersistentCalls:
         m_Calls: []
@@ -81,4 +81,21 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 11400000, guid: 635996b1133e65f41beea0b23c3f4b09, type: 2}
+    targetTime: 0
+  - mode: 4
+    character: 2
+    name: 
+    mood: 0
+    message: 
+    choices: []
+    eventKey: Ball_7 Playground
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
     targetTime: 0
