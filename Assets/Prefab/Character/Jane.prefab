@@ -133,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfAnim: {fileID: 5126504193107735405}
   actorName: 0
+  initialStage: 0
 --- !u!320 &2490784965025101200
 PlayableDirector:
   m_ObjectHideFlags: 0
