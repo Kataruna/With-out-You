@@ -179,8 +179,12 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                 case DialogueProperties.Mode.TimelineChange:
                     TARDIS.Instance.activeTimeline = activeDialogue.dialogue[_line].timeline;
                     TARDIS.Instance.activeWorld = activeDialogue.dialogue[_line].world;
-                    
-                    if(activeDialogue.dialogue[_line].doChangeOnThisState) ParallelWorld.Instance.TimelineJump();
+
+                    if (activeDialogue.dialogue[_line].doChangeOnThisState)
+                    {
+                        ParallelWorld.Instance.TimelineJump();
+                        LightingManager.Instance.UpdateTimeRound(activeDialogue.dialogue[_line].targetTime);
+                    }
                     
                     DialogueInteraction();
                     break;
@@ -282,9 +286,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         ClearImage();
         dialogAnimator.SetTrigger("Exit");
         activeDialogue = null;
-        
-        _controller.UI.Interact.performed -= _ => DialogueInteraction();
-        
+
         DisableInput();
     }
 

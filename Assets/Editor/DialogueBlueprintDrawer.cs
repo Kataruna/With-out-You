@@ -21,6 +21,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
     private SerializedProperty _doChangeOnThisState;
     private SerializedProperty _animatronic;
     private SerializedProperty _actionScript;
+    private SerializedProperty _targetTime;
 
     private float lineHeight = EditorGUIUtility.singleLineHeight;
 
@@ -48,6 +49,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         _doChangeOnThisState = property.FindPropertyRelative("doChangeOnThisState");
         _animatronic = property.FindPropertyRelative("animatronic");
         _actionScript = property.FindPropertyRelative("actionScript");
+        _targetTime = property.FindPropertyRelative("targetTime");
 
         //Draw foldOutBox
         Rect foldOutBox = new Rect(position.xMin, position.yMin, position.size.x, lineHeight);
@@ -158,6 +160,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
                     DrawTimelineProperty(position, 2);
                     DrawWorldProperty(position, 3);
                     DrawDoChangeTimelineProperty(position, 4);
+                    DrawTargetTimeProperty(position,5);
                     break;
                 case DialogueProperties.Mode.Action:
                     DrawAnimatronicProperty(position, 2);
@@ -285,6 +288,15 @@ public class DialogueBlueprintDrawer : PropertyDrawer
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
 
         EditorGUI.PropertyField(drawArea, _doChangeOnThisState, new GUIContent("Switch"));
+    }
+    
+    private void DrawTargetTimeProperty(Rect position, int line)
+    {
+        EditorGUIUtility.labelWidth = 60;
+
+        Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
+
+        EditorGUI.Slider(drawArea, _targetTime, 0f, 24f, new GUIContent("Worldline"));
     }
     
     private void DrawActionScriptProperty(Rect position, int line)

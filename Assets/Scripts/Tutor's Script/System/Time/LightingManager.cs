@@ -60,6 +60,13 @@ public class LightingManager : MonoBehaviour
             .OnComplete(() => DOTween.To(() => TimeOfDay, x => TimeOfDay = x, 24f, 0.5f).SetLoops(round, LoopType.Restart))
             .OnComplete(() => DOTween.To(() => TimeOfDay, x => TimeOfDay = x, scheduleTime, 1f)); 
     }
+    
+    public void UpdateTimeRound(float scheduleTime)
+    {
+        DOTween.To(() => TimeOfDay, x => TimeOfDay = x, 24f, 1f)
+            .OnComplete(() => TimeOfDay = 0f)
+            .OnComplete(() => DOTween.To(() => TimeOfDay, x => TimeOfDay = x, scheduleTime, 1f)); 
+    }
 
     private void UpdateLighting(float timePercent)
     {
