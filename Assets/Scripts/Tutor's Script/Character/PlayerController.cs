@@ -34,9 +34,13 @@ using UnityEngine.InputSystem;
     //Unity's Input System Method
     public void OnMove(InputValue value) 
     {
-        if(_isControlable) _movementValue = value.Get<Vector2>();
+        
+        if(_isControlable) 
+        {
+            _movementValue = value.Get<Vector2>();
+             FeedbacksManager.Instance.InteractFeedback.PlayFeedbacks();
+        }
         else _movementValue = Vector2.zero;
-
         if(_movementValue.x != 0f || _movementValue.y != 0f) characterAnimator.SetBool(IsMoving, true);
         else characterAnimator.SetBool(IsMoving, false);
         

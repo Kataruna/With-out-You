@@ -8,10 +8,10 @@ public class FeedbacksManager : MonoBehaviour
     public static FeedbacksManager Instance;
     [Header("Feedbacks")]
     [SerializeField] private MMFeedbacks interactFeedback;
-    [SerializeField] private MMFeedbacks walkingFeedback;
+    //[SerializeField] private MMFeedbacks walkingFeedback;
 
     public MMFeedbacks InteractFeedback => interactFeedback;
-    public MMFeedbacks WalkingFeedback => walkingFeedback;
+    //public MMFeedbacks WalkingFeedback => walkingFeedback;
     
     private void Awake()
     {

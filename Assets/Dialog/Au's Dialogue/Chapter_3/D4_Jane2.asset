@@ -64,6 +64,23 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 0}
     targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 0
+    message: Follow me, and I'll lead you to the plot I've prepared.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 3
     character: 2
     name: 
@@ -97,23 +114,6 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 11400000, guid: fe3d4e98b99a78c45a1bebbc2b65bd94, type: 2}
-    targetTime: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 0
-    message: Follow me, and I'll lead you to the plot I've prepared.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
     targetTime: 0
   - mode: 4
     character: 2
