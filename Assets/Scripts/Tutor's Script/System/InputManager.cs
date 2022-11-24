@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
 
@@ -13,6 +14,8 @@ public class InputManager : Singleton<InputManager>
 
     public delegate void EndTouchEvent(Vector2 position, float time);
     public event EndTouchEvent OnEndTouch;
+
+    public UnityEvent OnTouch;
     
     private ControllerTouch _inputController;
 
@@ -50,6 +53,7 @@ public class InputManager : Singleton<InputManager>
     private void StartTouch(InputAction.CallbackContext callbackContext)
     {
         Debug.Log("Touch Detected");
+        OnTouch.Invoke();
         Debug.Log($"Touch started {_inputController.Touch.TouchPosition.ReadValue<Vector2>()}");
         if (OnStartTouch != null)
         {
@@ -70,7 +74,8 @@ public class InputManager : Singleton<InputManager>
     {
         if (OnStartTouch != null)
         {
-            OnStartTouch(finger.screenPosition, Time.time);
+            OnTouch.Invoke();
+            // OnStartTouch(finger.screenPosition, Time.time);
         }
     }
 }
