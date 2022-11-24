@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   texture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: a6f60e6840d9b804e9fa40659d297e7e, type: 3}
     dimension: 1
   contribution:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0.416
 --- !u!114 &-425037437943023758
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -32,21 +32,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   postExposure:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: -0.09
   contrast:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   colorFilter:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 0.7924528, g: 0.6814903, b: 0.19063722, a: 1}
   hueShift:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   saturation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
 --- !u!114 &-32820517437979890
 MonoBehaviour:
@@ -123,7 +123,7 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 0.916763, y: 0.93379015, z: 1, w: -0.08042895}
+    m_Value: {x: 1, y: 0.9211729, z: 0.68640417, w: 0.28103057}
   midtones:
     m_OverrideState: 1
     m_Value: {x: 1, y: 0.99418324, z: 0.9437109, w: 0.06882479}
