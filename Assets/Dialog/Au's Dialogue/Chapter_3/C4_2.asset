@@ -25,6 +25,38 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 4
+    character: 2
+    name: 
+    mood: 0
+    message: "\u0E40\u0E2D\u0E48\u0E2D\u0E2D\u0E2D\u0E2D\u0E2D \u0E40\u0E18\u0E2D\u0E40\u0E2B\u0E47\u0E19\u0E1A\u0E2D\u0E23\u0E4C\u0E14\u0E1B\u0E23\u0E30\u0E01\u0E32\u0E28\u0E44\u0E2B\u0E21
+      \u0E17\u0E35\u0E48\u0E08\u0E30\u0E21\u0E35\u0E07\u0E32\u0E19\u0E40\u0E17\u0E28\u0E01\u0E32\u0E25\u0E04\u0E23\u0E34\u0E2A\u0E15\u0E4C\u0E21\u0E32\u0E2A"
+    choices:
+    - choice: I saw it.
+      blueprint: {fileID: 11400000, guid: 5d11fdc231d8c7b4a81812b74a6da2a1, type: 2}
+      eventKey: 
+      eventValue: 0
+    - choice: I haven't seen.
+      blueprint: {fileID: 11400000, guid: 9c5772be3184a0042a038d7f17f404d2, type: 2}
+      eventKey: 
+      eventValue: 0
+    eventKey: F2_Rose
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 3
     name: 
@@ -36,6 +68,12 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -47,6 +85,12 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -58,6 +102,12 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -69,6 +119,12 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 2
     character: 2
     name: 
@@ -89,3 +145,9 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
