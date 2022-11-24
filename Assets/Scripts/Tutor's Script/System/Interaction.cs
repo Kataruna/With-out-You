@@ -101,6 +101,7 @@ public class Interaction : MonoBehaviour, IInteractable
 
     public void UpdateEvent()
     {
+        FeedbacksManager.Instance.InteractFeedback.PlayFeedbacks();
         switch (type)
         {
             case Type.Event:
