@@ -16,6 +16,7 @@ public class MusicPlayer : MonoBehaviour
     [SerializeField] private Playlist playlist;
     [SerializeField] private Button trackPrefab;
     [SerializeField] private float fadeTime = 0.5f;
+    [SerializeField] private bool playOnReload = false;
 
     [Header("Object Assign")]
     [SerializeField] private Transform playlistHolder;
@@ -88,6 +89,8 @@ public class MusicPlayer : MonoBehaviour
             
             i++;
         }
+        
+        PlayMusic(1);
     }
 
     // private void VolumeSetup(float defaultVolume)

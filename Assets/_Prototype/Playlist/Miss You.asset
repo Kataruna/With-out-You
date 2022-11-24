@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b998c4e99fd63a24497e811bc42cf8a2, type: 3}
+  m_Name: Miss You
+  m_EditorClassIdentifier: 
+  song:
+  - trackName: Beautiful Moments
+    artist: 
+    trackFile: {fileID: 8300000, guid: 114a75d9e240a124e8a31199e709b817, type: 3}
+    defaultVolume: 0.5
+  - trackName: Calm & Sentimental
+    artist: 
+    trackFile: {fileID: 8300000, guid: 061cd53ec8a36d44e939738c6ede8689, type: 3}
+    defaultVolume: 0.5
+  - trackName: Casual Theme #1
+    artist: 
+    trackFile: {fileID: 8300000, guid: ebe4d7daf178a4849a5044de0a565e3e, type: 3}
+    defaultVolume: 0.5
+  - trackName: Casual Theme #3
+    artist: Acoustic Version
+    trackFile: {fileID: 8300000, guid: a7faebd28dc4ea44ca0dbb74a9afbdf3, type: 3}
+    defaultVolume: 0.5
+  - trackName: Dream On
+    artist: 
+    trackFile: {fileID: 8300000, guid: 364a9b5d6a9e60c47b0dae94539b0b40, type: 3}
+    defaultVolume: 0.5
+  - trackName: Emotional (Piano and Strings)
+    artist: 
+    trackFile: {fileID: 8300000, guid: 9758f4734e4fd164a91a64ec955ff579, type: 3}
+    defaultVolume: 0.5
+  - trackName: Happy Acoustic #2
+    artist: 
+    trackFile: {fileID: 8300000, guid: f66e9a2f0658ac141af3d0327c930e8e, type: 3}
+    defaultVolume: 0.5
+  - trackName: Inspiration (Piano and Strings Version)
+    artist: 
+    trackFile: {fileID: 8300000, guid: ab5daf39d7472274898ccd7c7ac436f0, type: 3}
+    defaultVolume: 0.5
+  - trackName: Inspiring Dreams (Only Piano)
+    artist: 
+    trackFile: {fileID: 8300000, guid: 3ce558d782c219d41bc3ecadff6967c2, type: 3}
+    defaultVolume: 0.5
+  - trackName: Love Story
+    artist: 
+    trackFile: {fileID: 8300000, guid: 2ca9fcf16f018884486d5e565a17e5f6, type: 3}
+    defaultVolume: 0.5
+  - trackName: Lyric & Peaceful (Piano and Strings)
+    artist: 
+    trackFile: {fileID: 8300000, guid: 78450c77106920e4db1d2cb9c3383828, type: 3}
+    defaultVolume: 0.5
+  - trackName: Lyric & Peaceful Space Theme #1
+    artist: 
+    trackFile: {fileID: 8300000, guid: ec9cd1c00760b724886fa95610a0594d, type: 3}
+    defaultVolume: 0.5
+  - trackName: Lyric & Peaceful Space Theme #3
+    artist: 
+    trackFile: {fileID: 8300000, guid: a6af2b5a944e2d74390b03155610d1d6, type: 3}
+    defaultVolume: 0.5
+  - trackName: Lyric & Peaceful Space Theme #4
+    artist: 
+    trackFile: {fileID: 8300000, guid: 271b8827f70c0e2499d63d696160975c, type: 3}
+    defaultVolume: 0.5
+  - trackName: Lyric & Peaceful Space Theme #5
+    artist: 
+    trackFile: {fileID: 8300000, guid: 2ecdb4bd5df65c34bbd3f8267d460b42, type: 3}
+    defaultVolume: 0.5
+  - trackName: My Inspiration
+    artist: 
+    trackFile: {fileID: 8300000, guid: d55aade28fd943f449ca8a6dc7da33b9, type: 3}
+    defaultVolume: 0.5
+  - trackName: Piano Mood
+    artist: 
+    trackFile: {fileID: 8300000, guid: 7c3b683a09253a947b45b5eab5197ddf, type: 3}
+    defaultVolume: 0.5
+  - trackName: Quiet Theme #1
+    artist: 
+    trackFile: {fileID: 8300000, guid: d62c129df834bc74aae28de263c294a1, type: 3}
+    defaultVolume: 0.5
+  - trackName: Quiet Theme #5
+    artist: 
+    trackFile: {fileID: 8300000, guid: f89668ba44d6fcd4c9d6da6377aa7d29, type: 3}
+    defaultVolume: 0.5
+  - trackName: Romantic
+    artist: 
+    trackFile: {fileID: 8300000, guid: c0881a5a3cc5d854ab90c17546e9953b, type: 3}
+    defaultVolume: 0.5
+  - trackName: Romantic Memories
+    artist: 
+    trackFile: {fileID: 8300000, guid: 55bbf76e554e69e4fb287399d44e21d0, type: 3}
+    defaultVolume: 0.5
+  - trackName: Sentimental Moment
+    artist: 
+    trackFile: {fileID: 8300000, guid: 263b88df9f3605442b219632f812d9bd, type: 3}
+    defaultVolume: 0.5
+  - trackName: Space Ambience #6
+    artist: 
+    trackFile: {fileID: 8300000, guid: b3653c9bdaae22d4ba75073b7eb234a0, type: 3}
+    defaultVolume: 0.5
+  - trackName: Space Casual Theme #1 V2
+    artist: 
+    trackFile: {fileID: 8300000, guid: 99a20577156db1146a975766a2a9525d, type: 3}
+    defaultVolume: 0.5
+  - trackName: Space Casual Theme #2
+    artist: 
+    trackFile: {fileID: 8300000, guid: c71eec0af6b9d024fafbca2dba217bb0, type: 3}
+    defaultVolume: 0.5
+  - trackName: Warm Romantic Mood (Guitar and Piano)
+    artist: 
+    trackFile: {fileID: 8300000, guid: 93d170c7cbdfa8646b628bb1d78d7e39, type: 3}
+    defaultVolume: 0.5
+  - trackName: Romantic Feeling
+    artist: 
+    trackFile: {fileID: 8300000, guid: 53f992c1675613e4a82a94b7259a5a94, type: 3}
+    defaultVolume: 0.5
