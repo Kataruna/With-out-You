@@ -77,11 +77,10 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     void StartLine()
     {
         PlayerController.Instance.SetControlState(false);
-        
-        _line = 0;
 
-        StartCoroutine(TypeName());
-        StartCoroutine(TypeLine());
+        _line = -1;
+        
+        NextLine();
     }
 
     IEnumerator TypeLine()
