@@ -182,7 +182,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
                     if (activeDialogue.dialogue[_line].doChangeOnThisState)
                     {
                         ParallelWorld.Instance.TimelineJump();
-                        LightingManager.Instance.UpdateTimeRound(activeDialogue.dialogue[_line].targetTime);
+                        UniStorm.UniStormManager.Instance.FastForwardTo(activeDialogue.dialogue[_line].targetTime, 0);
                     }
                     
                     DialogueInteraction();

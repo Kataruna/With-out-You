@@ -20,7 +20,7 @@ public class DialogueProperties
     public bool doChangeOnThisState;
     public Animatronics.Characters animatronic;
     public TimelineAsset actionScript;
-    public float targetTime;
+    public int targetTime;
 
     public enum Character
     {

@@ -296,7 +296,7 @@ public class DialogueBlueprintDrawer : PropertyDrawer
 
         Rect drawArea = DrawProperty(position, PositionInLine.front, HorizontalSize.full, line, 1);
 
-        EditorGUI.Slider(drawArea, _targetTime, 0f, 24f, new GUIContent("Worldline"));
+        EditorGUI.Slider(drawArea, _targetTime, 0, 24, new GUIContent("Worldline"));
     }
     
     private void DrawActionScriptProperty(Rect position, int line)
