@@ -13,29 +13,11 @@ MonoBehaviour:
   m_Name: C4_End
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 3
+  - mode: 7
     character: 2
     name: 
     mood: 5
-    message: "(I maybe\_miss you till the memory of the first time we met at this
-      location returns to me.)"
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
-  - mode: 7
-    character: 3
-    name: 
-    mood: 2
-    message: "(I maybe\_miss you till the memory of the first time we met at this
-      location returns to me.)"
+    message: 
     choices: []
     eventKey: 
     eventStatus: 0
@@ -47,6 +29,24 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 11400000, guid: 82c70a08b7c504d4b8d610014928468e, type: 2}
+    targetTime: 0
+  - mode: 3
+    character: 2
+    name: 
+    mood: 5
+    message: 
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 3
     name: 
@@ -62,7 +62,8 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
     animatronic: 0
-    actionScript: {fileID: 0}
+    actionScript: {fileID: 11400000, guid: 82c70a08b7c504d4b8d610014928468e, type: 2}
+    targetTime: 0
   - mode: 0
     character: 3
     name: 
@@ -79,7 +80,8 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
     animatronic: 0
-    actionScript: {fileID: 0}
+    actionScript: {fileID: 11400000, guid: 82c70a08b7c504d4b8d610014928468e, type: 2}
+    targetTime: 0
   - mode: 0
     character: 3
     name: 
@@ -95,7 +97,8 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
     animatronic: 0
-    actionScript: {fileID: 0}
+    actionScript: {fileID: 11400000, guid: 82c70a08b7c504d4b8d610014928468e, type: 2}
+    targetTime: 0
   - mode: 0
     character: 3
     name: 
@@ -111,7 +114,8 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
     animatronic: 0
-    actionScript: {fileID: 0}
+    actionScript: {fileID: 11400000, guid: 82c70a08b7c504d4b8d610014928468e, type: 2}
+    targetTime: 0
   - mode: 0
     character: 3
     name: 
@@ -128,4 +132,5 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
     animatronic: 0
-    actionScript: {fileID: 0}
+    actionScript: {fileID: 11400000, guid: 82c70a08b7c504d4b8d610014928468e, type: 2}
+    targetTime: 0

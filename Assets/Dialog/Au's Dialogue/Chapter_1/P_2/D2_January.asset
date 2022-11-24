@@ -29,6 +29,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 7
     character: 1
     name: 
@@ -54,6 +55,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 11400000, guid: fb02d245527fcc74588c32bef4cf75da, type: 2}
+    targetTime: 0
   - mode: 0
     character: 4
     name: 
@@ -70,6 +72,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 0
     name: 
@@ -86,6 +89,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 0
     name: 
@@ -102,6 +106,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 1
     name: 
@@ -119,6 +124,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 1
     name: 
@@ -135,6 +141,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 1
     name: 
@@ -152,6 +159,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 4
     character: 1
     name: 
@@ -177,6 +185,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 2
     character: 1
     name: 
@@ -184,11 +193,11 @@ MonoBehaviour:
     message: I was informed by someone from the class that I needed to come here
       to see you.
     choices:
-    - choice: Jane, Is that you?
+    - choice: Jane, is that you?
       blueprint: {fileID: 11400000, guid: cba7fc8886577d9418990ad299c6dc7c, type: 2}
       eventKey: 
       eventValue: 0
-    - choice: Jan... January It's a pleasure to meet you. I'm Fine.
+    - choice: Jan... January, it's a pleasure to meet you. I'm fine.
       blueprint: {fileID: 11400000, guid: 2674868e82fe47240acc0e57ba0648c6, type: 2}
       eventKey: 
       eventValue: 0
@@ -202,3 +211,4 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0

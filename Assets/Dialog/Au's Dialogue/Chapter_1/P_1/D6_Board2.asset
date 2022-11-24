@@ -27,13 +27,16 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 4
     character: 0
     name: 
     mood: 3
     message: "Wait,\_ Why does the Christmas poster date from 2006? 2007 is the year."
     choices: []
-    eventKey: Ball_4 Poster gone
+    eventKey: Ball_3 Poster gone
     eventStatus: 1
     events:
       m_PersistentCalls:
@@ -41,3 +44,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0

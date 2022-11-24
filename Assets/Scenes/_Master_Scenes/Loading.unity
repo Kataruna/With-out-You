@@ -759,12 +759,12 @@ PrefabInstance:
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.data[6].eventName
-      value: Ball_3 Flower gone
+      value: Ball_3 Poster gone
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.data[7].eventName
-      value: Ball_4 Poster gone
+      value: Ball_4 Flower gone
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}

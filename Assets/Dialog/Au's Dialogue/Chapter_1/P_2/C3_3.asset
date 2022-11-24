@@ -29,6 +29,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -45,6 +46,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 1
     name: 
@@ -61,6 +63,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 2
     character: 1
     name: 
@@ -68,7 +71,7 @@ MonoBehaviour:
     message: Bye, Silvy
     choices:
     - choice: Bye, Jane
-      blueprint: {fileID: 11400000, guid: 680d50258c8314b42b11b550892d4720, type: 2}
+      blueprint: {fileID: 11400000, guid: 7596bedc996ece64e899c9b87f89e622, type: 2}
       eventKey: 
       eventValue: 0
     eventKey: 
@@ -81,3 +84,4 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0

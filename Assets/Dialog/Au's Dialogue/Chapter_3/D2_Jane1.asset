@@ -13,23 +13,6 @@ MonoBehaviour:
   m_Name: D2_Jane1
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 0
-    character: 2
-    name: 
-    mood: 4
-    message: Yo!! Silvy
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
-    targetTime: 0
   - mode: 7
     character: 2
     name: 
@@ -44,6 +27,23 @@ MonoBehaviour:
       blueprint: {fileID: 11400000, guid: 8a3d14bf8afd69042b12b047dc6f4108, type: 2}
       eventKey: 
       eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 11400000, guid: fe3d4e98b99a78c45a1bebbc2b65bd94, type: 2}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 4
+    message: Yo!! Silvy
+    choices: []
     eventKey: 
     eventStatus: 0
     events:
