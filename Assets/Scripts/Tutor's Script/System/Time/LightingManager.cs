@@ -68,6 +68,11 @@ public class LightingManager : MonoBehaviour
             .OnComplete(() => DOTween.To(() => TimeOfDay, x => TimeOfDay = x, scheduleTime, 1f)); 
     }
 
+    public void SkipToTime(float scheduleTime)
+    {
+        TimeOfDay = scheduleTime;
+    }
+
     private void UpdateLighting(float timePercent)
     {
         //Set ambient and fog

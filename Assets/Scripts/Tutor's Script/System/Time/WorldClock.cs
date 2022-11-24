@@ -5,16 +5,14 @@ using UnityEngine;
 
 public class WorldClock : MonoBehaviour
 {
-    public static WorldClock Instance;
     [SerializeField, Range(0f,24f)] float timeOfDay;
     [SerializeField] private int round;
-
-    private LightingManager _sky;
-    private void Awake()
+    [SerializeField, Tooltip("โว่ โหหหหหหหหหหห")] private bool noAnimation;
+    
+    private void OnEnable()
     {
-        Instance = this;
-        
-        _sky = GetComponent<LightingManager>();
+        if(!noAnimation) FastForward();
+        else Skip();
     }
 
     [ContextMenu("Fast Forward")]
@@ -27,5 +25,10 @@ public class WorldClock : MonoBehaviour
     public void Spin()
     {
         LightingManager.Instance.UpdateTime(timeOfDay, round);
+    }
+
+    public void Skip()
+    {
+        LightingManager.Instance.SkipToTime(timeOfDay);
     }
 }
