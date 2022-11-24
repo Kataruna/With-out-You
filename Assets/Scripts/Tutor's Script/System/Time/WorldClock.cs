@@ -27,6 +27,7 @@ public class WorldClock : MonoBehaviour
         LightingManager.Instance.UpdateTime(timeOfDay, round);
     }
 
+    [ContextMenu("Skip")]
     public void Skip()
     {
         LightingManager.Instance.SkipToTime(timeOfDay);
