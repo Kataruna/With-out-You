@@ -13,31 +13,6 @@ MonoBehaviour:
   m_Name: D2_Jane1
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 7
-    character: 2
-    name: 
-    mood: 0
-    message: 
-    choices:
-    - choice: Don't panic, I haven't back yet.
-      blueprint: {fileID: 11400000, guid: c09a88a40ea0e694db75ab9ee4c1d564, type: 2}
-      eventKey: 
-      eventValue: 0
-    - choice: I'll be waiting for you. You do not have to hurry.
-      blueprint: {fileID: 11400000, guid: 8a3d14bf8afd69042b12b047dc6f4108, type: 2}
-      eventKey: 
-      eventValue: 0
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 11400000, guid: fe3d4e98b99a78c45a1bebbc2b65bd94, type: 2}
-    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -72,11 +47,28 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 0}
     targetTime: 0
+  - mode: 7
+    character: 2
+    name: 
+    mood: 3
+    message: Sorry, I just returned from work. You're going to back, right?
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 11400000, guid: fe3d4e98b99a78c45a1bebbc2b65bd94, type: 2}
+    targetTime: 0
   - mode: 2
     character: 2
     name: 
-    mood: 0
-    message: 
+    mood: 3
+    message: Sorry, I just returned from work. You're going to back, right?
     choices:
     - choice: Don't panic, I haven't back yet.
       blueprint: {fileID: 11400000, guid: c09a88a40ea0e694db75ab9ee4c1d564, type: 2}
@@ -95,5 +87,5 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
     animatronic: 0
-    actionScript: {fileID: 0}
+    actionScript: {fileID: 11400000, guid: fe3d4e98b99a78c45a1bebbc2b65bd94, type: 2}
     targetTime: 0
