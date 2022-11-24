@@ -29,11 +29,12 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
     mood: 3
-    message: See you tomorrow at 12.30 p.m. in the public park.
+    message: See you tomorrow at 2 p.m. in the public park.
     choices: []
     eventKey: 
     eventStatus: 0
@@ -45,6 +46,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -61,6 +63,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 2
     name: 
@@ -77,6 +80,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 3
     character: 2
     name: 
@@ -97,6 +101,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 2
     character: 1
     name: 
@@ -117,3 +122,4 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
