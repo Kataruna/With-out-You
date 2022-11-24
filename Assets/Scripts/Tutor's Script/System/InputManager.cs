@@ -14,11 +14,11 @@ public class InputManager : Singleton<InputManager>
     public delegate void EndTouchEvent(Vector2 position, float time);
     public event EndTouchEvent OnEndTouch;
     
-    private Controller _inputController;
+    private ControllerTouch _inputController;
 
     private void Awake()
     {
-        _inputController = new Controller();
+        _inputController = new ControllerTouch();
     }
 
     private void OnEnable()

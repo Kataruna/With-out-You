@@ -11,7 +11,7 @@ namespace UniStorm
     {
         public static UniStormManager Instance = null;
 
-        void Start()
+        void Awake()
         {
             Instance = this;
         }
