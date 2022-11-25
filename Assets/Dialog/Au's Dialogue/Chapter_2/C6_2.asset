@@ -132,23 +132,6 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 0}
     targetTime: 0
-  - mode: 3
-    character: 2
-    name: 
-    mood: 5
-    message: (I sincerely wish to help you somehow.)
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
-    targetTime: 0
   - mode: 7
     character: 3
     name: 
@@ -165,6 +148,23 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 11400000, guid: 4234c37fa5442fc469c839de2bdb3be6, type: 2}
+    targetTime: 0
+  - mode: 3
+    character: 2
+    name: 
+    mood: 5
+    message: (I sincerely wish to help you somehow.)
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
     targetTime: 0
   - mode: 0
     character: 3

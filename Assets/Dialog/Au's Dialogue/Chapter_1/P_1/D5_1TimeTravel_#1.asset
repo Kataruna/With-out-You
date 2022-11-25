@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
-  m_Name: D5_TimeTravel_#1
+  m_Name: D5_1TimeTravel_#1
   m_EditorClassIdentifier: 
   dialogue:
   - mode: 0
@@ -27,6 +27,23 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 4
+    character: 0
+    name: 
+    mood: 4
+    message: Let's take a picture together, before I leave.
+    choices: []
+    eventKey: Ball_2 ReversePoint
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 1
     animatronic: 0
     actionScript: {fileID: 0}
     targetTime: 0
@@ -64,20 +81,3 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 0}
     targetTime: 18.12
-  - mode: 4
-    character: 0
-    name: 
-    mood: 4
-    message: Let's take a picture together, before I leave.
-    choices: []
-    eventKey: Ball_2 ReversePoint
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 1
-    animatronic: 0
-    actionScript: {fileID: 0}
-    targetTime: 0

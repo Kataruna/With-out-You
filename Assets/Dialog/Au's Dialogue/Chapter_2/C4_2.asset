@@ -48,23 +48,6 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 0}
     targetTime: 0
-  - mode: 3
-    character: 2
-    name: 
-    mood: 5
-    message: 
-    choices: []
-    eventKey: Ball_7 Playground
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
-    targetTime: 0
   - mode: 7
     character: 2
     name: 
@@ -81,6 +64,23 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 11400000, guid: 635996b1133e65f41beea0b23c3f4b09, type: 2}
+    targetTime: 0
+  - mode: 3
+    character: 2
+    name: 
+    mood: 5
+    message: 
+    choices: []
+    eventKey: Ball_7 Playground
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
     targetTime: 0
   - mode: 4
     character: 2

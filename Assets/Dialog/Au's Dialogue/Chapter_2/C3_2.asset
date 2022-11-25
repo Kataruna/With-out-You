@@ -30,23 +30,6 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 0}
     targetTime: 0
-  - mode: 3
-    character: 2
-    name: 
-    mood: 5
-    message: Follow me !
-    choices: []
-    eventKey: Ball_5 First date
-    eventStatus: 1
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
-    targetTime: 0
   - mode: 7
     character: 2
     name: 
@@ -63,6 +46,23 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 11400000, guid: d72f1702ae4fa4b45b1a926261c3a06f, type: 2}
+    targetTime: 0
+  - mode: 3
+    character: 2
+    name: 
+    mood: 5
+    message: Follow me !
+    choices: []
+    eventKey: Ball_5 First date
+    eventStatus: 1
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
     targetTime: 0
   - mode: 4
     character: 2

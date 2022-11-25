@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: C4_End
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 0
-    character: 3
+  - mode: 7
+    character: 2
     name: 
-    mood: 3
-    message: (What am I dreaming about? What happened?)
+    mood: 5
+    message: 
     choices: []
     eventKey: 
     eventStatus: 0
@@ -51,8 +51,7 @@ MonoBehaviour:
     character: 3
     name: 
     mood: 3
-    message: "(I'm completely confused. But how is it possible that Jane\_don't recognize
-      me?)"
+    message: (What am I dreaming about? What happened?)
     choices: []
     eventKey: 
     eventStatus: 0
@@ -65,11 +64,12 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 11400000, guid: 82c70a08b7c504d4b8d610014928468e, type: 2}
     targetTime: 0
-  - mode: 7
-    character: 2
+  - mode: 0
+    character: 3
     name: 
-    mood: 5
-    message: 
+    mood: 3
+    message: "(I'm completely confused. But how is it possible that Jane\_don't recognize
+      me?)"
     choices: []
     eventKey: 
     eventStatus: 0

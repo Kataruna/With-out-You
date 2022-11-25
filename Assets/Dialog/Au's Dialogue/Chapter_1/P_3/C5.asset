@@ -13,22 +13,6 @@ MonoBehaviour:
   m_Name: C5
   m_EditorClassIdentifier: 
   dialogue:
-  - mode: 0
-    character: 3
-    name: 
-    mood: 0
-    message: (Despite the fact that I already know what will happen tomorrow.)
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
   - mode: 7
     character: 3
     name: 
@@ -45,6 +29,24 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 11400000, guid: d0eff08bb7ab40f46908bc22bdf14c78, type: 2}
+    targetTime: 0
+  - mode: 0
+    character: 3
+    name: 
+    mood: 0
+    message: (Despite the fact that I already know what will happen tomorrow.)
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 3
     name: 
@@ -61,6 +63,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 3
     name: 
@@ -77,6 +80,7 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 4
     character: 3
     name: 
@@ -93,3 +97,4 @@ MonoBehaviour:
     doChangeOnThisState: 0
     animatronic: 0
     actionScript: {fileID: 0}
+    targetTime: 0
