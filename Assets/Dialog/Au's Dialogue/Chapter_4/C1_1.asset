@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
+  m_Name: C1_1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - mode: 0
+    character: 2
+    name: 
+    mood: 1
+    message: I can't believe that you're letting me wait like this.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 1
+    message: You don't even know. Today is so important for me.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 2
+    message: No matter how many times I turn back time. You are never coming on time.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 2
+    message: I don't want to change anymore. I want to disappear.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 3
+    name: 
+    mood: 3
+    message: (I will never forget that night.)
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 3
+    name: 
+    mood: 3
+    message: (After both of us argued on the morning of December 26.)
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 3
+    name: 
+    mood: 2
+    message: (Somebody has found her body at the end of the river)
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 3
+    name: 
+    mood: 3
+    message: (I don't want it to be like that. I must change something.)
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 2
+    character: 3
+    name: 
+    mood: 3
+    message: (I don't want it to be like that. I must change something.)
+    choices:
+    - choice: I'm sorry.
+      blueprint: {fileID: 11400000, guid: f7253979fa6b54f4b8edf280e15f3222, type: 2}
+      eventKey: 
+      eventValue: 0
+    - choice: You don't need to fix anything.
+      blueprint: {fileID: 11400000, guid: f7253979fa6b54f4b8edf280e15f3222, type: 2}
+      eventKey: 
+      eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0

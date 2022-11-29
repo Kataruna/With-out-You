@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5753b5bd1509b940a6737f8e9609c07, type: 3}
+  m_Name: C6_3
+  m_EditorClassIdentifier: 
+  dialogue:
+  - mode: 0
+    character: 3
+    name: 
+    mood: 1
+    message: No one can understand each other.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 1
+    message: Everything you have told me is about you.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 2
+    message: 'No no no, You never even tried to understand me. '
+    choices:
+    - choice: 
+      blueprint: {fileID: 0}
+      eventKey: 
+      eventValue: 0
+    - choice: 
+      blueprint: {fileID: 0}
+      eventKey: 
+      eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
+    mood: 2
+    message: You never stay by my side.
+    choices:
+    - choice: 
+      blueprint: {fileID: 0}
+      eventKey: 
+      eventValue: 0
+    - choice: 
+      blueprint: {fileID: 0}
+      eventKey: 
+      eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 2
+    character: 2
+    name: 
+    mood: 2
+    message: 
+    choices:
+    - choice: 
+      blueprint: {fileID: 0}
+      eventKey: 
+      eventValue: 0
+    - choice: 
+      blueprint: {fileID: 0}
+      eventKey: 
+      eventValue: 0
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
