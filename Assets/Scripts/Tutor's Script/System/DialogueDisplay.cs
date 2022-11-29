@@ -223,7 +223,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
 
         if (_line == activeDialogue.dialogue.Length - 1 && (message.text == activeDialogue.dialogue[_line].message || activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.UpdateEvent))
             ConversationEnd();
-        else if (message.text == activeDialogue.dialogue[_line].message)
+        else if (message.text == activeDialogue.dialogue[_line].message || (activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.UpdateEvent || activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.TimelineChange || activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.Action) && _line != activeDialogue.dialogue.Length-1)
             NextLine();
         else
         {
