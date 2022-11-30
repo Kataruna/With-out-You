@@ -298,6 +298,8 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         dialogAnimator.SetTrigger("Exit");
         activeDialogue = null;
 
+        _controller.UI.Interact.performed -= _ => DialogueInteraction();
+        
         DisableInput();
     }
 
