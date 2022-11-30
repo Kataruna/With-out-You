@@ -62,7 +62,7 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
     animatronic: 0
-    actionScript: {fileID: 11400000, guid: fe3d4e98b99a78c45a1bebbc2b65bd94, type: 2}
+    actionScript: {fileID: 11400000, guid: f5250861ad303c94bb59e890b4937885, type: 2}
     targetTime: 0
   - mode: 3
     character: 2

@@ -28,6 +28,9 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 0
     name: 
@@ -43,6 +46,9 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 4
     character: 0
     name: 
@@ -50,7 +56,7 @@ MonoBehaviour:
     message: Today I brought flowers that we both planted together. I hope you like
       it.
     choices: []
-    eventKey: Ball_1 Board
+    eventKey: Ball_2 Board
     eventStatus: 1
     events:
       m_PersistentCalls:
@@ -58,3 +64,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3983266843881747969
+--- !u!114 &-7366243219265465675
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,6 +13,22 @@ MonoBehaviour:
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
   m_Time: 0
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: 0ef4cdf7a28d6b4429fad5babb9e47c3, type: 2}
+--- !u!114 &-3983266843881747969
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 0.08333333333333333
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 4b133418911cab949842a7f2a7262636, type: 2}
@@ -45,9 +61,9 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-        value: {x: 6.7979946, y: -0.040890098, z: -4.0899143}
-        inSlope: {x: 0, y: 0, z: -1.8869699}
-        outSlope: {x: 0, y: 0, z: -1.8869699}
+        value: {x: 9.877996, y: -0.0029593706, z: -1.9302444}
+        inSlope: {x: 3.7199986, y: 0, z: 0}
+        outSlope: {x: 3.7199986, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -146,9 +162,9 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 6.7979946
-        inSlope: 0
-        outSlope: 0
+        value: 9.877996
+        inSlope: 3.7199986
+        outSlope: 3.7199986
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -183,7 +199,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -0.040890098
+        value: -0.0029593706
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -220,9 +236,9 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -4.0899143
-        inSlope: -1.8869699
-        outSlope: -1.8869699
+        value: -1.9302444
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -312,6 +328,7 @@ MonoBehaviour:
     m_Objects:
     - {fileID: -3983266843881747969}
     - {fileID: 4331615384778473469}
+    - {fileID: -7366243219265465675}
 --- !u!114 &4331615384778473469
 MonoBehaviour:
   m_ObjectHideFlags: 1

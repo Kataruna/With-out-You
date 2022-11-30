@@ -28,6 +28,9 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 0
     character: 0
     name: 
@@ -42,13 +45,16 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
   - mode: 4
     character: 0
     name: 
     mood: 0
     message: I want you to take a look for yourself.
     choices: []
-    eventKey: Ball_2 Flower
+    eventKey: Ball_1 Flower
     eventStatus: 1
     events:
       m_PersistentCalls:
@@ -56,3 +62,6 @@ MonoBehaviour:
     timeline: 0
     world: 0
     doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0

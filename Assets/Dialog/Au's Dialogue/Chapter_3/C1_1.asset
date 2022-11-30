@@ -16,6 +16,23 @@ MonoBehaviour:
   - mode: 0
     character: 2
     name: 
+    mood: 0
+    message: See you tomorrow at the same time in the park.
+    choices: []
+    eventKey: 
+    eventStatus: 0
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+    timeline: 0
+    world: 0
+    doChangeOnThisState: 0
+    animatronic: 0
+    actionScript: {fileID: 0}
+    targetTime: 0
+  - mode: 0
+    character: 2
+    name: 
     mood: 4
     message: Maybe you're free now? You spends the most of her time reading and listening
       to music.
@@ -36,23 +53,6 @@ MonoBehaviour:
     name: 
     mood: 3
     message: Are you free tomorrow?
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
-    targetTime: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 0
-    message: See you tomorrow at the same time in the park.
     choices: []
     eventKey: 
     eventStatus: 0

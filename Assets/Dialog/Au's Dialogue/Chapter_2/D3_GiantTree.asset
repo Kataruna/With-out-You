@@ -82,23 +82,6 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 0}
     targetTime: 0
-  - mode: 0
-    character: 2
-    name: 
-    mood: 0
-    message: Let's move to the next point.
-    choices: []
-    eventKey: 
-    eventStatus: 0
-    events:
-      m_PersistentCalls:
-        m_Calls: []
-    timeline: 0
-    world: 0
-    doChangeOnThisState: 0
-    animatronic: 0
-    actionScript: {fileID: 0}
-    targetTime: 0
   - mode: 7
     character: 2
     name: 
@@ -116,14 +99,14 @@ MonoBehaviour:
     animatronic: 0
     actionScript: {fileID: 11400000, guid: 117fd593bd44f9540af860f2cf8074fe, type: 2}
     targetTime: 0
-  - mode: 3
+  - mode: 0
     character: 2
     name: 
-    mood: 5
-    message: 
+    mood: 0
+    message: Let's move to the next point.
     choices: []
-    eventKey: Ball_6 Huge Tree
-    eventStatus: 1
+    eventKey: 
+    eventStatus: 0
     events:
       m_PersistentCalls:
         m_Calls: []
@@ -131,5 +114,5 @@ MonoBehaviour:
     world: 0
     doChangeOnThisState: 0
     animatronic: 0
-    actionScript: {fileID: 11400000, guid: 117fd593bd44f9540af860f2cf8074fe, type: 2}
+    actionScript: {fileID: 0}
     targetTime: 0

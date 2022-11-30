@@ -695,12 +695,12 @@ PrefabInstance:
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.data[1].eventName
-      value: Ball_1 Board
+      value: Ball_1 Flower
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
       propertyPath: eventList.Array.data[2].eventName
-      value: Ball_2 Flower
+      value: Ball_2 Board
       objectReference: {fileID: 0}
     - target: {fileID: 8795882929356151975, guid: 7ed5cecedfebed54482168b2a4c382d2,
         type: 3}
