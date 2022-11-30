@@ -16,10 +16,24 @@ public class Appearance : MonoBehaviour
             switch (defaultAppearance)
             {
                 case true:
-                    controlledGameObject.SetActive(false);
+                    if (controlledGameObject.TryGetComponent(out MeshRenderer meshT))
+                    {
+                        meshT.enabled = false;
+                    }
+                    else
+                    {
+                        controlledGameObject.SetActive(false);
+                    }
                     break;
                 case false:
-                    controlledGameObject.SetActive(true);
+                    if (controlledGameObject.TryGetComponent(out MeshRenderer meshF))
+                    {
+                        meshF.enabled = true;
+                    }
+                    else
+                    {
+                        controlledGameObject.SetActive(true);
+                    }
                     break;
             }
 
