@@ -46,8 +46,6 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     private Controller _controller;
     private static readonly int ChoicePhrase = Animator.StringToHash("ChoicePhrase");
 
-    private bool _justEnter;
-
     #endregion
 
     #region - Unity's Method -
@@ -60,10 +58,13 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     public void EnableInput()
     {
         _controller.Enable();
+        _controller.UI.Interact.performed += _ => DialogueInteraction();
     }
 
     public void DisableInput()
     {
+        _controller.UI.Interact.performed -= _ => DialogueInteraction();
+
         _controller.Disable();
     }
 
@@ -83,8 +84,6 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         _line = -1;
         
         NextLine();
-
-        _justEnter = false;
     }
 
     IEnumerator TypeLine()
@@ -223,12 +222,6 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
 
     void DialogueInteraction()
     {
-        if (_justEnter)
-        {
-            StartLine();
-            return;
-        }
-        
         if (activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.Choice) return;
 
         if (_line == activeDialogue.dialogue.Length - 1 && (message.text == activeDialogue.dialogue[_line].message || activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.UpdateEvent))
@@ -280,12 +273,9 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     public void EnterDialogue(Dialogue dialogue)
     {
         activeDialogue = dialogue;
-
-        _justEnter = true;
         
         EnableInput();
-        _controller.UI.Interact.performed += _ => DialogueInteraction();
-        
+
         ClearImage();
         dialogAnimator.SetTrigger("Enter");
         
@@ -298,8 +288,6 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         dialogAnimator.SetTrigger("Exit");
         activeDialogue = null;
 
-        _controller.UI.Interact.performed -= _ => DialogueInteraction();
-        
         DisableInput();
     }
 
