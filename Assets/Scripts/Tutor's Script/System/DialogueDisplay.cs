@@ -288,6 +288,8 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         dialogAnimator.SetTrigger("Exit");
         activeDialogue = null;
 
+        _line = 0;
+        
         DisableInput();
     }
 
