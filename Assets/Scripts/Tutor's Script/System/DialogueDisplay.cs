@@ -219,6 +219,12 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
 
     void DialogueInteraction()
     {
+        if (_line == -1)
+        {
+            StartLine();
+            return;
+        }
+        
         if (activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.Choice) return;
 
         if (_line == activeDialogue.dialogue.Length - 1 && (message.text == activeDialogue.dialogue[_line].message || activeDialogue.dialogue[_line].mode == DialogueProperties.Mode.UpdateEvent))
@@ -270,6 +276,8 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     public void EnterDialogue(Dialogue dialogue)
     {
         activeDialogue = dialogue;
+
+        _line = -1;
         
         EnableInput();
         _controller.UI.Interact.performed += _ => DialogueInteraction();
