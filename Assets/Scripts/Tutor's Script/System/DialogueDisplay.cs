@@ -46,6 +46,8 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     private Controller _controller;
     private static readonly int ChoicePhrase = Animator.StringToHash("ChoicePhrase");
 
+    private bool _justEnter;
+
     #endregion
 
     #region - Unity's Method -
@@ -81,6 +83,8 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
         _line = -1;
         
         NextLine();
+
+        _justEnter = false;
     }
 
     IEnumerator TypeLine()
@@ -219,7 +223,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
 
     void DialogueInteraction()
     {
-        if (_line == -1)
+        if (_justEnter)
         {
             StartLine();
             return;
@@ -277,7 +281,7 @@ public class DialogueDisplay : Singleton<DialogueDisplay>
     {
         activeDialogue = dialogue;
 
-        _line = -1;
+        _justEnter = true;
         
         EnableInput();
         _controller.UI.Interact.performed += _ => DialogueInteraction();
