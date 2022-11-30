@@ -15,7 +15,8 @@ public class Traveler : MonoBehaviour
     {
         Library,
         Park,
-        Graveyard
+        Graveyard,
+        End
     }
 
     public Mode SelectedMode => mode;
@@ -71,6 +72,8 @@ public class Traveler : MonoBehaviour
     {
         DisableInput();
         LoadingScreenController.Instance.LoadNextScene($"{nextScene}");
+        if (nextScene == Scene.End) return;
+
         _tardis.orderOfAppearance = sceneOrder;
 
         if (doChangeTime)
